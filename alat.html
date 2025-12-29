@@ -100,64 +100,67 @@
       </div>
     </nav>
 
-    <section class="py-5 mt-5">
-      <div class="container">
-        <div class="row justify-content-center px-2">
-          <div class="col-lg-6">
-            <div class="text-center">
-              <h2 class="display-4 fw-bold text-dark">
-                Koleksi <span class="text-success">Alat</span>
-              </h2>
-              <p class="text-secondary">
-                Temukan kumpulan alat digital gratis siap digunakan untuk
-                mendukung kreativitas dan produktivitas
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-4 mt-4">
-          <div class="row g-2 align-items-end">
-            <div class="col-12 col-lg-8">
-              <div
-                class="input-group input-group-lg shadow-sm rounded-4 overflow-hidden border"
-              >
-                <span class="input-group-text bg-white border-0 ps-4">
-                  <i class="bi bi-search text-success"></i>
-                </span>
-                <input
-                  type="text"
-                  id="searchInput"
-                  class="form-control border-0 px-2 py-3 shadow-none fs-6"
-                  placeholder="Cari nama alat..."
-                />
+    <main>
+      <section class="py-5 mt-5">
+        <div class="container">
+          <div class="row justify-content-center px-2">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <h1 class="display-4 fw-bold text-dark">
+                  Koleksi <span class="text-success">Alat</span>
+                </h1>
+                <p class="text-secondary">
+                  Temukan kumpulan alat digital gratis siap digunakan untuk
+                  mendukung kreativitas dan produktivitas
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              <select
-                id="categorySelect"
-                class="form-select form-select-lg border shadow-sm rounded-4 py-3 px-4 fs-6"
-              >
-                <option value="all">Semua Kategori</option>
-                <option value="teks">Alat Teks</option>
-              </select>
+          <div class="mb-4 mt-4">
+            <div class="row g-2 align-items-end">
+              <div class="col-12 col-lg-8">
+                <div
+                  class="input-group input-group-lg shadow-sm rounded-4 overflow-hidden border"
+                >
+                  <span class="input-group-text bg-white border-0 ps-4">
+                    <i class="bi bi-search text-success"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control border-0 px-2 py-3 shadow-none fs-6"
+                    placeholder="Cari nama alat..."
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <select
+                  id="categorySelect"
+                  class="form-select form-select-lg border shadow-sm rounded-4 py-3 px-4 fs-6"
+                  aria-label="Pilih Kategori Alat"
+                >
+                  <option value="all">Semua Kategori</option>
+                  <option value="teks">Alat Teks</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="row g-3" id="toolsGrid"></div>
+          <div class="row g-3" id="toolsGrid"></div>
 
-        <div class="d-flex justify-content-center mt-5">
-          <nav aria-label="Page navigation">
-            <ul
-              id="paginationControls"
-              class="pagination pagination-lg border-0"
-            ></ul>
-          </nav>
+          <div class="d-flex justify-content-center mt-5">
+            <nav aria-label="Page navigation">
+              <ul
+                id="paginationControls"
+                class="pagination pagination-lg border-0"
+              ></ul>
+            </nav>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="py-3">
       <div class="container">

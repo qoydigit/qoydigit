@@ -125,7 +125,7 @@ paginatedItems.forEach((tool) => {
         </div>
 
         <div class="mb-3">
-            <h5 class="fw-bold text-dark mb-2">${tool.name}</h5>
+            <h2 class="fw-bold text-dark fs-5 mb-2">${tool.name}</h2>
             <p class="text-secondary small mb-0">
                 ${tool.desc}
             </p>
