@@ -12,12 +12,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/2025/:path*",
-      "destination": "/",
-      "permanent": true
-    }
   ]
 }
