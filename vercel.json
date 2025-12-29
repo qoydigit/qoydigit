@@ -1,7 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "pages404": true,
   "headers": [
     {
       "source": "/(.*)",
