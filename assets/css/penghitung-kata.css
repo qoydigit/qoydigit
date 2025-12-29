@@ -1,0 +1,8 @@
+#qoy-app .form-penghitung-kata{
+    min-height: 400px;
+    line-height: 1.5;
+}
+
+#qoy-app .copyNotif{
+    display: none;
+}
