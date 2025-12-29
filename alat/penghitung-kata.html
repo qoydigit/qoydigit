@@ -107,423 +107,439 @@
       </div>
     </nav>
 
-    <section class="py-5">
-      <div class="container">
-        <nav aria-label="breadcrumb" class="mt-4 mb-2 small">
-          <div class="container">
-            <ol
-              class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-              style="--bs-breadcrumb-divider: '»'"
-            >
-              <li class="breadcrumb-item d-flex align-items-center">
-                <a
-                  href="/"
-                  class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
-                >
-                  Beranda
-                </a>
-              </li>
-              <li class="breadcrumb-item d-flex align-items-center">
-                <a
-                  href="/alat"
-                  class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
-                >
-                  Alat
-                </a>
-              </li>
-              <li
-                class="breadcrumb-item active fw-bold text-success d-flex align-items-center"
-                aria-current="page"
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <nav aria-label="breadcrumb" class="mt-4 mb-2 small">
+            <div class="container">
+              <ol
+                class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
+                style="--bs-breadcrumb-divider: '»'"
               >
-                Teks
-              </li>
-            </ol>
-          </div>
-        </nav>
+                <li class="breadcrumb-item d-flex align-items-center">
+                  <a
+                    href="/"
+                    class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
+                  >
+                    Beranda
+                  </a>
+                </li>
+                <li class="breadcrumb-item d-flex align-items-center">
+                  <a
+                    href="/alat"
+                    class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
+                  >
+                    Alat
+                  </a>
+                </li>
+                <li
+                  class="breadcrumb-item active fw-bold text-success d-flex align-items-center"
+                  aria-current="page"
+                >
+                  Teks
+                </li>
+              </ol>
+            </div>
+          </nav>
 
-        <div class="row justify-content-center mb-4">
-          <div class="col-lg-7">
-            <div class="text-center">
-              <h1 class="display-4 fw-bold text-dark">
-                Penghitung <span class="text-success">Kata</span>
-              </h1>
-              <p class="text-secondary">
-                Gunakan alat ini untuk menganalisis teks yang dilengkapi dengan
-                jumlah kata, karakter, kalimat hingga perkiraan waktu membaca
-                dan berbicara secara real-time.
-              </p>
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-7">
+              <div class="text-center">
+                <h1 class="display-4 fw-bold text-dark">
+                  Penghitung <span class="text-success">Kata</span>
+                </h1>
+                <p class="text-secondary">
+                  Gunakan alat ini untuk menganalisis teks yang dilengkapi
+                  dengan jumlah kata, karakter, kalimat hingga perkiraan waktu
+                  membaca dan berbicara secara real-time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="qoy-app">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div
+                  class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-4 border"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <h5 class="fw-bold text-dark fs-6 mb-0">Masukkan Teks</h5>
+                    <span id="charLimit" class="text-muted small"
+                      >0 Karakter</span
+                    >
+                  </div>
+
+                  <textarea
+                    id="textInput"
+                    class="form-penghitung-kata form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 mb-4 shadow-none"
+                    placeholder="Tulis atau tempel teks di sini..."
+                  ></textarea>
+
+                  <div
+                    class="d-flex gap-2 justify-content-start align-items-center"
+                  >
+                    <button
+                      onclick="copyToClipboard()"
+                      class="btn btn-success px-4 py-2 rounded-4 fw-semibold shadow-sm"
+                    >
+                      <i class="bi bi-clipboard-check me-2"></i>Salin Teks
+                    </button>
+                    <button
+                      onclick="clearText()"
+                      class="btn btn-link text-dark text-decoration-none fw-bold small"
+                    >
+                      Hapus
+                    </button>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm border">
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 border-bottom pb-4 gap-3"
+                  >
+                    <div>
+                      <h5 class="fw-bold mb-1 text-dark">Laporan Analisis</h5>
+                      <p class="text-muted small mb-0">Statistik real-time</p>
+                    </div>
+                  </div>
+
+                  <div class="row g-3 mb-4">
+                    <div class="col-6 col-lg">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Kata
+                        </div>
+                        <div id="wordCount" class="h2 fw-bold text-dark mb-0">
+                          0
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Karakter
+                        </div>
+                        <div id="charCount" class="h2 fw-bold text-dark mb-0">
+                          0
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Kalimat
+                        </div>
+                        <div
+                          id="sentenceCount"
+                          class="h2 fw-bold text-dark mb-0"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Paragraf
+                        </div>
+                        <div id="paraCount" class="h2 fw-bold text-dark mb-0">
+                          0
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Kata Unik
+                        </div>
+                        <div id="uniqueWords" class="h2 fw-bold text-dark mb-0">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-3 mb-4">
+                    <div class="col-6 col-md-3 text-center">
+                      <div
+                        id="readabilityBox"
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Level Baca
+                        </div>
+                        <div id="readabilityStatus" class="fw-bold h5 mb-1">
+                          ...
+                        </div>
+                        <div id="readabilityDesc" class="text-muted xx-small">
+                          Tidak ada data
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Waktu Baca
+                        </div>
+                        <div id="readTime" class="fw-bold h5 mb-1 text-dark">
+                          ...
+                        </div>
+                        <div class="text-muted xx-small">~200 kpm</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Waktu Bicara
+                        </div>
+                        <div id="speakTime" class="fw-bold h5 mb-1 text-dark">
+                          ...
+                        </div>
+                        <div class="text-muted xx-small">~110 kpm</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                      <div
+                        class="p-3 rounded-4 bg-light border border-light-subtle h-100"
+                      >
+                        <div
+                          class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
+                        >
+                          Rata-Rata
+                        </div>
+                        <div
+                          id="avgWordsPerSent"
+                          class="fw-bold h5 mb-1 text-dark"
+                        >
+                          ...
+                        </div>
+                        <div class="text-muted xx-small">Kata/Kalimat</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 rounded-4 bg-light border border-light-subtle text-center"
+                  >
+                    <div
+                      class="text-secondary fw-bold mb-4 text-uppercase xx-small xx-letspacing"
+                    >
+                      Presentase Kata Terbanyak
+                    </div>
+                    <div
+                      id="keywordDensity"
+                      class="d-flex flex-wrap justify-content-center gap-2"
+                    >
+                      <span class="text-muted small">Tidak ada data</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-3">
+                    <p class="text-secondary x-small text-italic mb-3">
+                      Hasil analisis ini bersifat perkiraan, gunakan sebagai
+                      referensi tambahan.
+                    </p>
+                    <button
+                      onclick="copyStats()"
+                      class="btn btn-success btn-sm border-2 rounded-4 px-3 py-2 fw-semibold text-uppercase"
+                    >
+                      <i class="bi bi-share me-2"></i>Salin Statistik
+                    </button>
+                    <div
+                      id="copyNotify"
+                      class="copyNotif small text-success fw-bold mt-3"
+                    >
+                      <i class="bi bi-check-circle-fill me-1"></i>Statistik
+                      berhasil disalin!
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div id="qoy-app">
+      <section class="text-description pb-4" id="qoy-article">
+        <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-12">
-              <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-4 border">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <h5 class="fw-bold text-dark fs-6 mb-0">Masukkan Teks</h5>
-                  <span id="charLimit" class="text-muted small"
-                    >0 Karakter</span
-                  >
-                </div>
-
-                <textarea
-                  id="textInput"
-                  class="form-penghitung-kata form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 mb-4 shadow-none"
-                  placeholder="Tulis atau tempel teks di sini..."
-                ></textarea>
-
-                <div
-                  class="d-flex gap-2 justify-content-start align-items-center"
-                >
-                  <button
-                    onclick="copyToClipboard()"
-                    class="btn btn-success px-4 py-2 rounded-4 fw-semibold shadow-sm"
-                  >
-                    <i class="bi bi-clipboard-check me-2"></i>Salin Teks
-                  </button>
-                  <button
-                    onclick="clearText()"
-                    class="btn btn-link text-dark text-decoration-none fw-bold small"
-                  >
-                    Hapus
-                  </button>
-                </div>
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark mb-2">
+                  Tentang Penghitung Kata
+                </h2>
+                <p class="text-secondary lh-lg">
+                  Alat Penghitung Kata adalah alat untuk membantu menganalisis
+                  teks dengan menampilkan jumlah kata, karakter, kalimaat,
+                  paragraf serta fitur tambahan seperti waktu baca, bicara dan
+                  tingkat keterbacaan yang dilengkapi hasil statistik secara
+                  real-time. Alat ini dirancang untuk memudahkan siapa saja
+                  dalam memahami dan kualitas teks secara cepat.
+                </p>
               </div>
 
-              <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm border">
-                <div
-                  class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 border-bottom pb-4 gap-3"
-                >
-                  <div>
-                    <h5 class="fw-bold mb-1 text-dark">Laporan Analisis</h5>
-                    <p class="text-muted small mb-0">Statistik real-time</p>
-                  </div>
-                </div>
-
-                <div class="row g-3 mb-4">
-                  <div class="col-6 col-lg">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Kata
-                      </div>
-                      <div id="wordCount" class="h2 fw-bold text-dark mb-0">
-                        0
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-6 col-lg">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Karakter
-                      </div>
-                      <div id="charCount" class="h2 fw-bold text-dark mb-0">
-                        0
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-6 col-lg">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Kalimat
-                      </div>
-                      <div id="sentenceCount" class="h2 fw-bold text-dark mb-0">
-                        0
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-6 col-lg">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Paragraf
-                      </div>
-                      <div id="paraCount" class="h2 fw-bold text-dark mb-0">
-                        0
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-lg">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100 text-center"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Kata Unik
-                      </div>
-                      <div id="uniqueWords" class="h2 fw-bold text-dark mb-0">
-                        0
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row g-3 mb-4">
-                  <div class="col-6 col-md-3 text-center">
-                    <div
-                      id="readabilityBox"
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Level Baca
-                      </div>
-                      <div id="readabilityStatus" class="fw-bold h5 mb-1">
-                        ...
-                      </div>
-                      <div id="readabilityDesc" class="text-muted xx-small">
-                        Tidak ada data
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Waktu Baca
-                      </div>
-                      <div id="readTime" class="fw-bold h5 mb-1 text-dark">
-                        ...
-                      </div>
-                      <div class="text-muted xx-small">~200 kpm</div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Waktu Bicara
-                      </div>
-                      <div id="speakTime" class="fw-bold h5 mb-1 text-dark">
-                        ...
-                      </div>
-                      <div class="text-muted xx-small">~110 kpm</div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <div
-                      class="p-3 rounded-4 bg-light border border-light-subtle h-100"
-                    >
-                      <div
-                        class="text-secondary fw-bold mb-2 text-uppercase xx-small xx-letspacing"
-                      >
-                        Rata-Rata
-                      </div>
-                      <div
-                        id="avgWordsPerSent"
-                        class="fw-bold h5 mb-1 text-dark"
-                      >
-                        ...
-                      </div>
-                      <div class="text-muted xx-small">Kata/Kalimat</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="p-3 rounded-4 bg-light border border-light-subtle text-center"
-                >
-                  <div
-                    class="text-secondary fw-bold mb-4 text-uppercase xx-small xx-letspacing"
-                  >
-                    Presentase Kata Terbanyak
-                  </div>
-                  <div
-                    id="keywordDensity"
-                    class="d-flex flex-wrap justify-content-center gap-2"
-                  >
-                    <span class="text-muted small">Tidak ada data</span>
-                  </div>
-                </div>
-
-                <div class="text-center mt-3">
-                  <p class="text-secondary x-small text-italic mb-3">
-                    Hasil analisis ini bersifat perkiraan, gunakan sebagai
-                    referensi tambahan.
-                  </p>
-                  <button
-                    onclick="copyStats()"
-                    class="btn btn-success btn-sm border-2 rounded-4 px-3 py-2 fw-semibold text-uppercase"
-                  >
-                    <i class="bi bi-share me-2"></i>Salin Statistik
-                  </button>
-                  <div
-                    id="copyNotify"
-                    class="copyNotif small text-success fw-bold mt-3"
-                  >
-                    <i class="bi bi-check-circle-fill me-1"></i>Statistik
-                    berhasil disalin!
-                  </div>
-                </div>
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark mb-2">
+                  Mengapa Alat Ini Diperlukan
+                </h2>
+                <p class="text-secondary lh-lg">
+                  Mengetahui struktur dan panjang teks sangat penting untuk
+                  memastikan kualitas tulisan agar tetap jelas dan mudah
+                  dipahami. Dengan melihat jumlah kata, panjang, kalimat dan
+                  level tingkat keterbacaan, sehingga memudahkan untuk
+                  menyesuaikan gaya penulisan agar lebih rapi dan nyaman saat
+                  dibaca.
+                </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="text-description pb-4" id="qoy-article">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="mb-4">
-              <h2 class="h4 fw-bold text-dark mb-2">Tentang Penghitung Kata</h2>
-              <p class="text-secondary lh-lg">
-                Alat Penghitung Kata adalah alat untuk membantu menganalisis
-                teks dengan menampilkan jumlah kata, karakter, kalimaat,
-                paragraf serta fitur tambahan seperti waktu baca, bicara dan
-                tingkat keterbacaan yang dilengkapi hasil statistik secara
-                real-time. Alat ini dirancang untuk memudahkan siapa saja dalam
-                memahami dan kualitas teks secara cepat.
-              </p>
-            </div>
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark mb-2">
+                  Manfaat Menggunakan Alat Ini
+                </h2>
+                <ul class="article-list text-secondary">
+                  <li>
+                    Mengetahui jumlah kata, karakter dan kalimat secara cepat
+                    dan real-time.
+                  </li>
+                  <li>Membantu dalam mengatur panjang dan struktur tulisan.</li>
+                  <li>
+                    Memperkirakan waktu yang dibutuhkan dalam membaca atau
+                    menyampaikan teks.
+                  </li>
+                  <li>
+                    Membantu untuk mendeteksi tingkat kesulitan membaca tulisan.
+                  </li>
+                  <li>
+                    Cocok untuk berbagai kebutuhan dalam penulisan konten.
+                  </li>
+                </ul>
+              </div>
 
-            <div class="mb-4">
-              <h2 class="h4 fw-bold text-dark mb-2">
-                Mengapa Alat Ini Diperlukan
-              </h2>
-              <p class="text-secondary lh-lg">
-                Mengetahui struktur dan panjang teks sangat penting untuk
-                memastikan kualitas tulisan agar tetap jelas dan mudah dipahami.
-                Dengan melihat jumlah kata, panjang, kalimat dan level tingkat
-                keterbacaan, sehingga memudahkan untuk menyesuaikan gaya
-                penulisan agar lebih rapi dan nyaman saat dibaca.
-              </p>
-            </div>
+              <div class="mb-5">
+                <h2 class="h4 fw-bold text-dark mb-2">Untuk Siapa Alat Ini</h2>
+                <ul class="article-list text-secondary">
+                  <li>Penulis dan blogger</li>
+                  <li>Pelajar dan mahasiswa</li>
+                  <li>Konten kreator</li>
+                  <li>Pekerja profesional</li>
+                  <li>Siapa saja yang ingin menganalisis teks dengan instan</li>
+                </ul>
+              </div>
 
-            <div class="mb-4">
-              <h2 class="h4 fw-bold text-dark mb-2">
-                Manfaat Menggunakan Alat Ini
-              </h2>
-              <ul class="article-list text-secondary">
-                <li>
-                  Mengetahui jumlah kata, karakter dan kalimat secara cepat dan
-                  real-time.
-                </li>
-                <li>Membantu dalam mengatur panjang dan struktur tulisan.</li>
-                <li>
-                  Memperkirakan waktu yang dibutuhkan dalam membaca atau
-                  menyampaikan teks.
-                </li>
-                <li>
-                  Membantu untuk mendeteksi tingkat kesulitan membaca tulisan.
-                </li>
-                <li>Cocok untuk berbagai kebutuhan dalam penulisan konten.</li>
-              </ul>
-            </div>
-
-            <div class="mb-5">
-              <h2 class="h4 fw-bold text-dark mb-2">Untuk Siapa Alat Ini</h2>
-              <ul class="article-list text-secondary">
-                <li>Penulis dan blogger</li>
-                <li>Pelajar dan mahasiswa</li>
-                <li>Konten kreator</li>
-                <li>Pekerja profesional</li>
-                <li>Siapa saja yang ingin menganalisis teks dengan instan</li>
-              </ul>
-            </div>
-
-            <div class="bg-success p-4 rounded-4 shadow-sm">
-              <h2 class="h4 fw-bold text-white mb-4">Cara Menggunakan Alat:</h2>
-              <div class="row g-4">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-column gap-4">
-                    <div class="d-flex gap-3 align-items-start">
-                      <span
-                        class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
-                      >
-                        1
-                      </span>
-                      <div>
-                        <h3 class="h6 fw-bold mb-1 text-white">
-                          Masukkan Teks
-                        </h3>
-                        <p class="small text-white opacity-75 mb-0 lh-lg">
-                          Tempel atau ketik teks yang ingin dianalisis ke dalam
-                          kolom form yang tersedia.
-                        </p>
+              <div class="bg-success p-4 rounded-4 shadow-sm">
+                <h2 class="h4 fw-bold text-white mb-4">
+                  Cara Menggunakan Alat:
+                </h2>
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex flex-column gap-4">
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          1
+                        </span>
+                        <div>
+                          <h3 class="h6 fw-bold mb-1 text-white">
+                            Masukkan Teks
+                          </h3>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Tempel atau ketik teks yang ingin dianalisis ke
+                            dalam kolom form yang tersedia.
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="d-flex gap-3 align-items-start">
-                      <span
-                        class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
-                      >
-                        2
-                      </span>
-                      <div>
-                        <h3 class="h6 fw-bold mb-1 text-white">
-                          Lihat Hasil Analisis
-                        </h3>
-                        <p class="small text-white opacity-75 mb-0 lh-lg">
-                          Statistik seperti jumlah kata, karakter, hingga waktu
-                          baca akan muncul secara otomatis.
-                        </p>
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          2
+                        </span>
+                        <div>
+                          <h3 class="h6 fw-bold mb-1 text-white">
+                            Lihat Hasil Analisis
+                          </h3>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Statistik seperti jumlah kata, karakter, hingga
+                            waktu baca akan muncul secara otomatis.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-lg-6">
-                  <div class="d-flex flex-column gap-4">
-                    <div class="d-flex gap-3 align-items-start">
-                      <span
-                        class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
-                      >
-                        3
-                      </span>
-                      <div>
-                        <h3 class="h6 fw-bold mb-1 text-white">
-                          Tinjau Hasil Analisis
-                        </h3>
-                        <p class="small text-white opacity-75 mb-0 lh-lg">
-                          Perhatikan hasil statistik yang muncul untuk mengecek
-                          struktur dan kualitas teks.
-                        </p>
+                  <div class="col-lg-6">
+                    <div class="d-flex flex-column gap-4">
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          3
+                        </span>
+                        <div>
+                          <h3 class="h6 fw-bold mb-1 text-white">
+                            Tinjau Hasil Analisis
+                          </h3>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Perhatikan hasil statistik yang muncul untuk
+                            mengecek struktur dan kualitas teks.
+                          </p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="d-flex gap-3 align-items-start">
-                      <span
-                        class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
-                      >
-                        4
-                      </span>
-                      <div>
-                        <h3 class="h6 fw-bold mb-1 text-white">Simpan Hasil</h3>
-                        <p class="small text-white opacity-75 mb-0 lh-lg">
-                          Simpan atau salin hasil statistik untuk digunakan
-                          sebagai referensi atau dibagikan.
-                        </p>
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          4
+                        </span>
+                        <div>
+                          <h3 class="h6 fw-bold mb-1 text-white">
+                            Simpan Hasil
+                          </h3>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Simpan atau salin hasil statistik untuk digunakan
+                            sebagai referensi atau dibagikan.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -532,66 +548,66 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-4">
-      <div class="container">
-        <div class="row justify-content-center mb-3 px-2">
-          <div class="col-lg-6">
-            <div class="text-center">
-              <h2 class="h2 fw-bold text-dark">Bagikan Alat Ini</h2>
-              <p class="text-secondary">
-                Bagikan alat ini agar orang lain bisa merasakan manfaatnya
-              </p>
+      <section class="py-4">
+        <div class="container">
+          <div class="row justify-content-center mb-3 px-2">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <h2 class="h2 fw-bold text-dark">Bagikan Alat Ini</h2>
+                <p class="text-secondary">
+                  Bagikan alat ini agar orang lain bisa merasakan manfaatnya
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row g-2 g-md-3 justify-content-center">
+              <div class="col-6 col-lg">
+                <a
+                  href="https://api.whatsapp.com/send?text=Gunakan%20alat%20penghitung%20kata%20untuk%20menganalisis%20teks%20dengan%20jumlah%20kata%2C%20karakter%2C%20kalimat%20serta%20waktu%20baca%20dan%20bicara%20secara%20real-time.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fpenghitung-kata"
+                  target="_blank"
+                  class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                </a>
+              </div>
+
+              <div class="col-6 col-lg">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://qoydigit.web.id/alat/penghitung-kata"
+                  target="_blank"
+                  class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-facebook me-2"></i> Facebook
+                </a>
+              </div>
+
+              <div class="col-6 col-lg">
+                <a
+                  href="https://t.me/share/url?url=https://qoydigit.web.id/alat/penghitung-kata&text=Gunakan%20alat%20penghitung%20kata%20untuk%20menganalisis%20teks%20dengan%20jumlah%20kata%2C%20karakter%2C%20kalimat%20serta%20waktu%20baca%20dan%20bicara%20secara%20real-time."
+                  target="_blank"
+                  class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-telegram me-2"></i> Telegram
+                </a>
+              </div>
+
+              <div class="col-6 col-lg">
+                <a
+                  href="https://twitter.com/intent/tweet?text=Gunakan%20alat%20penghitung%20kata%20untuk%20menganalisis%20teks%20dengan%20jumlah%20kata%2C%20karakter%2C%20kalimat%20serta%20waktu%20baca%20dan%20bicara%20secara%20real-time.&url=https://qoydigit.web.id/alat/penghitung-kata"
+                  target="_blank"
+                  class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-twitter-x me-2"></i> Twitter
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div class="row g-2 g-md-3 justify-content-center">
-            <div class="col-6 col-lg">
-              <a
-                href="https://api.whatsapp.com/send?text=Gunakan%20alat%20penghitung%20kata%20untuk%20menganalisis%20teks%20dengan%20jumlah%20kata%2C%20karakter%2C%20kalimat%20serta%20waktu%20baca%20dan%20bicara%20secara%20real-time.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fpenghitung-kata"
-                target="_blank"
-                class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
-              >
-                <i class="bi bi-whatsapp me-2"></i> WhatsApp
-              </a>
-            </div>
-
-            <div class="col-6 col-lg">
-              <a
-                href="https://www.facebook.com/sharer/sharer.php?u=https://qoydigit.web.id/alat/penghitung-kata"
-                target="_blank"
-                class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
-              >
-                <i class="bi bi-facebook me-2"></i> Facebook
-              </a>
-            </div>
-
-            <div class="col-6 col-lg">
-              <a
-                href="https://t.me/share/url?url=https://qoydigit.web.id/alat/penghitung-kata&text=Gunakan%20alat%20penghitung%20kata%20untuk%20menganalisis%20teks%20dengan%20jumlah%20kata%2C%20karakter%2C%20kalimat%20serta%20waktu%20baca%20dan%20bicara%20secara%20real-time."
-                target="_blank"
-                class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
-              >
-                <i class="bi bi-telegram me-2"></i> Telegram
-              </a>
-            </div>
-
-            <div class="col-6 col-lg">
-              <a
-                href="https://twitter.com/intent/tweet?text=Gunakan%20alat%20penghitung%20kata%20untuk%20menganalisis%20teks%20dengan%20jumlah%20kata%2C%20karakter%2C%20kalimat%20serta%20waktu%20baca%20dan%20bicara%20secara%20real-time.&url=https://qoydigit.web.id/alat/penghitung-kata"
-                target="_blank"
-                class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
-              >
-                <i class="bi bi-twitter-x me-2"></i> Twitter
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="py-3">
       <div class="container">
@@ -615,7 +631,7 @@
               <div class="col-lg-6">
                 <div class="row">
                   <div class="col-6 col-md-6">
-                    <h6 class="fw-bold text-dark mb-3">Menu Utama</h6>
+                    <h3 class="fw-bold text-dark fs-6 mb-3">Menu Utama</h3>
                     <ul class="list-unstyled">
                       <li class="mb-2">
                         <a
@@ -648,7 +664,7 @@
                     </ul>
                   </div>
                   <div class="col-6 col-md-6">
-                    <h6 class="fw-bold text-dark mb-3">Legal</h6>
+                    <h3 class="fw-bold text-dark fs-6 mb-3">Legal</h3>
                     <ul class="list-unstyled">
                       <li class="mb-2">
                         <a
