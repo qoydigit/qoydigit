@@ -232,16 +232,13 @@ body {
 .border-dashed{
     border-style: dashed !important;
 }
+
+/* - Color - */
+.text-secondary {
+    color: #4B4B4B !important; 
+}
 /* ------------ Override Bootstrap ------------ */
 
 /* 
     <=== [End UI Website] ===>
-*/
-
-/* 
-    <=== [Start UI Tools] ===>
-*/
-
-/* 
-    <=== [End UI Tools] ===>
 */
