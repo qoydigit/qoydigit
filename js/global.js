@@ -137,7 +137,7 @@ paginatedItems.forEach((tool) => {
             </div>
         </div>
 
-        <a href="${tool.link || "#"}" class="stretched-link"></a>
+        <a href="${tool.link || "#"}" class="stretched-link" aria-label="Buka alat digital"></a>
     </div>
 </div>
 `;
