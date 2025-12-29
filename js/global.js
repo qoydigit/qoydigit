@@ -49,7 +49,7 @@ function initCookieBanner() {
                             <strong>Privasi & Data</strong>
                             <br>
                             Situs ini menggunakan cookie untuk meningkatkan pengalaman anda dan menampilkan konten relevan. Dengan memilih "Setuju", anda menyetujui penggunaan cookie. 
-                            <a href="/cookie-policy.html" class="text-decoration-none text-success">Kebijakan Cookie</a>
+                            <a href="/cookie-policy" class="text-decoration-none text-success">Kebijakan Cookie</a>
                         </p>
                         <div class="d-flex gap-2 justify-content-start">
                         <button id="qoyAccept" class="btn btn-success btn-sm px-4 rounded-3 fw-semibold">Setuju</button>
@@ -75,13 +75,13 @@ function initCookieBanner() {
     });
 }
 
-// Search and kategori -> Halaman Alat.html
+// Search and kategori -> Halaman Alat
 const allTools = [
 {
     name: "Penghitung Kata",
     cat: "teks",
     desc: "Hitung jumlah kata, karakter, kalimat hingga estimasi membaca dilengkapi dengan analisis dalam satu alat.",
-    link: "/alat/penghitung-kata.html",
+    link: "/alat/penghitung-kata",
 },
 ];
 

@@ -14,17 +14,17 @@
   </url>
 
   <url>
-    <loc>https://qoydigit.web.id/alat/penghitung-kata.html</loc>
+    <loc>https://qoydigit.web.id/alat/penghitung-kata</loc>
     <lastmod>2025-12-29</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <url><loc>https://qoydigit.web.id/tentang.html</loc><priority>0.5</priority></url>
-  <url><loc>https://qoydigit.web.id/kontak.html</loc><priority>0.5</priority></url>
+  <url><loc>https://qoydigit.web.id/tentang</loc><priority>0.5</priority></url>
+  <url><loc>https://qoydigit.web.id/kontak</loc><priority>0.5</priority></url>
 
-  <url><loc>https://qoydigit.web.id/privacy-policy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://qoydigit.web.id/disclaimer.html</loc><priority>0.3</priority></url>
-  <url><loc>https://qoydigit.web.id/terms-of-service.html</loc><priority>0.3</priority></url>
-  <url><loc>https://qoydigit.web.id/cookie-policy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://qoydigit.web.id/privacy-policy</loc><priority>0.3</priority></url>
+  <url><loc>https://qoydigit.web.id/disclaimer</loc><priority>0.3</priority></url>
+  <url><loc>https://qoydigit.web.id/terms-of-service</loc><priority>0.3</priority></url>
+  <url><loc>https://qoydigit.web.id/cookie-policy</loc><priority>0.3</priority></url>
 
 </urlset>
