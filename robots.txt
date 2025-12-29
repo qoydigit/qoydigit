@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qoydigit.web.id/sitemap.xml
