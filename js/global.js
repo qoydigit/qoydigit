@@ -121,7 +121,7 @@ if (paginatedItems.length === 0) {
 
 paginatedItems.forEach((tool) => {
     grid.innerHTML += `
-<div class="col-lg-4 col-md-6 mb-4">
+<div class="col-lg-4 col-md-6 mb-2">
     <div class="card list-card h-100 border-0 shadow-sm rounded-4 p-4 bg-white position-relative card-hover">
         
         <div class="mb-3">
