@@ -83,6 +83,12 @@ const allTools = [
     desc: "Hitung jumlah kata, karakter, kalimat hingga estimasi membaca dilengkapi dengan analisis dalam satu alat.",
     link: "/alat/penghitung-kata",
 },
+{
+    name: "Pengubah Huruf",
+    cat: "teks",
+    desc: "Ubah teks menjadi huruf besar, huruf kecil, kapital hingga format kalimat secara real-time dan praktis.",
+    link: "/alat/pengubah-huruf",
+},
 ];
 
 function shuffleArray(array) {

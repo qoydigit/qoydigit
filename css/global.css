@@ -237,6 +237,15 @@ body {
 .text-secondary {
     color: #4B4B4B !important; 
 }
+
+/* - Radio Button - */
+.form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
+}
+.form-check-input:focus {
+    box-shadow: none;
+}
 /* ------------ Override Bootstrap ------------ */
 
 /* 
