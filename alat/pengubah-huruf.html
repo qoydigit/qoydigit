@@ -110,176 +110,184 @@
 
     <main>
       <section class="py-5">
-        <nav aria-label="breadcrumb" class="mt-4 mb-2 small">
-          <div class="container">
-            <ol
-              class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-              style="--bs-breadcrumb-divider: '»'"
-            >
-              <li class="breadcrumb-item d-flex align-items-center">
-                <a
-                  href="/"
-                  class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
-                >
-                  Beranda
-                </a>
-              </li>
-              <li class="breadcrumb-item d-flex align-items-center">
-                <a
-                  href="/alat"
-                  class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
-                >
-                  Alat
-                </a>
-              </li>
-              <li
-                class="breadcrumb-item active fw-bold text-success d-flex align-items-center"
-                aria-current="page"
-              >
-                Teks
-              </li>
-            </ol>
-          </div>
-        </nav>
-
-        <div class="row justify-content-center mb-4 px-2">
-          <div class="col-lg-7">
-            <div class="text-center">
-              <h1 class="display-4 fw-bold text-dark">
-                Pengubah <span class="text-success">Huruf</span>
-              </h1>
-              <p class="text-secondary">
-                Gunakan alat ini untuk mengubah format teks menjadi huruf besar,
-                kecil, kapital atau kalimat secara otomatis untuk menyesuaikan
-                penulisan agar lebih rapi dan konsisten.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div class="container">
-          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
-            <div class="row">
-              <div class="col-lg-5">
-                <div
-                  class="d-flex justify-content-between align-items-end mb-2"
+          <nav aria-label="breadcrumb" class="mt-4 mb-2 small">
+            <div class="container">
+              <ol
+                class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
+                style="--bs-breadcrumb-divider: '»'"
+              >
+                <li class="breadcrumb-item d-flex align-items-center">
+                  <a
+                    href="/"
+                    class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
+                  >
+                    Beranda
+                  </a>
+                </li>
+                <li class="breadcrumb-item d-flex align-items-center">
+                  <a
+                    href="/alat"
+                    class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
+                  >
+                    Alat
+                  </a>
+                </li>
+                <li
+                  class="breadcrumb-item active fw-bold text-success d-flex align-items-center"
+                  aria-current="page"
                 >
-                  <label for="textInput" class="form-label fw-bold fs-6 mb-0"
-                    >Masukkan Teks</label
-                  >
-                  <small id="charCount" class="text-muted small"
-                    >0 Karakter</small
-                  >
-                </div>
-                <textarea
-                  class="form-control bg-light border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  id="textInput"
-                  rows="10"
-                  placeholder="Ketik atau tempel teks di sini..."
-                  oninput="processText()"
-                ></textarea>
-              </div>
+                  Teks
+                </li>
+              </ol>
+            </div>
+          </nav>
 
-              <div
-                class="col-md-2 d-flex align-items-center justify-content-start justify-content-lg-center"
-              >
-                <div class="py-3">
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="upper"
-                      value="upper"
-                      onclick="processText()"
-                      checked
-                    />
-                    <label class="form-check-label small fw-medium" for="upper"
-                      >HURUF BESAR</label
-                    >
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="lower"
-                      value="lower"
-                      onclick="processText()"
-                    />
-                    <label class="form-check-label small fw-medium" for="lower"
-                      >huruf kecil</label
-                    >
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="title"
-                      value="title"
-                      onclick="processText()"
-                    />
-                    <label class="form-check-label small fw-medium" for="title"
-                      >Huruf Kapital</label
-                    >
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="sentence"
-                      value="sentence"
-                      onclick="processText()"
-                    />
-                    <label
-                      class="form-check-label small fw-medium"
-                      for="sentence"
-                      >Kapital kalimat</label
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-5">
-                <div class="mb-2">
-                  <label for="textOutput" class="form-label fw-bold mb-0"
-                    >Hasil</label
-                  >
-                </div>
-                <textarea
-                  class="form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  id="textOutput"
-                  rows="10"
-                  placeholder="Hasil teks akan muncul di sini..."
-                  disabled
-                ></textarea>
+          <div class="row justify-content-center mb-4 px-2">
+            <div class="col-lg-7">
+              <div class="text-center">
+                <h1 class="display-4 fw-bold text-dark">
+                  Pengubah <span class="text-success">Huruf</span>
+                </h1>
+                <p class="text-secondary">
+                  Gunakan alat ini untuk mengubah format teks menjadi huruf
+                  besar, kecil, kapital atau kalimat secara otomatis untuk
+                  menyesuaikan penulisan agar lebih rapi dan konsisten.
+                </p>
               </div>
             </div>
-            <div
-              class="d-flex gap-2 justify-content-center align-items-center mt-4"
-            >
-              <button
-                onclick="copyResult()"
-                class="btn btn-success btn-sm px-4 py-2 rounded-4 fw-semibold shadow-sm"
-              >
-                <i class="bi bi-clipboard-check me-2"></i>Salin Teks
-              </button>
-              <button
-                onclick="clearAll()"
-                class="btn btn-link text-dark text-decoration-none fw-bold small"
-              >
-                Hapus
-              </button>
-            </div>
-            <div class="text-center">
+          </div>
+
+          <div class="container">
+            <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div
+                    class="d-flex justify-content-between align-items-end mb-2"
+                  >
+                    <label for="textInput" class="form-label fw-bold fs-6 mb-0"
+                      >Masukkan Teks</label
+                    >
+                    <small id="charCount" class="text-muted small"
+                      >0 Karakter</small
+                    >
+                  </div>
+                  <textarea
+                    class="form-control bg-light border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
+                    id="textInput"
+                    rows="10"
+                    placeholder="Ketik atau tempel teks di sini..."
+                    oninput="processText()"
+                  ></textarea>
+                </div>
+
+                <div
+                  class="col-md-2 d-flex align-items-center justify-content-start justify-content-lg-center"
+                >
+                  <div class="py-3">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="caseOption"
+                        id="upper"
+                        value="upper"
+                        onclick="processText()"
+                        checked
+                      />
+                      <label
+                        class="form-check-label small fw-medium"
+                        for="upper"
+                        >HURUF BESAR</label
+                      >
+                    </div>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="caseOption"
+                        id="lower"
+                        value="lower"
+                        onclick="processText()"
+                      />
+                      <label
+                        class="form-check-label small fw-medium"
+                        for="lower"
+                        >huruf kecil</label
+                      >
+                    </div>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="caseOption"
+                        id="title"
+                        value="title"
+                        onclick="processText()"
+                      />
+                      <label
+                        class="form-check-label small fw-medium"
+                        for="title"
+                        >Huruf Kapital</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="caseOption"
+                        id="sentence"
+                        value="sentence"
+                        onclick="processText()"
+                      />
+                      <label
+                        class="form-check-label small fw-medium"
+                        for="sentence"
+                        >Kapital kalimat</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="mb-2">
+                    <label for="textOutput" class="form-label fw-bold mb-0"
+                      >Hasil</label
+                    >
+                  </div>
+                  <textarea
+                    class="form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
+                    id="textOutput"
+                    rows="10"
+                    placeholder="Hasil teks akan muncul di sini..."
+                    disabled
+                  ></textarea>
+                </div>
+              </div>
               <div
-                id="copyNotify"
-                class="copyNotif small text-success fw-bold mt-3 d-none"
+                class="d-flex gap-2 justify-content-center align-items-center mt-4"
               >
-                <i class="bi bi-check-circle-fill me-1"></i>Teks berhasil
-                disalin!
+                <button
+                  onclick="copyResult()"
+                  class="btn btn-success btn-sm px-4 py-2 rounded-4 fw-semibold shadow-sm"
+                >
+                  <i class="bi bi-clipboard-check me-2"></i>Salin Teks
+                </button>
+                <button
+                  onclick="clearAll()"
+                  class="btn btn-link text-dark text-decoration-none fw-bold small"
+                >
+                  Hapus
+                </button>
+              </div>
+              <div class="text-center">
+                <div
+                  id="copyNotify"
+                  class="copyNotif small text-success fw-bold mt-3 d-none"
+                >
+                  <i class="bi bi-check-circle-fill me-1"></i>Teks berhasil
+                  disalin!
+                </div>
               </div>
             </div>
           </div>
