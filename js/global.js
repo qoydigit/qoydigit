@@ -77,18 +77,25 @@ function initCookieBanner() {
 
 // Search and kategori -> Halaman Alat
 const allTools = [
-{
-    name: "Penghitung Kata",
-    cat: "teks",
-    desc: "Hitung jumlah kata, karakter, kalimat hingga estimasi membaca dilengkapi dengan analisis dalam satu alat.",
-    link: "/alat/penghitung-kata",
-},
-{
-    name: "Pengubah Huruf",
-    cat: "teks",
-    desc: "Ubah teks menjadi huruf besar, huruf kecil, kapital hingga format kalimat secara real-time dan praktis.",
-    link: "/alat/pengubah-huruf",
-},
+    // Alat Teks
+    {
+        name: "Penghitung Kata",
+        cat: "teks",
+        desc: "Hitung jumlah kata, karakter, kalimat hingga estimasi membaca dilengkapi dengan analisis dalam satu alat.",
+        link: "/alat/penghitung-kata",
+    },
+    {
+        name: "Pengubah Huruf",
+        cat: "teks",
+        desc: "Ubah teks menjadi huruf besar, huruf kecil, kapital hingga format kalimat secara real-time dan praktis.",
+        link: "/alat/pengubah-huruf",
+    },
+    {
+        name: "Pembersih Teks",
+        cat: "teks",
+        desc: "Bersihkan taks dari spasi berlebih, baris kosong, simbol dan format tidak rapi secara otomatis dan mudah.",
+        link: "/alat/pembersih-teks",
+    },
 ];
 
 function shuffleArray(array) {

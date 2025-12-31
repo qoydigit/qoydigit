@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pengubah Huruf Online (Case Converter) - Qoydigit</title>
+    <title>Pembersih Teks Online - Qoydigit</title>
     <meta
       name="description"
-      content="Alat pengubah huruf online untuk mengkonversi teks menjadi huruf besar, kecil, kapital atau format kalimat dengan cepat dan mudah."
+      content="Alat pembersih teks online untuk menghapus spasi ganda, baris kosong, simbol dan meripkan format teks dengan cepat dan mudah."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
-    <link rel="canonical" href="https://qoydigit.web.id/alat/pengubah-huruf" />
+    <link rel="canonical" href="https://qoydigit.web.id/alat/pembersih-teks" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://qoydigit.web.id/alat/pengubah-huruf"
+      content="https://qoydigit.web.id/alat/pembersih-teks"
     />
-    <meta
-      property="og:title"
-      content="Pengubah Huruf Online (Case Converter) - Qoydigit"
-    />
+    <meta property="og:title" content="Pembersih Teks Online - Qoydigit" />
     <meta
       property="og:description"
-      content="Alat pengubah huruf online untuk mengkonversi teks menjadi huruf besar, kecil, kapital atau format kalimat dengan cepat dan mudah."
+      content="Alat pembersih teks online untuk menghapus spasi ganda, baris kosong, simbol dan meripkan format teks dengan cepat dan mudah."
     />
     <meta
       property="og:image"
@@ -31,15 +28,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:url"
-      content="https://qoydigit.web.id/alat/pengubah-huruf"
+      content="https://qoydigit.web.id/alat/pembersih-teks"
     />
-    <meta
-      name="twitter:title"
-      content="Pengubah Huruf Online (Case Converter) - Qoydigit"
-    />
+    <meta name="twitter:title" content="Pembersih Teks Online - Qoydigit" />
     <meta
       name="twitter:description"
-      content="Alat pengubah huruf online untuk mengkonversi teks menjadi huruf besar, kecil, kapital atau format kalimat dengan cepat dan mudah."
+      content="Alat pembersih teks online untuk menghapus spasi ganda, baris kosong, simbol dan meripkan format teks dengan cepat dan mudah."
     />
     <meta
       name="twitter:image"
@@ -65,10 +59,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="/css/global.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-HMJ0ZM5TGK"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -157,128 +147,152 @@
             <div class="col-lg-7">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
-                  Pengubah <span class="text-success">Huruf</span>
+                  Pembersih <span class="text-success">Teks</span>
                 </h1>
                 <p class="text-secondary">
-                  Gunakan alat ini untuk mengubah format teks menjadi huruf
-                  besar, kecil, kapital atau kalimat secara otomatis untuk
-                  menyesuaikan penulisan agar lebih rapi dan konsisten.
+                  Gunakan alat pembersih teks ini untuk merapikan tulisan untuk
+                  menghapus spasi ganda, baris kosong, simbol serta format yang
+                  tidak konsisten secara otomatis.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
-            <div class="row">
-              <div class="col-lg-5">
+            <div class="row gx-3 gy-4 justify-content-between mb-4">
+              <label for="opsi-pembersih" class="form-label fw-bold fs-6 mb-0"
+                >Pilih Opsi</label
+              >
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optCleanSpaces"
+                    checked
+                    onchange="processText()"
+                  />
+                  <label class="form-check-label" for="optCleanSpaces"
+                    >Hapus Spasi Ganda</label
+                  >
+                </div>
+              </div>
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optRemoveEmpty"
+                    onchange="processText()"
+                  />
+                  <label class="form-check-label" for="optRemoveEmpty"
+                    >Hapus Baris Kosong</label
+                  >
+                </div>
+              </div>
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optTrim"
+                    onchange="processText()"
+                  />
+                  <label class="form-check-label" for="optTrim"
+                    >Rapikan Baris</label
+                  >
+                </div>
+              </div>
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optRemoveList"
+                    onchange="processText()"
+                  />
+                  <label class="form-check-label" for="optRemoveList"
+                    >Hapus List/Nomor</label
+                  >
+                </div>
+              </div>
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optRemoveSymbols"
+                    onchange="processText()"
+                  />
+                  <label class="form-check-label" for="optRemoveSymbols"
+                    >Hapus Simbol</label
+                  >
+                </div>
+              </div>
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optJoinLines"
+                    onchange="processText()"
+                  />
+                  <label class="form-check-label" for="optJoinLines"
+                    >Gabung Jadi 1 Baris</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-6">
                 <div
-                  class="d-flex justify-content-between align-items-end mb-2"
+                  class="d-flex justify-content-between align-items-center mb-2"
                 >
                   <label for="textInput" class="form-label fw-bold fs-6 mb-0"
                     >Masukkan Teks</label
                   >
-                  <small id="charCount" class="text-muted small"
-                    >0 Karakter</small
+                  <button
+                    class="btn btn-sm btn-link text-success text-decoration-none p-0"
+                    onclick="loadExample()"
                   >
+                    Gunakan Contoh
+                  </button>
                 </div>
                 <textarea
+                  id="inputText"
                   class="form-control bg-light border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  id="textInput"
                   rows="10"
-                  placeholder="Ketik atau tempel teks di sini..."
                   oninput="processText()"
+                  placeholder="Ketik atau tempel teks di sini..."
                 ></textarea>
               </div>
-
-              <div
-                class="col-md-2 d-flex align-items-center justify-content-start justify-content-lg-center"
-              >
-                <div class="py-3">
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="upper"
-                      value="upper"
-                      onclick="processText()"
-                      checked
-                    />
-                    <label class="form-check-label small fw-medium" for="upper"
-                      >HURUF BESAR</label
-                    >
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="lower"
-                      value="lower"
-                      onclick="processText()"
-                    />
-                    <label class="form-check-label small fw-medium" for="lower"
-                      >huruf kecil</label
-                    >
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="title"
-                      value="title"
-                      onclick="processText()"
-                    />
-                    <label class="form-check-label small fw-medium" for="title"
-                      >Huruf Kapital</label
-                    >
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="sentence"
-                      value="sentence"
-                      onclick="processText()"
-                    />
-                    <label
-                      class="form-check-label small fw-medium"
-                      for="sentence"
-                      >Kapital kalimat</label
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-5">
+              <div class="col-lg-6">
                 <div class="mb-2">
-                  <label for="textOutput" class="form-label fw-bold mb-0"
-                    >Hasil</label
+                  <label for="textResult" class="form-label fw-bold fs-6 mb-0"
+                    >Hasil Teks</label
                   >
                 </div>
                 <textarea
-                  class="form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  id="textOutput"
+                  id="outputText"
+                  class="form-control form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
                   rows="10"
-                  placeholder="Hasil teks akan muncul di sini..."
-                  disabled
+                  placeholder="Hasil otomatis muncul di sini..."
+                  readonly
                 ></textarea>
               </div>
             </div>
-            <div
-              class="d-flex gap-2 justify-content-center align-items-center mt-4"
-            >
+            <div class="text-center mt-4 d-flex justify-content-center gap-3">
               <button
+                id="copyBtn"
                 onclick="copyResult()"
-                class="btn btn-success btn-sm px-4 py-2 rounded-4 fw-semibold shadow-sm"
+                class="btn btn-success px-4 py-2 rounded-4 fw-semibold shadow-sm"
               >
-                <i class="bi bi-clipboard-check me-2"></i>Salin Teks
+                <i class="bi bi-clipboard-check me-2"></i>Salin Hasil
               </button>
               <button
                 onclick="clearAll()"
-                class="btn btn-link text-dark text-decoration-none fw-bold small"
+                class="btn btn-link text-dark text-decoration-none fw-semibold small"
               >
                 Hapus
               </button>
@@ -286,7 +300,7 @@
             <div class="text-center">
               <div
                 id="copyNotify"
-                class="copyNotif small text-success fw-bold mt-3 d-none"
+                class="small text-success fw-bold mt-3 d-none"
               >
                 <i class="bi bi-check-circle-fill me-1"></i>Teks berhasil
                 disalin!
@@ -302,14 +316,14 @@
             <div class="col-lg-12">
               <div class="mb-4">
                 <h2 class="h4 fw-bold text-dark mb-2">
-                  Tentang Pengubah Huruf
+                  Tentang Pembersih Teks
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Pengubah Huruf adalah alat digital yang digunakan untuk
-                  mengubah format teks menjadi huruf besar, huruf kecil, kapital
-                  atau format kalimat secara otomatis. Alat ini membantu dalam
-                  merapikan tulisan tanpa perlu mengeditnya satu per satu secara
-                  manual.
+                  Pembersih Teks adalah alat digital untuk membantu membersihkan
+                  dan merapikan teks dari format yang tidak diperlukan seperti
+                  spasi yang berlebihan, baris kosong, simbol dan penomoran.
+                  Alat ini membuat teks menjadi lebih rapi, konsisten dan siap
+                  digunakan.
                 </p>
               </div>
 
@@ -318,10 +332,11 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Saat menyalin teks dari berbagai sumber di internet, sering
-                  kali format huruf tidak konsisten. Ada yang semua huruf besar,
-                  semua kecil atau tidak rapi. Alat ini digunakan untuk
-                  menyesuaikan format teks dengan cepat agar mudah dibaca.
+                  Teks yang diambil dari hasil salinan dokumen, website di
+                  internet atau file sering kali mengandung spasi berlebih,
+                  baris kosong atau karakter yang tidak dibutuhkan. Alat ini
+                  digunakan untuk membersihkan semua masalah tersebut secara
+                  otomatis.
                 </p>
               </div>
 
@@ -330,20 +345,19 @@
                   Manfaat Menggunakan Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Dengan pengubah huruf, anda bisa menghemat banyak waktu karena
-                  tidak perlu mengedit teks secara manual. Format tulisan
-                  menjadi lebih konsisten, rapi dan cocok dalam kebutuhan
-                  seperti dokumen, konten media sosial maupun pekerjaan lainnya.
+                  Dengan pembersih teks ini, anda bisa menghemat waktu dan
+                  menghindari kesalahan format penulisan. Teks menjadi lebih
+                  bersih, mudah dibaca dan siap dipakai untuk berbagai keperluan
+                  penulisan, pengolahan data atau pemrograman.
                 </p>
               </div>
 
               <div class="mb-5">
                 <h2 class="h4 fw-bold text-dark mb-2">Untuk Siapa Alat Ini</h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini cocok digunakan untuk penulis, pelajar, pengelola
-                  media sosial, developer, serta siapa pun yang sering bekerja
-                  dengan teks dan membutuhkan format penulisan yang lebih
-                  teratur.
+                  Alat ini cocok untuk penulis, blogger, pelajar, konten kreator
+                  serta siapa pun yang sering bekerja dengan teks dari berbagai
+                  sumber dengan hasil yang lebih rapi dan konsisten.
                 </p>
               </div>
 
@@ -365,8 +379,8 @@
                             Masukkan Teks
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tempel atau ketik teks yang ingin diubah ke dalam
-                            kolom form input yang tersedia.
+                            Tempel atau ketik teks yang ingin dibersihkan ke
+                            dalam form input yang sudah tersedia.
                           </p>
                         </div>
                       </div>
@@ -379,11 +393,12 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white">
-                            Pilih Format Huruf
+                            Pilih Opsi Pembersihan
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Pilih jenis format huruf yang tersedia seperti huruf
-                            besar, huruf kecil, kapital atau tiap kalimat.
+                            Aktifkan fitur seperti hapus spasi ganda, hapus
+                            baris kosong, hapus simbol atau gabungkan baris
+                            sesuai kebutuhan.
                           </p>
                         </div>
                       </div>
@@ -403,9 +418,8 @@
                             Tinjau Hasil Teks
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Teks akan diperbarui secara otomatis sesuai format
-                            yang dipilih sehingga bisa langsung melihat hasil
-                            secara real-time.
+                            Teks secara otomatis akan diperbarui setelah
+                            mengaktifkan fitur opsi pembersihan.
                           </p>
                         </div>
                       </div>
@@ -417,11 +431,13 @@
                           4
                         </span>
                         <div>
-                          <h3 class="h6 fw-bold mb-1 text-white">Salin Teks</h3>
+                          <h3 class="h6 fw-bold mb-1 text-white">
+                            Salin Hasil
+                          </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Salin hasil teks yang sudah diformat untuk digunakan
-                            kembali untuk kebutuhan dokumen, konten atau
-                            aplikasi lain.
+                            Gunakan teks yang sudah rapi untuk keperluan
+                            dokumen, penulisan konten atau berbagai pekerjaan
+                            lainnya.
                           </p>
                         </div>
                       </div>
@@ -450,7 +466,7 @@
             <div class="row g-2 g-md-3 justify-content-center">
               <div class="col-6 col-lg">
                 <a
-                  href="https://api.whatsapp.com/send?text=Alat%20pengubah%20huruf%20online%20untuk%20mengkonversi%20teks%20menjadi%20huruf%20besar%2C%20kecil%2C%20kapital%20atau%20format%20kalimat%20dengan%20cepat%20dan%20mudah.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf"
+                  href="https://api.whatsapp.com/send?text=Alat%20pembersih%20teks%20online%20untuk%20menghapus%20spasi%20ganda%2C%20baris%20kosong%2C%20simbol%20dan%20merapikan%20format%20teks%20dengan%20cepat%20dan%20mudah.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fpembersih-teks"
                   target="_blank"
                   class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -460,7 +476,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpembersih-teks"
                   target="_blank"
                   class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -470,7 +486,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf&text=Alat%20pengubah%20huruf%20online%20untuk%20mengkonversi%20teks%20menjadi%20huruf%20besar%2C%20kecil%2C%20kapital%20atau%20format%20kalimat%20dengan%20cepat%20dan%20mudah."
+                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpembersih-teks&text=Alat%20pembersih%20teks%20online%20untuk%20menghapus%20spasi%20ganda%2C%20baris%20kosong%2C%20simbol%20dan%20merapikan%20format%20teks%20dengan%20cepat%20dan%20mudah."
                   target="_blank"
                   class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -480,7 +496,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://twitter.com/intent/tweet?text=Alat%20pengubah%20huruf%20online%20untuk%20mengkonversi%20teks%20menjadi%20huruf%20besar%2C%20kecil%2C%20kapital%20atau%20format%20kalimat%20dengan%20cepat%20dan%20mudah.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf"
+                  href="https://twitter.com/intent/tweet?text=Alat%20pembersih%20teks%20online%20untuk%20menghapus%20spasi%20ganda%2C%20baris%20kosong%2C%20simbol%20dan%20merapikan%20format%20teks%20dengan%20cepat%20dan%20mudah.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpembersih-teks"
                   target="_blank"
                   class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -603,6 +619,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="/js/global.js"></script>
-    <script type="text/javascript" src="/assets/js/pengubah-huruf.js"></script>
+    <!-- Alat JS -->
+    <script type="text/javascript" src="/assets/js/pembersih-teks.js"></script>
   </body>
 </html>
