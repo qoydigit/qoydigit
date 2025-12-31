@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 document.addEventListener("DOMContentLoaded", function () {
     initCookieBanner();
 });
+
 function initCookieBanner() {
     const consent = localStorage.getItem("qoydigit_cookie_consent");
     if (consent) return;
@@ -103,6 +104,67 @@ const allTools = [
         link: "/alat/penghapus-baris-duplikat",
     },
 ];
+
+// Alat Terkait
+function displayRelatedTools() {
+    const container = document.getElementById("relatedToolsContent");
+    const buttonContainer = document.getElementById("relatedButtonContainer");
+    if (!container) return;
+
+    const currentPath = window.location.pathname;
+
+    const currentTool = allTools.find(tool => currentPath.includes(tool.link));
+    
+    if (!currentTool) return;
+
+    const related = allTools.filter(tool => 
+        tool.cat === currentTool.cat && !currentPath.includes(tool.link)
+    );
+
+    const toolsToShow = related.slice(0, 3);
+
+    let html = "";
+    toolsToShow.forEach(tool => {
+        html += `
+        <div class="col-lg-4 col-md-6">
+            <div class="card list-card h-100 border shadow-sm rounded-4 p-4 bg-white position-relative card-hover">
+                
+                <div class="mb-3">
+                    <span class="badge rounded-3 bg-success text-white px-3 py-2 xx-small xx-letspacing fw-bold text-uppercase border-0">
+                        ${tool.cat}
+                    </span>
+                </div>
+
+                <div class="mb-3">
+                    <h2 class="fw-bold text-dark fs-5 mb-2">${tool.name}</h2>
+                    <p class="text-secondary small mb-0">
+                        ${tool.desc}
+                    </p>
+                </div>
+
+                <div class="mt-auto">
+                    <div class="text-success d-inline-flex align-items-center fw-semibold rounded-3 small">
+                        Buka Alat <i class="bi bi-arrow-right ms-2"></i>
+                    </div>
+                </div>
+
+                <a href="${tool.link || "#"}" class="stretched-link" aria-label="Buka alat digital"></a>
+            </div>
+        </div>`;
+    });
+
+    container.innerHTML = html;
+    if (buttonContainer) {
+        buttonContainer.innerHTML = `
+        <div class="text-center">
+            <a href="/alat" class="btn btn-success rounded-4 px-4 py-3 fw-semibold">
+                Lihat Semua Alat <i class="bi-grid-fill ms-2"></i>
+            </a>
+        </div>`;
+    }
+}
+// Jalankan otomatis saat halaman siap
+document.addEventListener("DOMContentLoaded", displayRelatedTools);
 
 function shuffleArray(array) {
 for (let i = array.length - 1; i > 0; i--) {
