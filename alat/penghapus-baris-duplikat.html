@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pengubah Huruf Online (Case Converter) - Qoydigit</title>
+    <title>Penghapus Baris Duplikat - Qoydigit</title>
     <meta
       name="description"
-      content="Alat pengubah huruf online untuk mengkonversi teks menjadi huruf besar, kecil, kapital atau format kalimat dengan cepat dan mudah."
+      content="Gunakan alat penghapus baris duplikat untuk membersihkan daftar teks dari baris yang berulang dengan cepat dan mudah."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
-    <link rel="canonical" href="https://qoydigit.web.id/alat/pengubah-huruf" />
+    <link
+      rel="canonical"
+      href="https://qoydigit.web.id/alat/penghapus-baris-duplikat"
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://qoydigit.web.id/alat/pengubah-huruf"
+      content="https://qoydigit.web.id/alat/penghapus-baris-duplikat"
     />
-    <meta
-      property="og:title"
-      content="Pengubah Huruf Online (Case Converter) - Qoydigit"
-    />
+    <meta property="og:title" content="Penghapus Baris Duplikat - Qoydigit" />
     <meta
       property="og:description"
-      content="Alat pengubah huruf online untuk mengkonversi teks menjadi huruf besar, kecil, kapital atau format kalimat dengan cepat dan mudah."
+      content="Gunakan alat penghapus baris duplikat untuk membersihkan daftar teks dari baris yang berulang dengan cepat dan mudah."
     />
     <meta
       property="og:image"
@@ -31,15 +31,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:url"
-      content="https://qoydigit.web.id/alat/pengubah-huruf"
+      content="https://qoydigit.web.id/alat/penghapus-baris-duplikat"
     />
-    <meta
-      name="twitter:title"
-      content="Pengubah Huruf Online (Case Converter) - Qoydigit"
-    />
+    <meta name="twitter:title" content="Penghapus Baris Duplikat - Qoydigit" />
     <meta
       name="twitter:description"
-      content="Alat pengubah huruf online untuk mengkonversi teks menjadi huruf besar, kecil, kapital atau format kalimat dengan cepat dan mudah."
+      content="Gunakan alat penghapus baris duplikat untuk membersihkan daftar teks dari baris yang berulang dengan cepat dan mudah."
     />
     <meta
       name="twitter:image"
@@ -157,139 +154,117 @@
             <div class="col-lg-7">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
-                  Pengubah <span class="text-success">Huruf</span>
+                  Penghapus<br /><span class="text-success"
+                    >Baris Duplikat</span
+                  >
                 </h1>
                 <p class="text-secondary">
-                  Gunakan alat ini untuk mengubah format teks menjadi huruf
-                  besar, kecil, kapital atau kalimat secara otomatis untuk
-                  menyesuaikan penulisan agar lebih rapi dan konsisten.
+                  Gunakan alat penghapus baris duplikat untuk menghilangkan teks
+                  yang sama dan berulang menghasilkan daftar yang lebih bersih,
+                  rapi dan mudah digunakan.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
-            <div class="row">
-              <div class="col-lg-5">
+          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm border">
+            <div class="row gx-3 gy-4 justify-content-start mb-4">
+              <label
+                for="opsi-duplikat"
+                class="form-label fw-semibold fs-6 mb-0"
+                >Pilih Opsi</label
+              >
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optTrimLines"
+                    onchange="processDuplicate()"
+                  />
+                  <label class="form-check-label fw-medium" for="optTrimLines"
+                    >Hapus Spasi Ganda</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optIgnoreEmpty"
+                    onchange="processDuplicate()"
+                  />
+                  <label class="form-check-label fw-medium" for="optIgnoreEmpty"
+                    >Hapus Baris Kosong</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-6">
                 <div
-                  class="d-flex justify-content-between align-items-end mb-2"
+                  class="d-flex justify-content-between align-items-center mb-2"
                 >
                   <label for="textInput" class="form-label fw-bold fs-6 mb-0"
                     >Masukkan Teks</label
                   >
-                  <small id="charCount" class="text-muted small"
-                    >0 Karakter</small
+                  <button
+                    class="btn btn-sm btn-link text-success fw-semibold text-decoration-none p-0"
+                    onclick="loadDupExample()"
                   >
+                    Gunakan Contoh
+                  </button>
                 </div>
                 <textarea
+                  id="inputDup"
                   class="form-control bg-light border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  id="textInput"
                   rows="10"
-                  placeholder="Ketik atau tempel teks di sini..."
-                  oninput="processText()"
+                  oninput="processDuplicate()"
+                  placeholder="Ketik atau Tempel daftar baris di sini..."
                 ></textarea>
               </div>
 
-              <div
-                class="col-md-2 d-flex align-items-center justify-content-start justify-content-lg-center"
-              >
-                <div class="py-3">
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="upper"
-                      value="upper"
-                      onclick="processText()"
-                      checked
-                    />
-                    <label class="form-check-label small fw-medium" for="upper"
-                      >HURUF BESAR</label
-                    >
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="lower"
-                      value="lower"
-                      onclick="processText()"
-                    />
-                    <label class="form-check-label small fw-medium" for="lower"
-                      >huruf kecil</label
-                    >
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="title"
-                      value="title"
-                      onclick="processText()"
-                    />
-                    <label class="form-check-label small fw-medium" for="title"
-                      >Huruf Kapital</label
-                    >
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="caseOption"
-                      id="sentence"
-                      value="sentence"
-                      onclick="processText()"
-                    />
-                    <label
-                      class="form-check-label small fw-medium"
-                      for="sentence"
-                      >Kapital kalimat</label
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-5">
+              <div class="col-lg-6">
                 <div class="mb-2">
-                  <label for="textOutput" class="form-label fw-bold mb-0"
+                  <label for="textInput" class="form-label fw-bold fs-6 mb-0"
                     >Hasil</label
                   >
                 </div>
                 <textarea
-                  class="form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  id="textOutput"
+                  id="outputDup"
+                  class="form-control form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
                   rows="10"
-                  placeholder="Hasil teks akan muncul di sini..."
-                  disabled
+                  readonly
+                  placeholder="Hasil tanpa duplikat..."
                 ></textarea>
               </div>
             </div>
-            <div
-              class="d-flex gap-2 justify-content-center align-items-center mt-4"
-            >
-              <button
-                onclick="copyResult()"
-                class="btn btn-success btn-sm px-4 py-2 rounded-4 fw-semibold shadow-sm"
-              >
-                <i class="bi bi-clipboard-check me-2"></i>Salin Teks
-              </button>
-              <button
-                onclick="clearAll()"
-                class="btn btn-link text-dark text-decoration-none fw-bold small"
-              >
-                Hapus
-              </button>
-            </div>
-            <div class="text-center">
+            <div class="text-center mt-4 d-flex flex-column align-items-center">
+              <div class="d-flex gap-3">
+                <button
+                  id="copyBtnDup"
+                  class="btn btn-success px-4 py-2 rounded-4 fw-semibold shadow-sm"
+                  onclick="copyDupResult()"
+                >
+                  <i class="bi bi-clipboard-check me-2"></i>Salin Hasil
+                </button>
+                <button
+                  class="btn btn-link text-dark text-decoration-none fw-semibold small"
+                  onclick="clearDup()"
+                >
+                  Hapus
+                </button>
+              </div>
+
               <div
-                id="copyNotify"
-                class="copyNotif small text-success fw-bold mt-3 d-none"
+                id="copyNotifyDup"
+                class="small text-success fw-bold mt-3"
+                style="display: none"
               >
-                <i class="bi bi-check-circle-fill me-1"></i>Teks berhasil
-                disalin!
+                <i class="bi bi-check-circle-fill me-1"></i>Berhasil disalin!
               </div>
             </div>
           </div>
@@ -302,14 +277,14 @@
             <div class="col-lg-12">
               <div class="mb-4">
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
-                  Tentang Pengubah Huruf
+                  Tentang Penghapus Baris Duplikat
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Pengubah Huruf adalah alat digital yang digunakan untuk
-                  mengubah format teks menjadi huruf besar, huruf kecil, kapital
-                  atau format kalimat secara otomatis. Alat ini membantu dalam
-                  merapikan tulisan tanpa perlu mengeditnya satu per satu secara
-                  manual.
+                  Penghapus Baris Duplikat adalah alat yang digunakan untuk
+                  menghapus baris teks yang dalam sebuah daftar atau kumpulan
+                  data. Alat ini membantu untuk memastikan setiap baris hanya
+                  muncul satu kali sehingga teks menjadi lebih rapi dan
+                  terstruktur.
                 </p>
               </div>
 
@@ -318,10 +293,11 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Saat menyalin teks dari berbagai sumber di internet, sering
-                  kali format huruf tidak konsisten. Ada yang semua huruf besar,
-                  semua kecil atau tidak rapi. Alat ini digunakan untuk
-                  menyesuaikan format teks dengan cepat agar mudah dibaca.
+                  Saat bekerja dengan banyak daftar data, sering kali terdapat
+                  baris yang terduplikasi akibat proses dari menyalin,
+                  menggabung file atau input secara manual. Alat ini digunakan
+                  untuk membersihkan data tersebut tanpa harus mengecek atau
+                  menghapusnya satu per satu.
                 </p>
               </div>
 
@@ -330,10 +306,10 @@
                   Manfaat Menggunakan Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Dengan pengubah huruf, anda bisa menghemat banyak waktu karena
-                  tidak perlu mengedit teks secara manual. Format tulisan
-                  menjadi lebih konsisten, rapi dan cocok dalam kebutuhan
-                  seperti dokumen, konten media sosial maupun pekerjaan lainnya.
+                  Dengan menggunakan alat Penghapus Baris Duplikat, data akan
+                  menjadi lebih akurat, mudah dibaca dan siap digunakan untuk
+                  kebutuhan analisis, impor ke dalam sistem atau pengolahan data
+                  lainnya.
                 </p>
               </div>
 
@@ -342,10 +318,10 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini cocok digunakan untuk penulis, pelajar, pengelola
-                  media sosial, developer, serta siapa pun yang sering bekerja
-                  dengan teks dan membutuhkan format penulisan yang lebih
-                  teratur.
+                  Alat ini cocok untuk seseorang yang berprofesi sebagai Admin
+                  Data, Pengembang, Penuli, Pelajar serta siapa pun yang bekerja
+                  dengan masalah daftar, tabel atau teks panjang untuk
+                  memastikan tidak ada data yg terduplikat.
                 </p>
               </div>
 
@@ -367,8 +343,9 @@
                             Masukkan Teks
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tempel atau ketik teks yang ingin diubah ke dalam
-                            kolom form input yang tersedia.
+                            Tempel atau Ketik teks ke dalam form input yang
+                            tersedia. Alat akan langsung memproses teks yang
+                            dimasukkan.
                           </p>
                         </div>
                       </div>
@@ -381,11 +358,12 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white lh-base">
-                            Pilih Format Huruf
+                            Atur Opsi
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Pilih jenis format huruf yang tersedia seperti huruf
-                            besar, huruf kecil, kapital atau tiap kalimat.
+                            Pilih atau aktifkan fitur yang tersedia sesuai
+                            kebutuhan seperti menghapus spasi ganda dan hapus
+                            baris kosong.
                           </p>
                         </div>
                       </div>
@@ -402,12 +380,12 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white lh-base">
-                            Tinjau Hasil Teks
+                            Lihat Hasil Teks
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Teks akan diperbarui secara otomatis sesuai format
-                            yang dipilih sehingga bisa langsung melihat hasil
-                            secara real-time.
+                            Hasil akan diperbarui secara otomatis, sehingga bisa
+                            langsung melihat perubahaan tanpa perlu menekan
+                            tombol.
                           </p>
                         </div>
                       </div>
@@ -420,12 +398,12 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white lh-base">
-                            Salin Teks
+                            Salin atau Simpan Hasil
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Salin hasil teks yang sudah diformat untuk digunakan
-                            kembali untuk kebutuhan dokumen, konten atau
-                            aplikasi lain.
+                            Salin teks yang sudah diproses untuk digunakan
+                            kembali ke dalam dokumen, kontak atau kebutuhan
+                            lainnya.
                           </p>
                         </div>
                       </div>
@@ -454,7 +432,7 @@
             <div class="row g-2 g-md-3 justify-content-center">
               <div class="col-6 col-lg">
                 <a
-                  href="https://api.whatsapp.com/send?text=Alat%20pengubah%20huruf%20online%20untuk%20mengkonversi%20teks%20menjadi%20huruf%20besar%2C%20kecil%2C%20kapital%20atau%20format%20kalimat%20dengan%20cepat%20dan%20mudah.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf"
+                  href="https://api.whatsapp.com/send?text=Gunakan%20alat%20penghapus%20baris%20duplikat%20untuk%20membersihkan%20daftar%20teks%20dari%20baris%20yang%20berulang%20dengan%20cepat%20dan%20mudah.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fpenghapus-duplikat"
                   target="_blank"
                   class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -464,7 +442,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpenghapus-duplikat"
                   target="_blank"
                   class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -474,7 +452,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf&text=Alat%20pengubah%20huruf%20online%20untuk%20mengkonversi%20teks%20menjadi%20huruf%20besar%2C%20kecil%2C%20kapital%20atau%20format%20kalimat%20dengan%20cepat%20dan%20mudah."
+                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpenghapus-duplikat&text=Gunakan%20alat%20penghapus%20baris%20duplikat%20untuk%20membersihkan%20daftar%20teks%20dari%20baris%20yang%20berulang%20dengan%20cepat%20dan%20mudah."
                   target="_blank"
                   class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -484,7 +462,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://twitter.com/intent/tweet?text=Alat%20pengubah%20huruf%20online%20untuk%20mengkonversi%20teks%20menjadi%20huruf%20besar%2C%20kecil%2C%20kapital%20atau%20format%20kalimat%20dengan%20cepat%20dan%20mudah.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpengubah-huruf"
+                  href="https://twitter.com/intent/tweet?text=Gunakan%20alat%20penghapus%20baris%20duplikat%20untuk%20membersihkan%20daftar%20teks%20dari%20baris%20yang%20berulang%20dengan%20cepat%20dan%20mudah.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fpenghapus-duplikat"
                   target="_blank"
                   class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -607,6 +585,10 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="/js/global.js"></script>
-    <script type="text/javascript" src="/assets/js/pengubah-huruf.js"></script>
+    <!-- Alat JS -->
+    <script
+      type="text/javascript"
+      src="/assets/js/penghapus-baris-duplikat.js"
+    ></script>
   </body>
 </html>

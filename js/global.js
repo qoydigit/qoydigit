@@ -96,6 +96,12 @@ const allTools = [
         desc: "Bersihkan taks dari spasi berlebih, baris kosong, simbol dan format tidak rapi secara otomatis dan mudah.",
         link: "/alat/pembersih-teks",
     },
+    {
+        name: "Penghapus Baris Duplikat",
+        cat: "teks",
+        desc: "Hapus baris teks yang sama secara otomatis untuk membuat dan daftar menjadi lebih rapi dan terstruktur.",
+        link: "/alat/penghapus-baris-duplikat",
+    },
 ];
 
 function shuffleArray(array) {
