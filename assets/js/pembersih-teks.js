@@ -80,6 +80,13 @@ const inputArea = document.getElementById("inputText");
       function clearAll() {
         inputArea.value = "";
         outputArea.value = "";
+
+        // document.getElementById("optCleanSpaces").checked = false;
+        document.getElementById("optRemoveEmpty").checked = false;
+        document.getElementById("optTrim").checked = false;
+        document.getElementById("optRemoveList").checked = false;
+        document.getElementById("optRemoveSymbols").checked = false;
+        document.getElementById("optJoinLines").checked = false;
         processText();
       }
 
