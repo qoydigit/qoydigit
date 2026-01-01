@@ -94,7 +94,7 @@ const allTools = [
     {
         name: "Pembersih Teks",
         cat: "teks",
-        desc: "Bersihkan taks dari spasi berlebih, baris kosong, simbol dan format tidak rapi secara otomatis dan mudah.",
+        desc: "Bersihkan teks dari spasi berlebih, baris kosong, simbol dan format tidak rapi secara otomatis dan mudah.",
         link: "/alat/pembersih-teks",
     },
     {
@@ -102,6 +102,12 @@ const allTools = [
         cat: "teks",
         desc: "Hapus baris teks yang sama secara otomatis untuk membuat dan daftar menjadi lebih rapi dan terstruktur.",
         link: "/alat/penghapus-baris-duplikat",
+    },
+    {
+        name: "Hapus Tanda Baca",
+        cat: "teks",
+        desc: "Hapus tanda baca, spasi ganda dan ubah teks menjadi satu baris secara cepat dengan cepat dan mudah.",
+        link: "/alat/hapus-tanda-baca",
     },
 ];
 
