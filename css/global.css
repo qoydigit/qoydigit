@@ -145,10 +145,10 @@ body {
 }
 #qoy-article .article-list{
     padding-left: 20px;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 #qoy-article .article-list li{
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
 }
 /* ------------ Override Bootstrap ------------ */
 .btn, 

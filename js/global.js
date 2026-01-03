@@ -109,6 +109,13 @@ const allTools = [
         desc: "Hapus tanda baca, spasi ganda dan ubah teks menjadi satu baris secara cepat dengan cepat dan mudah.",
         link: "/alat/hapus-tanda-baca",
     },
+    // Alat Kalkulator
+    {
+        name: "Kalkulator Harga Diskon",
+        cat: "kalkulator",
+        desc: "Hitung harga setelah diskon dengan akurat termasuk potongan diskon tambahan cepat dan mudah digunakan.",
+        link: "/alat/kalkulator-harga-diskon",
+    },
 ];
 
 // Alat Terkait
