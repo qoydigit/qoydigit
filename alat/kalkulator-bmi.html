@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator Harga Diskon - Qoydigit</title>
+    <title>Kalkulator BMI (Body Mass Index) - Qoydigit</title>
     <meta
       name="description"
-      content="Hitung harga setelah diskon dengan mudah menggunakan kalkulator harga diskon online yang dilengkapi fitur diskon tambahan untuk hasil yang akurat."
+      content="Hitung Body Mass Index (BMI) untuk mengetahui berat badan termasuk kurus, ideal atau berlebih berdasarkan tinggi dan berat badan."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
-    <link
-      rel="canonical"
-      href="https://qoydigit.web.id/alat/kalkulator-harga-diskon"
-    />
+    <link rel="canonical" href="https://qoydigit.web.id/alat/kalkulator-bmi" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://qoydigit.web.id/alat/kalkulator-harga-diskon"
+      content="https://qoydigit.web.id/alat/kalkulator-bmi"
     />
-    <meta property="og:title" content="Kalkulator Harga Diskon - Qoydigit" />
+    <meta
+      property="og:title"
+      content="Kalkukator BMI (Body Mass Index) - Qoydigit"
+    />
     <meta
       property="og:description"
-      content="Hitung harga setelah diskon dengan mudah menggunakan kalkulator harga diskon online yang dilengkapi fitur diskon tambahan untuk hasil yang akurat."
+      content="Hitung Body Mass Index (BMI) untuk mengetahui berat badan termasuk kurus, ideal atau berlebih berdasarkan tinggi dan berat badan."
     />
     <meta
       property="og:image"
@@ -31,12 +31,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:url"
-      content="https://qoydigit.web.id/alat/kalkulator-harga-diskon"
+      content="https://qoydigit.web.id/alat/kalkulator-bmi"
     />
-    <meta name="twitter:title" content="Kalkulator Harga Diskon - Qoydigit" />
+    <meta
+      name="twitter:title"
+      content="Kalkulator BMI (Body Mass Index) Online - Qoydigit"
+    />
     <meta
       name="twitter:description"
-      content="Hitung harga setelah diskon dengan mudah menggunakan kalkulator harga diskon online yang dilengkapi fitur diskon tambahan untuk hasil yang akurat."
+      content="Hitung Body Mass Index (BMI) untuk mengetahui berat badan termasuk kurus, ideal atau berlebih berdasarkan tinggi dan berat badan."
     />
     <meta
       name="twitter:image"
@@ -154,12 +157,13 @@
             <div class="col-lg-7">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
-                  Kalkukator<br /><span class="text-success">Harga Diskon</span>
+                  Kalkulator BMI<br />
+                  <span class="text-success">(Body Mass Index)</span>
                 </h1>
                 <p class="text-secondary">
-                  Gunakan kalkulator harga diskon untuk mengetahui harga akhir
-                  setelah potongan diskon utama dan diskon tambahan dengan tepat
-                  dan mudah digunakan.
+                  Gunakan Kalkulator BMI untuk mengetahui apakah berat badan
+                  termasuk kurus, ideal atau berlebih berdasarkan hitungan
+                  tinggi dan berat badan.
                 </p>
               </div>
             </div>
@@ -169,99 +173,65 @@
             <div class="row g-4">
               <div class="col-lg-6">
                 <div class="pe-lg-3">
-                  <div class="alert alert-success rounded-4 mb-4" role="alert">
+                  <div class="alert alert-success rounded-4 mb-4">
                     <h3 class="fw-bold small mb-2">
-                      <i class="bi bi-lightbulb-fill me-2"></i>Rumus Hitung
-                      Diskon
+                      <i class="bi bi-lightbulb-fill me-2"></i>Apa itu BMI?
                     </h3>
-                    <p class="mb-0 small text-dark">
-                      Diskon <strong>50% + 20%</strong> bukan berarti total
-                      diskon jadi <strong>70%</strong>, tetapi diskon tambahan
-                      dihitung dari harga yang sudah dipotong dari diskon
-                      pertama.
+                    <p class="mb-0 text-secondary small">
+                      Body Mass Index (BMI) adalah cara sederhana untuk memantau
+                      status kesehatan berat badan seseorang terhadap risiko
+                      penyakit tertentu.
                     </p>
                   </div>
 
                   <div class="mb-4">
                     <label
-                      for="InputHarga"
+                      for="inputBerat"
                       class="form-label fw-bold text-dark fs-6"
-                      >Harga Awal</label
-                    >
-                    <div class="input-group">
-                      <span
-                        class="input-group-text bg-light border-end-0 text-muted fw-semibold px-3"
-                        >Rp</span
-                      >
-                      <input
-                        type="text"
-                        id="hargaAsli"
-                        class="form-control border-start-0 py-2 fw-semibold shadow-none bg-light"
-                        placeholder="0"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label
-                      for="InputDiskonPertama"
-                      class="form-label fw-bold text-dark"
-                      >Diskon (%)</label
+                      >Berat Badan</label
                     >
                     <div class="input-group">
                       <input
                         type="number"
-                        id="diskon1"
-                        class="form-control py-2 shadow-none border-end-0 bg-light"
+                        id="beratBadan"
+                        class="form-control py-2 fw-semibold shadow-none bg-light border-end-0"
                         placeholder="0"
                       />
                       <span class="input-group-text bg-light text-muted fw-bold"
-                        >%</span
+                        >kg</span
                       >
                     </div>
                   </div>
 
-                  <div class="form-check form-switch mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      role="switch"
-                      id="toggleDiskon2"
-                    />
+                  <div class="mb-4">
                     <label
-                      class="form-check-label small fw-bold text-success text-uppercase"
-                      for="toggleDiskon2"
-                      >Ada diskon tambahan?</label
-                    >
-                  </div>
-
-                  <div id="containerDiskon2" class="mb-4 d-none">
-                    <label class="form-label fw-bold text-dark"
-                      >Diskon Tambahan (%)</label
+                      for="inpuTinggi"
+                      class="form-label fw-bold text-dark fs-6"
+                      >Tinggi Badan</label
                     >
                     <div class="input-group">
                       <input
                         type="number"
-                        id="diskon2"
-                        class="form-control py-2 shadow-none border-end-0 bg-light"
+                        id="tinggiBadan"
+                        class="form-control py-2 fw-semibold shadow-none bg-light border-end-0"
                         placeholder="0"
                       />
                       <span class="input-group-text bg-light text-muted fw-bold"
-                        >%</span
+                        >cm</span
                       >
                     </div>
                   </div>
 
                   <div class="d-grid gap-2 d-md-block">
                     <button
-                      id="hitungBtn"
+                      id="hitungBMIBtn"
                       class="btn btn-success rounded-4 fw-semibold py-2 px-3 shadow-sm border-0"
                       type="button"
                     >
-                      <i class="bi bi-calculator me-2"></i>Hitung Total Bayar
+                      <i class="bi bi-calculator me-2"></i>Hitung Skor BMI
                     </button>
                     <button
-                      id="resetBtn"
+                      id="resetBMIBtn"
                       class="btn btn-link text-dark text-decoration-none fw-semibold small"
                       type="button"
                     >
@@ -271,55 +241,67 @@
                 </div>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="hasilBMI">
                 <div
-                  id="hasilPerhitungan"
-                  class="rounded-4 border-0 shadow-sm h-100 d-flex flex-column bg-success text-white"
+                  id="cardHasil"
+                  class="rounded-4 overflow-hidden border-0 shadow-sm h-100 d-flex flex-column bg-light text-dark transition"
                 >
-                  <div class="p-4 bg-white bg-opacity-10 border-opacity-10">
-                    <h3 class="fw-bold small mb-4 text-uppercase text-center">
-                      Hasil Perhitungan
+                  <div class="p-4 text-center">
+                    <h3 class="fw-bold small mb-2 text-uppercase text-muted">
+                      Skor BMI Anda
                     </h3>
                     <div
-                      class="d-flex justify-content-between flex-column flex-sm-row mb-2"
+                      id="resSkorBMI"
+                      class="fw-bold mb-0 display-4 text-dark"
                     >
-                      <span class="opacity-75">Harga Awal</span>
-                      <span id="resHargaAwal" class="fw-semibold">Rp 0</span>
+                      0
                     </div>
                     <div
-                      class="d-flex justify-content-between flex-column flex-sm-row mb-0"
+                      id="resKategoriBMI"
+                      class="badge rounded-4 mt-2 px-4 py-3 fw-semibold text-uppercase bg-secondary"
                     >
-                      <span class="opacity-75">Total Potongan</span>
-                      <span id="resPotongan" class="fw-bold text-warning"
-                        >- Rp 0</span
-                      >
+                      Tidak Ada Data
                     </div>
                   </div>
 
-                  <div
-                    class="py-5 px-4 flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center"
-                  >
-                    <p
-                      class="mb-1 small fw-bold x-letspacing text-uppercase opacity-75"
-                    >
-                      Total Bayar
-                    </p>
-                    <div id="resHargaAkhir" class="fw-bold mb-0 display-4">
-                      Rp 0
-                    </div>
-
-                    <div id="badgeHemat" class="mt-4 d-none">
+                  <div class="px-4 py-3 bg-white">
+                    <div class="progress mb-1">
                       <div
-                        class="py-3 px-4 rounded-4 border border-white border-opacity-25 bg-white bg-opacity-10"
-                      >
-                        <i class="bi bi-cash-coin me-2"></i>Hemat
-                        <span id="persenTotal">0</span>% dari harga asli
-                      </div>
+                        id="bmiBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between text-muted text-uppercase xx-small fw-bold"
+                    >
+                      <span>Kurus</span>
+                      <span>Ideal</span>
+                      <span>Pra-Obesitas</span>
+                      <span>Obesitas</span>
                     </div>
                   </div>
 
-                  <div class="p-3 text-center d-none">
-                    <small class="opacity-50 small">Kalkulator Diskon</small>
+                  <div class="p-4 flex-grow-1 bg-white">
+                    <div
+                      id="infoIdeal"
+                      class="mb-4 d-none text-center p-3 rounded-4 border bg-light"
+                    >
+                      <p class="mb-1 small text-muted">
+                        Berat badan ideal anda:
+                      </p>
+                      <h3 id="rangeIdeal" class="fw-bold fs-4 mb-0 text-dark">
+                        0 kg - 0 kg
+                      </h3>
+                    </div>
+
+                    <div id="descBMI" class="text-center p-2">
+                      <p class="text-muted small mb-0">
+                        Silakan masukkan data berat dan tinggi badan untuk
+                        melihat analisis kesehatan anda.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -348,11 +330,11 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white">
-                            Masukkan Harga Awal
+                            Masukkan Berat Badan
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan harga awal produk sebelum diskon ke dalam
-                            kolom yang sudah tersedia.
+                            Isi berat badan dalam kilogram (kg) berdasarkan
+                            berat terakhir yang diketahui.
                           </p>
                         </div>
                       </div>
@@ -365,11 +347,11 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white">
-                            Masukkan Jumlah Diskon
+                            Masukkan Tinggi Badan
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan nilai diskon dalam persen, misal 10, 20
-                            atau 50 sesuai promo yang berlaku.
+                            Masukkan juga tinggi badan dalam satuan sentimeter
+                            (cm) sesuai kondisi saat ini.
                           </p>
                         </div>
                       </div>
@@ -386,12 +368,11 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white">
-                            Diskon Tambahan (opsional)
+                            Klik Tombol Hitung Skor BMI
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Jika ada potongan diskon tambahan seperti promo
-                            ekstra, aktifkan opsi ini dan masukkan nilai
-                            persennya.
+                            Tekan tombol hitung untuk mulai memproses data
+                            berdasarkan tinggi dan berat badan.
                           </p>
                         </div>
                       </div>
@@ -404,11 +385,11 @@
                         </span>
                         <div>
                           <h3 class="h6 fw-bold mb-1 text-white">
-                            Klik Tombol Hitung
+                            Lihat Hasil Analisis
                           </h3>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tekan tombol hitung total bayar untuk memproses data
-                            dan menampilkan harga akhir setelah diskon.
+                            Nilai BMI beserta kategori berat badan dan berat
+                            ideal akan langsung ditampilkan sebagai hasil.
                           </p>
                         </div>
                       </div>
@@ -419,14 +400,14 @@
 
               <div class="mb-4">
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
-                  Tentang Kalkulator Harga Diskon
+                  Tentang Kalkulator BMI
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Kalkulator harga Diskon adalah alat online untuk membantu
-                  menghitung harga akhir suatu barang setelah dikurangi dengan
-                  potongan diskon. Alat ini memudahkan siapa saja untuk
-                  mengetahui berapa harga yang harus dibayar tanpa perlu
-                  melakukan perhitungan manual.
+                  Kalkulator BMI (Body Mass Index) adalah alat sederhana untuk
+                  menghitung indeks masa tubuh berdasarkan tinggi dan berat
+                  badan. Nilai BMI digunakan sebagai acuan untuk mengetahui
+                  apakah berat badan seseorang tergolong kurus, ideal atau
+                  berlebih.
                 </p>
               </div>
 
@@ -435,10 +416,10 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Menghitung harga setelah diskon sering kali membingungkan,
-                  apalagi jika terdapat lebih dari satu potongan. Dengan
-                  menggunakan kalkulator harga diskon ini, hasil perhitungan
-                  dapat diperoleh secara cepat dan akurat.
+                  Banyak orang ingin mengetahui kondisi berat badan tanpa harus
+                  menghitung secara manual. Dengan Kalkulator BMI, hasil
+                  perhitungan bisa didapatkan dengan cepat dan membantu untuk
+                  memahami kondisi tubuh secara umum.
                 </p>
               </div>
 
@@ -447,13 +428,16 @@
                   Manfaat Menggunakan Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Dengan alat ini, pengguna bisa mengerti:
+                  Menggunakan alat ini bisa memberikan beberapa manfaat seperti:
                 </p>
                 <ul class="article-list text-secondary">
-                  <li>Mengetahui harga akhir setelah diskon dengan mudah.</li>
-                  <li>Menghindari kesalahan perhitungan.</li>
-                  <li>Membandingkan beberapa promo produk sekaligus.</li>
-                  <li>Menghemat waktu saat berbelanja.</li>
+                  <li>Mengetahui kategori berat badan dengan mudah</li>
+                  <li>Membantu memantau kondisi tubuh</li>
+                  <li>
+                    Menjadi referensi awal sebelum mengatur pola asupan atau
+                    aktivitas
+                  </li>
+                  <li>Menghemat waktu dibandingkan menghitung dengan manual</li>
                 </ul>
               </div>
 
@@ -462,19 +446,12 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini sangat cocok digunakan oleh:
+                  Alat ini cocok digunakan oleh:
                 </p>
                 <ul class="article-list text-secondary">
-                  <li>
-                    Pembeli online yang ingin memastikan harga sebelum checkout.
-                  </li>
-                  <li>
-                    Penjual yang sedang menghitung untuk menentukan harga promo.
-                  </li>
-                  <li>
-                    Pelajar, mahasiswa dan siapa pun untuk mengetahui harga
-                    setelah diskon dengan cepat.
-                  </li>
+                  <li>Orang yang ingin memantau berat badannya</li>
+                  <li>Pelaku diet dan gaya hidup sehat</li>
+                  <li>Siapa saja yang ingin mengetahui kondisi tubuh</li>
                 </ul>
               </div>
             </div>
@@ -506,7 +483,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq1"
                 >
-                  Apakah kalkulator ini gratis digunakan?
+                  Apakah alat ini gratis digunakan?
                 </button>
               </h3>
               <div
@@ -516,8 +493,8 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Ya. Kalkulator Harga Diskon ini dapat digunakan sepenuhnya
-                    gratis tanpa perlu daftar atau membuat akun.
+                    Ya. Kalkulator BMI ini dapat digunakan sepenuhnya dan
+                    sepuasnya tanpa biaya.
                   </p>
                 </div>
               </div>
@@ -533,7 +510,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq2"
                 >
-                  Apa itu Diskon Tambahan?
+                  Bagaimana cara menghitung BMI?
                 </button>
               </h3>
               <div
@@ -543,8 +520,9 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Diskon tambahan adalah potongan ekstra seperti voucher atau
-                    promo lain yang diberikan setelah potongan diskon utama.
+                    BMI dihitung dengan menggunakan rumus standa: berat badan
+                    dibagi tinggi badan dikali tinggi badan. alat ini
+                    menghitungnya secara otomatis.
                   </p>
                 </div>
               </div>
@@ -560,7 +538,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq3"
                 >
-                  Apakah hasil perhitungan ini akurat?
+                  Apa arti hasil BMI yang ditampilkan?
                 </button>
               </h3>
               <div
@@ -570,8 +548,35 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Ya. Proses alat kalkulator ini menggunakan rumus matematika
-                    standar dalam menghitung diskon.
+                    Hasil BMI menunjukan kategori berat badan seperti kurus,
+                    normal hingga obesitas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm"
+            >
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold py-4 bg-white text-dark shadow-none lh-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                >
+                  Apakah data saya disimpan?
+                </button>
+              </h3>
+              <div
+                id="faq4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqNamaTools"
+              >
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="text-secondary mb-0">
+                    Tidak. Semua proses perhitungan dilakukan langsung di
+                    browser dan tidak akan tersimpan di server.
                   </p>
                 </div>
               </div>
@@ -607,7 +612,7 @@
             <div class="row g-2 g-md-3 justify-content-center">
               <div class="col-6 col-lg">
                 <a
-                  href="https://api.whatsapp.com/send?text=Kalkulator%20Harga%20Diskon%3A%20Hitung%20harga%20setelah%20diskon%20dengan%20mudah%20menggunakan%20kalkulator%20harga%20diskon%20online%20yang%20dilengkapi%20fitur%20diskon%20tambahan%20untuk%20hasil%20yang%20akurat.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-harga-diskon"
+                  href="https://api.whatsapp.com/send?text=Kalkulator%20BMI%20Online%3A%20Hitung%20Body%20Mass%20Index%20(BMI)%20untuk%20mengetahui%20berat%20badan%20termasuk%20kurus%2C%20ideal%20atau%20berlebih%20berdasarkan%20tinggi%20dan%20berat%20badan.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-bmi"
                   target="_blank"
                   class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -617,7 +622,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-harga-diskon"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-bmi"
                   target="_blank"
                   class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -627,7 +632,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-harga-diskon&text=Kalkulator%20Harga%20Diskon%3A%20Hitung%20harga%20setelah%20diskon%20dengan%20mudah%20menggunakan%20kalkulator%20harga%20diskon%20online%20yang%20dilengkapi%20fitur%20diskon%20tambahan%20untuk%20hasil%20yang%20akurat."
+                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-bmi&text=Hitung%20Body%20Mass%20Index%20(BMI)%20untuk%20mengetahui%20berat%20badan%20termasuk%20kurus%2C%20ideal%20atau%20berlebih%20berdasarkan%20tinggi%20dan%20berat%20badan."
                   target="_blank"
                   class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -637,7 +642,7 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://twitter.com/intent/tweet?text=Kalkulator%20Harga%20Diskon%3A%20Hitung%20harga%20setelah%20diskon%20dengan%20mudah%20menggunakan%20kalkulator%20harga%20diskon%20online%20yang%20dilengkapi%20fitur%20diskon%20tambahan%20untuk%20hasil%20yang%20akurat.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-harga-diskon"
+                  href="https://twitter.com/intent/tweet?text=Hitung%20Body%20Mass%20Index%20(BMI)%20untuk%20mengetahui%20berat%20badan%20termasuk%20kurus%2C%20ideal%20atau%20berlebih%20berdasarkan%20tinggi%20dan%20berat%20badan.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fkalkulator-bmi"
                   target="_blank"
                   class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
@@ -761,9 +766,97 @@
     ></script>
     <script type="text/javascript" src="/js/global.js"></script>
     <!-- Alat JS -->
-    <script
-      type="text/javascript"
-      src="/assets/js/kalkulator-harga-diskon.js"
-    ></script>
+    <script type="text/javascript" src="/assets/js/nama-alat.js"></script>
+    <script>
+      const beratInput = document.getElementById("beratBadan");
+      const tinggiInput = document.getElementById("tinggiBadan");
+      const hitungBtn = document.getElementById("hitungBMIBtn");
+      const resetBtn = document.getElementById("resetBMIBtn");
+
+      hitungBtn.addEventListener("click", function () {
+        const berat = parseFloat(beratInput.value);
+        const tinggiCm = parseFloat(tinggiInput.value);
+
+        if (!berat || !tinggiCm) {
+          alert("Mohon isi berat dan tinggi badan.");
+          return;
+        }
+
+        const tinggiM = tinggiCm / 100;
+        const bmi = (berat / (tinggiM * tinggiM)).toFixed(1);
+        const idealMin = (18.5 * (tinggiM * tinggiM)).toFixed(1);
+        const idealMax = (24.9 * (tinggiM * tinggiM)).toFixed(1);
+
+        let kategori = "";
+        let warnaClass = "";
+        let pesan = "";
+        let barWidth = 0;
+
+        if (bmi < 18.5) {
+          kategori = "Kekurangan Berat Badan";
+          warnaClass = "bg-warning text-dark";
+          pesan =
+            "Cobalah tingkatkan asupan nutrisi dan konsultasikan dengan ahli gizi untuk mencapai berat badan yang ideal.";
+          barWidth = 25;
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+          kategori = "Normal (Ideal)";
+          warnaClass = "bg-success text-white";
+          pesan =
+            "Luar biasa! Pertahankan pola makan sehat dan rutin berolahraga untuk tetap menjaga kondisi fisik anda.";
+          barWidth = 50;
+        } else if (bmi >= 25 && bmi <= 29.9) {
+          kategori = "Berat Badan Berlebih";
+          warnaClass = "bg-warning text-dark";
+          pesan =
+            "Anda berada dalam kategori pra-obesitas. Mulailah kurangi asupan kalori dan tingkatkan aktivitas fisik.";
+          barWidth = 75;
+        } else {
+          kategori = "Obesitas";
+          warnaClass = "bg-danger text-white";
+          pesan =
+            "Perhatian! Anda berada dalam kategori risiko kesehatan tinggi. Sangat disarankan untuk memulai pola hidup yang sehat.";
+          barWidth = 100;
+        }
+
+        document.getElementById("resSkorBMI").innerText = bmi;
+        document.getElementById("resKategoriBMI").innerText = kategori;
+        document.getElementById(
+          "resKategoriBMI"
+        ).className = `badge rounded-4 mt-2 px-4 py-3 fw-semibold text-uppercase ${warnaClass}`;
+        document.getElementById("rangeIdeal").innerText =
+          idealMin + " kg - " + idealMax + " kg";
+        document.getElementById(
+          "descBMI"
+        ).innerHTML = `<p class="small mb-0 fw-semibold text-dark">${pesan}</p>`;
+        document.getElementById("bmiBar").style.width = barWidth + "%";
+        document.getElementById("bmiBar").className = `progress-bar ${
+          warnaClass.split(" ")[0]
+        }`;
+        document.getElementById("infoIdeal").classList.remove("d-none");
+
+        // UX Scroll Mobile
+        if (window.innerWidth < 992) {
+          setTimeout(() => {
+            document
+              .getElementById("hasilBMI")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        }
+      });
+
+      resetBtn.addEventListener("click", function () {
+        beratInput.value = "";
+        tinggiInput.value = "";
+        document.getElementById("resSkorBMI").innerText = "0.0";
+        document.getElementById("resKategoriBMI").innerText = "Input Data Anda";
+        document.getElementById("resKategoriBMI").className =
+          "badge rounded-pill mt-2 px-3 py-2 bg-secondary fw-bold text-uppercase";
+        document.getElementById("bmiBar").style.width = "0%";
+        document.getElementById("infoIdeal").classList.add("d-none");
+        document.getElementById("descBMI").innerHTML =
+          '<p class="text-muted small mb-0">Silakan masukkan data berat dan tinggi badan untuk melihat analisis kesehatan anda.</p>';
+        beratInput.focus();
+      });
+    </script>
   </body>
 </html>

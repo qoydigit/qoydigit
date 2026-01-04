@@ -116,6 +116,12 @@ const allTools = [
         desc: "Hitung harga setelah diskon dengan akurat termasuk potongan diskon tambahan cepat dan mudah digunakan.",
         link: "/alat/kalkulator-harga-diskon",
     },
+    {
+        name: "Kalkulator BMI",
+        cat: "kalkulator",
+        desc: "Hitung BMI (Body Mass Index) untuk mengetahui kategori berat badan berdasarkan tinggi dan berat badan dengan cepat.",
+        link: "/alat/kalkulator-bmi",
+    },
 ];
 
 // Alat Terkait
