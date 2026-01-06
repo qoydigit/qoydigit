@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pembersih Teks Online - Qoydigit</title>
+    <title>
+      Pembersih Teks | Hapus Spasi Ganda & Baris Kosong Online - Qoydigit
+    </title>
     <meta
       name="description"
-      content="Alat pembersih teks online untuk menghapus spasi ganda, baris kosong, simbol dan meripkan format teks dengan cepat dan mudah."
+      content="Bersihkan format teks dari spasi berlebih, baris kosong, dan karakter secara otomatis. Alat pembersih teks online gratis, cepat, dan mudah digunakan."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
@@ -16,10 +18,13 @@
       property="og:url"
       content="https://qoydigit.web.id/alat/pembersih-teks"
     />
-    <meta property="og:title" content="Pembersih Teks Online - Qoydigit" />
+    <meta
+      property="og:title"
+      content="Pembersih Teks | Hapus Spasi Ganda & Baris Kosong Online - Qoydigit"
+    />
     <meta
       property="og:description"
-      content="Alat pembersih teks online untuk menghapus spasi ganda, baris kosong, simbol dan meripkan format teks dengan cepat dan mudah."
+      content="Bersihkan format teks dari spasi berlebih, baris kosong, dan karakter secara otomatis. Alat pembersih teks online gratis, cepat, dan mudah digunakan."
     />
     <meta
       property="og:image"
@@ -30,10 +35,13 @@
       name="twitter:url"
       content="https://qoydigit.web.id/alat/pembersih-teks"
     />
-    <meta name="twitter:title" content="Pembersih Teks Online - Qoydigit" />
+    <meta
+      name="twitter:title"
+      content="Pembersih Teks | Hapus Spasi Ganda & Baris Kosong Online - Qoydigit"
+    />
     <meta
       name="twitter:description"
-      content="Alat pembersih teks online untuk menghapus spasi ganda, baris kosong, simbol dan meripkan format teks dengan cepat dan mudah."
+      content="Bersihkan format teks dari spasi berlebih, baris kosong, dan karakter secara otomatis. Alat pembersih teks online gratis, cepat, dan mudah digunakan."
     />
     <meta
       name="twitter:image"
@@ -154,16 +162,54 @@
                   Pembersih <span class="text-success">Teks</span>
                 </h1>
                 <p class="text-secondary">
-                  Gunakan alat pembersih teks ini untuk merapikan tulisan untuk
-                  menghapus spasi ganda, baris kosong, simbol serta format yang
-                  tidak konsisten secara otomatis.
+                  Bersihkan format teks dari spasi berlebih, baris kosong, dan
+                  karakter secara otomatis. Alat pembersih teks online gratis,
+                  cepat, dan mudah digunakan.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
-            <div class="row gx-3 gy-4 justify-content-between mb-4">
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <label for="textInput" class="form-label fw-bold fs-6 mb-0"
+                    >Masukkan Teks</label
+                  >
+                  <button
+                    class="btn btn-sm btn-link text-success fw-semibold text-decoration-none p-0"
+                    onclick="loadExample()"
+                  >
+                    Gunakan Contoh
+                  </button>
+                </div>
+                <textarea
+                  id="inputText"
+                  class="form-control bg-light border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
+                  rows="10"
+                  oninput="processText()"
+                  placeholder="Ketik atau tempel teks di sini..."
+                ></textarea>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-2">
+                  <label for="textResult" class="form-label fw-bold fs-6 mb-0"
+                    >Hasil Teks</label
+                  >
+                </div>
+                <textarea
+                  id="outputText"
+                  class="form-control form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
+                  rows="10"
+                  placeholder="Hasil otomatis muncul di sini..."
+                  readonly
+                ></textarea>
+              </div>
+            </div>
+            <div class="row gx-3 gy-4 justify-content-between">
               <label for="opsi-pembersih" class="form-label fw-bold fs-6 mb-0"
                 >Pilih Opsi</label
               >
@@ -216,7 +262,7 @@
                     onchange="processText()"
                   />
                   <label class="form-check-label" for="optRemoveList"
-                    >Hapus List/Nomor</label
+                    >Hapus List Nomor</label
                   >
                 </div>
               </div>
@@ -245,45 +291,6 @@
                     >Gabung Jadi 1 Baris</label
                   >
                 </div>
-              </div>
-            </div>
-
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <label for="textInput" class="form-label fw-bold fs-6 mb-0"
-                    >Masukkan Teks</label
-                  >
-                  <button
-                    class="btn btn-sm btn-link text-success fw-semibold text-decoration-none p-0"
-                    onclick="loadExample()"
-                  >
-                    Gunakan Contoh
-                  </button>
-                </div>
-                <textarea
-                  id="inputText"
-                  class="form-control bg-light border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  rows="10"
-                  oninput="processText()"
-                  placeholder="Ketik atau tempel teks di sini..."
-                ></textarea>
-              </div>
-              <div class="col-lg-6">
-                <div class="mb-2">
-                  <label for="textResult" class="form-label fw-bold fs-6 mb-0"
-                    >Hasil Teks</label
-                  >
-                </div>
-                <textarea
-                  id="outputText"
-                  class="form-control form-control bg-body-secondary border-1 border-secondary-subtle rounded-4 p-3 shadow-none"
-                  rows="10"
-                  placeholder="Hasil otomatis muncul di sini..."
-                  readonly
-                ></textarea>
               </div>
             </div>
             <div class="text-center mt-4 d-flex justify-content-center gap-3">
@@ -461,9 +468,9 @@
           <div class="row justify-content-center mb-3 px-2">
             <div class="col-lg-6">
               <div class="text-center">
-                <h2 class="h2 fw-bold text-dark">Informasi Penting</h2>
+                <h2 class="h2 fw-bold text-dark">Pertanyaan Umum</h2>
                 <p class="text-secondary">
-                  Hal yang perlu diketahui saat menggunakan alat ini
+                  Temukan informasi yang sering ditanyakan di sini.
                 </p>
               </div>
             </div>

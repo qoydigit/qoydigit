@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Penghapus Baris Duplikat - Qoydigit</title>
+    <title>
+      Penghapus Baris Duplikat | Buang Baris Ganda Online Otomatis - Qoydigit
+    </title>
     <meta
       name="description"
-      content="Gunakan alat penghapus baris duplikat untuk membersihkan daftar teks dari baris yang berulang dengan cepat dan mudah."
+      content="Hapus baris duplikat dari daftar teks secara otomatis dan cepat. Alat penghapus baris ganda online gratis untuk merapikan data dengan hasil yang akurat."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
@@ -19,10 +21,13 @@
       property="og:url"
       content="https://qoydigit.web.id/alat/penghapus-baris-duplikat"
     />
-    <meta property="og:title" content="Penghapus Baris Duplikat - Qoydigit" />
+    <meta
+      property="og:title"
+      content="Penghapus Baris Duplikat | Buang Baris Ganda Online Otomatis - Qoydigit"
+    />
     <meta
       property="og:description"
-      content="Gunakan alat penghapus baris duplikat untuk membersihkan daftar teks dari baris yang berulang dengan cepat dan mudah."
+      content="Hapus baris duplikat dari daftar teks secara otomatis dan cepat. Alat penghapus baris ganda online gratis untuk merapikan data dengan hasil yang akurat."
     />
     <meta
       property="og:image"
@@ -33,10 +38,13 @@
       name="twitter:url"
       content="https://qoydigit.web.id/alat/penghapus-baris-duplikat"
     />
-    <meta name="twitter:title" content="Penghapus Baris Duplikat - Qoydigit" />
+    <meta
+      name="twitter:title"
+      content="Penghapus Baris Duplikat | Buang Baris Ganda Online Otomatis - Qoydigit"
+    />
     <meta
       name="twitter:description"
-      content="Gunakan alat penghapus baris duplikat untuk membersihkan daftar teks dari baris yang berulang dengan cepat dan mudah."
+      content="Hapus baris duplikat dari daftar teks secara otomatis dan cepat. Alat penghapus baris ganda online gratis untuk merapikan data dengan hasil yang akurat."
     />
     <meta
       name="twitter:image"
@@ -159,51 +167,16 @@
                   >
                 </h1>
                 <p class="text-secondary">
-                  Gunakan alat penghapus baris duplikat untuk menghilangkan teks
-                  yang sama dan berulang menghasilkan daftar yang lebih bersih,
-                  rapi dan mudah digunakan.
+                  Hapus baris duplikat dari daftar teks secara otomatis dan
+                  cepat. Alat penghapus baris ganda online gratis untuk
+                  merapikan data dengan hasil yang akurat.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm border">
-            <div class="row gx-3 gy-4 justify-content-start mb-4">
-              <label
-                for="opsi-duplikat"
-                class="form-label fw-semibold fs-6 mb-0"
-                >Pilih Opsi</label
-              >
-              <div class="col-6 col-md-auto">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="optTrimLines"
-                    onchange="processDuplicate()"
-                  />
-                  <label class="form-check-label fw-medium" for="optTrimLines"
-                    >Hapus Spasi Ganda</label
-                  >
-                </div>
-              </div>
-
-              <div class="col-6 col-md-auto">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="optIgnoreEmpty"
-                    onchange="processDuplicate()"
-                  />
-                  <label class="form-check-label fw-medium" for="optIgnoreEmpty"
-                    >Hapus Baris Kosong</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="row g-4">
+          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
+            <div class="row g-4 mb-4">
               <div class="col-lg-6">
                 <div
                   class="d-flex justify-content-between align-items-center mb-2"
@@ -240,6 +213,40 @@
                   readonly
                   placeholder="Hasil tanpa duplikat..."
                 ></textarea>
+              </div>
+            </div>
+            <div class="row gx-3 gy-4 justify-content-start">
+              <label
+                for="opsi-duplikat"
+                class="form-label fw-semibold fs-6 mb-0"
+                >Pilih Opsi</label
+              >
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optTrimLines"
+                    onchange="processDuplicate()"
+                  />
+                  <label class="form-check-label fw-medium" for="optTrimLines"
+                    >Hapus Spasi Ganda</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-6 col-md-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optIgnoreEmpty"
+                    onchange="processDuplicate()"
+                  />
+                  <label class="form-check-label fw-medium" for="optIgnoreEmpty"
+                    >Hapus Baris Kosong</label
+                  >
+                </div>
               </div>
             </div>
             <div class="text-center mt-4 d-flex flex-column align-items-center">
@@ -421,9 +428,9 @@
           <div class="row justify-content-center mb-3 px-2">
             <div class="col-lg-6">
               <div class="text-center">
-                <h2 class="h2 fw-bold text-dark">Informasi Penting</h2>
+                <h2 class="h2 fw-bold text-dark">Pertanyaan Umum</h2>
                 <p class="text-secondary">
-                  Hal yang perlu diketahui saat menggunakan alat ini
+                  Temukan informasi yang sering ditanyakan di sini.
                 </p>
               </div>
             </div>
