@@ -122,6 +122,12 @@ const allTools = [
         desc: "Hitung BMI (Body Mass Index) untuk mengetahui kategori berat badan berdasarkan tinggi dan berat badan dengan cepat.",
         link: "/alat/kalkulator-bmi",
     },
+    {
+        name: "Kalkulator PPN",
+        cat: "kalkulator",
+        desc: "Hitung PPN 12% dari nominal harga untuk mengetahui total pembayaran dengan cepat dan akurat.",
+        link: "/alat/kalkulator-ppn",
+    },
 ];
 
 // Alat Terkait
