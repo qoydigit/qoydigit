@@ -78,9 +78,9 @@
     beratInput.value = "";
     tinggiInput.value = "";
     document.getElementById("resSkorBMI").innerText = "0.0";
-    document.getElementById("resKategoriBMI").innerText = "Input Data Anda";
+    document.getElementById("resKategoriBMI").innerText = "Tidak Ada Data";
     document.getElementById("resKategoriBMI").className =
-        "badge rounded-pill mt-2 px-3 py-2 bg-secondary fw-bold text-uppercase";
+        "badge rounded-4 mt-2 px-4 py-3 fw-semibold text-uppercase bg-secondary";
     document.getElementById("bmiBar").style.width = "0%";
     document.getElementById("infoIdeal").classList.add("d-none");
     document.getElementById("descBMI").innerHTML =
