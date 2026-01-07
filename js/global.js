@@ -128,6 +128,12 @@ const allTools = [
         desc: "Hitung PPN 12% dari nominal harga untuk mengetahui total pembayaran dengan cepat dan akurat.",
         link: "/alat/kalkulator-ppn",
     },
+    {
+        name: "Kalkulator Target Tabungan",
+        cat: "kalkulator",
+        desc: "Hitung berapa lama waktu yang dibutuhkan untuk mencapai target tabungan berdasarkan jumlah uang setiap bulan.",
+        link: "/alat/kalkulator-target-tabungan",
+    }
 ];
 
 // Alat Terkait
