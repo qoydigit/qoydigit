@@ -133,7 +133,13 @@ const allTools = [
         cat: "kalkulator",
         desc: "Hitung berapa lama waktu yang dibutuhkan untuk mencapai target tabungan berdasarkan jumlah uang setiap bulan.",
         link: "/alat/kalkulator-target-tabungan",
-    }
+    },
+    {
+        name: "Kalkulator Alokasi Gaji",
+        cat: "kalkulator",
+        desc: "Kelola gaji otomatis dengan metode 50/30/20 untuk atur kebutuhan, keinginan, dan tabungan secara ideal.",
+        link: "/alat/kalkulator-alokasi-gaji",
+    },
 ];
 
 // Alat Terkait
