@@ -78,7 +78,7 @@ function initCookieBanner() {
 
 // Search and kategori -> Halaman Alat
 const allTools = [
-    // Alat Teks
+    // Teks & Editor
     {
         name: "Penghitung Kata",
         cat: "teks",
@@ -109,18 +109,12 @@ const allTools = [
         desc: "Hapus tanda baca, spasi ganda dan ubah teks menjadi satu baris secara cepat dengan cepat dan mudah.",
         link: "/alat/hapus-tanda-baca",
     },
-    // Alat Kalkulator
+    // Alat Kalkulator & Keuangan
     {
         name: "Kalkulator Harga Diskon",
         cat: "kalkulator",
         desc: "Hitung harga setelah diskon dengan akurat termasuk potongan diskon tambahan cepat dan mudah digunakan.",
         link: "/alat/kalkulator-harga-diskon",
-    },
-    {
-        name: "Kalkulator BMI",
-        cat: "kalkulator",
-        desc: "Hitung BMI (Body Mass Index) untuk mengetahui kategori berat badan berdasarkan tinggi dan berat badan dengan cepat.",
-        link: "/alat/kalkulator-bmi",
     },
     {
         name: "Kalkulator PPN",
@@ -140,7 +134,14 @@ const allTools = [
         desc: "Kelola gaji otomatis dengan metode 50/30/20 untuk atur kebutuhan, keinginan, dan tabungan secara ideal.",
         link: "/alat/kalkulator-alokasi-gaji",
     },
-    // Alat Keamanan & Privasi
+    // Kesehatan
+    {
+        name: "Kalkulator BMI",
+        cat: "kesehatan",
+        desc: "Hitung BMI (Body Mass Index) untuk mengetahui kategori berat badan berdasarkan tinggi dan berat badan dengan cepat.",
+        link: "/alat/kalkulator-bmi",
+    },
+    // Keamanan & Privasi
     {
         name: "Cek Password & Generator",
         cat: "keamanan",
