@@ -140,6 +140,13 @@ const allTools = [
         desc: "Kelola gaji otomatis dengan metode 50/30/20 untuk atur kebutuhan, keinginan, dan tabungan secara ideal.",
         link: "/alat/kalkulator-alokasi-gaji",
     },
+    // Alat Keamanan & Privasi
+    {
+        name: "Cek Password & Generator",
+        cat: "keamanan",
+        desc: "Periksa kekuatan password atau buat password secara acak untuk membantu mengelola kata sandi akun online.",
+        link: "/alat/cek-password-generator",
+    },
 ];
 
 // Alat Terkait
