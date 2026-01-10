@@ -112,25 +112,25 @@ const allTools = [
     // Alat Kalkulator & Keuangan
     {
         name: "Kalkulator Harga Diskon",
-        cat: "kalkulator keuangan",
+        cat: "keuangan",
         desc: "Hitung harga setelah diskon dengan akurat termasuk potongan diskon tambahan cepat dan mudah digunakan.",
         link: "/alat/kalkulator-harga-diskon",
     },
     {
         name: "Kalkulator PPN",
-        cat: "kalkulator keuangan",
+        cat: "keuangan",
         desc: "Hitung PPN 12% dari nominal harga untuk mengetahui total pembayaran dengan cepat dan akurat.",
         link: "/alat/kalkulator-ppn",
     },
     {
         name: "Kalkulator Target Tabungan",
-        cat: "kalkulator keuangan",
+        cat: "keuangan",
         desc: "Hitung berapa lama waktu yang dibutuhkan untuk mencapai target tabungan berdasarkan jumlah uang setiap bulan.",
         link: "/alat/kalkulator-target-tabungan",
     },
     {
         name: "Kalkulator Alokasi Gaji",
-        cat: "kalkulator keuangan",
+        cat: "keuangan",
         desc: "Kelola gaji otomatis dengan metode 50/30/20 untuk atur kebutuhan, keinginan, dan tabungan secara ideal.",
         link: "/alat/kalkulator-alokasi-gaji",
     },
