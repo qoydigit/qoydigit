@@ -148,6 +148,13 @@ const allTools = [
         desc: "Periksa kekuatan password atau buat password secara acak untuk membantu mengelola kata sandi akun online.",
         link: "/alat/cek-password-generator",
     },
+    // Utilitas
+    {
+        name: "Biner Konverter",
+        cat: "utilitas",
+        desc: "Ubah teks menjadi kode biner ASCII atau terjemahkan kode biner kembali menjadi teks secara instan.",
+        link: "/alat/biner-konverter",
+    },
 ];
 
 // Alat Terkait
