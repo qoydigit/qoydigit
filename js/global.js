@@ -117,7 +117,7 @@ const allTools = [
         link: "/alat/kalkulator-harga-diskon",
     },
     {
-        name: "Kalkulator PPN",
+        name: "Kalkulator PPN 12%",
         cat: "keuangan",
         desc: "Hitung PPN 12% dari nominal harga untuk mengetahui total pembayaran dengan cepat dan akurat.",
         link: "/alat/kalkulator-ppn",
