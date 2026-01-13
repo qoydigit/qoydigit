@@ -160,6 +160,12 @@ const allTools = [
         desc: "Ubah teks alfabet menjadi kode morse atau terjemahkan titik dan garis kode kembali menjadi teks secara instan.",
         link: "/alat/morse-konverter",
     },
+    {
+        name: "URL Encoder & Decoder",
+        cat: "utilitas",
+        desc: "Ubah karakter khusus pada link menjadi format yang valid agar mudah diakses browser tanpa error.",
+        link: "/alat/url-encoder-decoder",
+    },
 ];
 
 // Alat Terkait

@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cek Password & Generator - Periksa dan Buat Password</title>
+    <title>URL Encoder & Decoder - Konversi Link ke Format Valid Online</title>
     <meta
       name="description"
-      content="Gunakan alat Cek Password & Generator untuk memeriksa kekuatan password atau membuat password baru secara acak. Cocok untuk mengelola kata sandi akun online."
+      content="Alat konversi URL online gratis. Ubah simbol dan karakter khusus menjadi kode persen yang sesuai standar web. Cepat, akurat, dan langsung diproses di browser."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
     <link
       rel="canonical"
-      href="https://qoydigit.web.id/alat/cek-password-generator"
+      href="https://qoydigit.web.id/alat/url-encoder-decoder"
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://qoydigit.web.id/alat/cek-password-generator"
+      content="https://qoydigit.web.id/alat/url-encoder-decoder"
     />
     <meta
       property="og:title"
-      content="Cek Password & Generator - Periksa dan Buat Password"
+      content="URL Encoder & Decoder - Konversi Link ke Format Valid Online"
     />
     <meta
       property="og:description"
-      content="Gunakan alat Cek Password & Generator untuk memeriksa kekuatan password atau membuat password baru secara acak. Cocok untuk mengelola kata sandi akun online."
+      content="Alat konversi URL online gratis. Ubah simbol dan karakter khusus menjadi kode persen yang sesuai standar web. Cepat, akurat, dan langsung diproses di browser."
     />
     <meta
       property="og:image"
@@ -34,15 +34,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:url"
-      content="https://qoydigit.web.id/alat/cek-password-generator"
+      content="https://qoydigit.web.id/alat/url-encoder-decoder"
     />
     <meta
       name="twitter:title"
-      content="Cek Password & Generator - Periksa dan Buat Password"
+      content="URL Encoder & Decoder - Konversi Link ke Format Valid Online"
     />
     <meta
       name="twitter:description"
-      content="Gunakan alat Cek Password & Generator untuk memeriksa kekuatan password atau membuat password baru secara acak. Cocok untuk mengelola kata sandi akun online."
+      content="Alat konversi URL online gratis. Ubah simbol dan karakter khusus menjadi kode persen yang sesuai standar web. Cepat, akurat, dan langsung diproses di browser."
     />
     <meta
       name="twitter:image"
@@ -73,7 +73,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="/css/global.css" />
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-HMJ0ZM5TGK"
     ></script>
@@ -89,7 +89,7 @@
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6857780609975923"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg py-3 px-3 fixed-top">
@@ -160,7 +160,7 @@
                   class="breadcrumb-item active fw-bold text-success d-flex align-items-center"
                   aria-current="page"
                 >
-                  Keamanan & Privasi
+                  Utilitas
                 </li>
               </ol>
             </div>
@@ -170,209 +170,93 @@
             <div class="col-lg-7">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
-                  Cek Password & Generator
+                  URL<br /><span class="text-success">Encoder & Decoder</span>
                 </h1>
                 <p class="text-secondary">
-                  Sebuah alat digital untuk memeriksa kekuatan password
-                  sekaligus membuat password baru secara acak. Dengan alat ini,
-                  anda dapat mengetahui apakah password yang digunakan sudah
-                  cukup kuat.
+                  Alat untuk mengonversi simbol, spasi, dan karakter menjadi
+                  format persen agar URL mudah dibaca oleh browser, serta
+                  menerjemahkan kembali URL menjadi teks.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
-            <div class="row g-4">
-              <div class="col-lg-6 border-end-md">
-                <div class="pe-lg-4">
-                  <h2 class="h5 fw-bold mb-1">Buat Password</h2>
-                  <p class="text-muted small mb-4">
-                    Buat sendiri atau klik tombol generate untuk membuat
-                    password baru.
-                  </p>
+            <input type="checkbox" id="modeSwitch" class="d-none" />
 
-                  <div
-                    class="bg-white rounded-4 p-4 mb-3 border shadow-sm position-relative"
+            <div class="row g-2 align-items-center mb-4">
+              <div class="col-12 col-lg">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <label id="labelInput" class="fw-bold text-dark fs-6 mb-0"
+                    >Masukkan URL/Teks:</label
                   >
-                    <input
-                      type="text"
-                      id="passOutput"
-                      class="form-control form-control-lg border-0 bg-transparent fw-bold fs-5 text-center text-dark x-letspacing font-monospace shadow-none p-0"
-                      placeholder="Ketik password di sini..."
-                      oninput="checkManualStrength(this.value)"
-                      autofocus
-                    />
-                  </div>
-
-                  <div class="mb-4">
-                    <div
-                      class="progress mb-2"
-                      style="height: 6px; background-color: #e9ecef"
-                    >
-                      <div
-                        id="strengthBar"
-                        class="progress-bar progress-bar-animated rounded-pill"
-                        role="progressbar"
-                        style="width: 0%"
-                      ></div>
-                    </div>
-                    <div id="strengthText" class="x-small fw-medium">
-                      Kekuatan: -
-                    </div>
-                  </div>
-
-                  <div class="d-flex gap-2">
-                    <button
-                      class="btn btn-success rounded-4 px-4 fw-semibold shadow-sm flex-grow-1 py-2"
-                      onclick="generatePass()"
-                    >
-                      <i class="bi bi-gear me-2"></i>Generate
-                    </button>
-                    <button
-                      class="btn btn-dark rounded-4 px-4 fw-semibold flex-grow-1 py-2"
-                      onclick="copyPassword()"
-                    >
-                      <i class="bi bi-clipboard-check me-2"></i>Salin
-                    </button>
-                  </div>
+                  <button
+                    onclick="useExample()"
+                    class="btn btn-link btn-sm text-decoration-none p-0 small fw-semibold text-success"
+                  >
+                    Gunakan Contoh
+                  </button>
                 </div>
+                <textarea
+                  id="mainInput"
+                  class="form-control border-secondary-subtle rounded-4 p-3 shadow-none focus-ring"
+                  style="--bs-focus-ring-color: rgba(13, 110, 253, 0.1)"
+                  rows="8"
+                  oninput="convert()"
+                  placeholder="Ketik atau tempel di sini..."
+                ></textarea>
               </div>
 
-              <div class="col-lg-6">
-                <div class="ps-lg-4">
-                  <h6 class="fw-bold mb-3">Kustomisasi</h6>
-                  <div class="row g-2">
-                    <div class="col-12">
-                      <div class="p-3 border rounded-4 ps-3 m-0 bg-white">
-                        <label
-                          class="form-label small fw-bold text-secondary d-flex justify-content-between mb-2"
-                        >
-                          Panjang Password
-                          <span id="lengthVal" class="text-primary">12</span>
-                        </label>
-                        <input
-                          type="range"
-                          class="form-range"
-                          id="passLength"
-                          min="8"
-                          max="50"
-                          value="12"
-                          oninput="updateLength(this.value)"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div
-                        class="form-check form-switch p-3 border rounded-4 d-flex justify-content-between align-items-center ps-3 m-0 bg-white"
-                      >
-                        <label
-                          class="form-check-label small fw-semibold"
-                          for="incUppercase"
-                          >Huruf Kapital (A-Z)</label
-                        >
-                        <input
-                          class="form-check-input ms-0 shadow-none"
-                          type="checkbox"
-                          id="incUppercase"
-                          checked
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div
-                        class="form-check form-switch p-3 border rounded-4 d-flex justify-content-between align-items-center ps-3 m-0 bg-white"
-                      >
-                        <label
-                          class="form-check-label small fw-semibold"
-                          for="incNumbers"
-                          >Angka (0-9)</label
-                        >
-                        <input
-                          class="form-check-input ms-0 shadow-none"
-                          type="checkbox"
-                          id="incNumbers"
-                          checked
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div
-                        class="form-check form-switch p-3 border rounded-4 d-flex justify-content-between align-items-center ps-3 m-0 bg-white"
-                      >
-                        <label
-                          class="form-check-label small fw-semibold"
-                          for="incSymbols"
-                          >Simbol (!@#$%^&*)</label
-                        >
-                        <input
-                          class="form-check-input ms-0 shadow-none"
-                          type="checkbox"
-                          id="incSymbols"
-                          checked
-                        />
-                      </div>
-                    </div>
-                  </div>
+              <div class="col-12 col-lg-auto text-center py-2 py-lg-0 px-lg-3">
+                <button
+                  onclick="triggerSwitch(this)"
+                  class="btn btn-white border-0 p-1 text-success shadow-none"
+                  title="Tukar Mode"
+                >
+                  <i
+                    id="swapIcon"
+                    class="bi bi-arrow-left-right fs-4 d-none d-lg-block"
+                  ></i>
+                  <i class="bi bi-arrow-down-up fs-4 d-block d-lg-none"></i>
+                </button>
+              </div>
+
+              <div class="col-12 col-lg">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <label id="labelOutput" class="fw-bold text-dark fs-6 mb-0"
+                    >Hasil Encode:</label
+                  >
                 </div>
+                <textarea
+                  id="mainOutput"
+                  class="form-control border-secondary-subtle rounded-4 p-3 shadow-none font-monospace bg-light"
+                  rows="8"
+                  readonly
+                  placeholder="Hasil akan muncul di sini..."
+                ></textarea>
               </div>
             </div>
 
-            <div class="bg-light rounded-4 p-4 border shadow-sm mt-4">
-              <h6 class="fw-bold mb-3">
-                Tabel Keamanan Password (Update 2026)
-              </h6>
-              <div class="table-responsive">
-                <table class="table table-hover align-middle x-small">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Panjang Karakter</th>
-                      <th>Hanya Angka</th>
-                      <th>Huruf (a-z)</th>
-                      <th>Campuran (a-Z)</th>
-                      <th>Lengkap (+Simbol)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>8 Karakter</td>
-                      <td class="text-danger fw-bold">Instan</td>
-                      <td class="text-danger fw-bold">Instan</td>
-                      <td>22 Menit</td>
-                      <td class="bg-danger bg-opacity-50 fw-bold">8 Jam</td>
-                    </tr>
-                    <tr>
-                      <td>10 Karakter</td>
-                      <td class="text-danger fw-bold">Instan</td>
-                      <td>58 Menit</td>
-                      <td>1 Bulan</td>
-                      <td class="bg-warning bg-opacity-50 fw-bold">5 Tahun</td>
-                    </tr>
-                    <tr>
-                      <td>12 Karakter</td>
-                      <td>2 Detik</td>
-                      <td>3 Minggu</td>
-                      <td>24 Tahun</td>
-                      <td class="bg-success bg-opacity-50 fw-bold">
-                        3.000 Tahun
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>15 Karakter</td>
-                      <td>20 Menit</td>
-                      <td>1.000 Tahun</td>
-                      <td>3 Juta Tahun</td>
-                      <td class="bg-success bg-opacity-50 fw-bold">
-                        1 Miliar Tahun
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="x-small text-muted fst-italic">
-                *Data di atas adalah estimasi waktu brute-force menggunakan
-                hardware kelas atas tahun 2026.
-              </div>
+            <div
+              class="text-center d-flex justify-content-center align-items-center gap-2"
+            >
+              <button
+                id="copyBtn"
+                onclick="copyResult()"
+                class="btn btn-dark rounded-4 fw-semibold px-4 py-2 shadow-sm"
+              >
+                <i class="bi bi-clipboard me-2"></i>Salin Hasil
+              </button>
+              <button
+                onclick="resetTool()"
+                class="btn btn-link text-secondary text-decoration-none fw-bold small"
+              >
+                Hapus
+              </button>
             </div>
           </div>
           <!-- End -->
@@ -398,11 +282,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Masukkan atau buat password
+                            Pilih Fungsi (Encode/Decode)
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Ketik password yang ingin diperiksa atau gunakan
-                            tombol untuk membuat password baru.
+                            Tekan tombol panah untuk memilih ingin mengubah
+                            (Encode) teks biasa atau menerjemahkan (Decode) URL.
                           </p>
                         </div>
                       </div>
@@ -415,11 +299,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Atur Preferensi
+                            Masukkan atau Tempel URL/teks
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tentukan panjang dan jenis karakter password seperti
-                            huruf, angka, dan simbol sesuai kebutuhan.
+                            Masukkan link website atau sebuah teks yang ingin
+                            diproses ke dalam kotak input yang disediakan.
                           </p>
                         </div>
                       </div>
@@ -436,11 +320,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Cek Hasil Password
+                            Lihat Hasil
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tingkat kekuatan password akan langsung ditampilkan
-                            saat mengisi atau merubah pengaturan.
+                            Hasil akan muncul secara otomatis di kotak sebelah
+                            kanan segera setelah mengetik atau menempelkan teks.
                           </p>
                         </div>
                       </div>
@@ -453,11 +337,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Salin Password
+                            Salin Hasil
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Gunakan tombol salin untuk memakai password yang
-                            dihasilkan yang akan dipakai pada akun anda.
+                            Klik tombol "Salin Hasil" untuk menyalin hasil URL
+                            encode/decode untuk digunakan sesuai kebutuhan.
                           </p>
                         </div>
                       </div>
@@ -468,14 +352,15 @@
 
               <div class="mb-4">
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
-                  Tentang Cek & Password Generator
+                  Tentang URL Decoder & Encoder
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Cek Password & Generator adalah alat online yang dirancang
-                  untuk membantu pengguna membuat dan mengecek password dengan
-                  mudah. Di era digital, password menjadi kunci utama untuk
-                  mengakses ke berbagai layanan seperti email, media sosial dan
-                  akun lainnya.
+                  URL Encoder/Decoder adalah alat yang digunakan untuk memproses
+                  karakter pada alamat web (URL). Karena URL hanya dapat
+                  dikirimkan melalui internet menggunakan set karakter ASCII,
+                  karakter di luar set tersebut (seperti spasi, tanda seru, atau
+                  simbol lainnya) harus diubah menjadi format % diikuti oleh dua
+                  digit heksadesimal.
                 </p>
               </div>
 
@@ -484,12 +369,11 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Banyak orang masih memakai password yang sederhana dan mudah
-                  ditebak oleh orang lain hingga sebuah komputer. Hal ini
-                  meningkatkan risiko akun mudah diretas dan disalahgunakan.
-                  Dengan alat ini, orang lain bisa memeriksa apakah password
-                  yang digunakan sudah cukup kuat serta dapat membuat password
-                  baru yang lebih sulit ditebak bahkan komputer sekalipun.
+                  Browser sering kali mengalami kesalahan dalam membaca jika URL
+                  mengandung simbol khusus yang memiliki arti teknis (seperti &,
+                  ?, atau =) namun digunakan sebagai teks biasa. Alat ini
+                  memastikan url yang dikirimkan melalui parameter URL tidak
+                  merusak struktur link tersebut agar mudah dibaca oleh browser.
                 </p>
               </div>
 
@@ -497,13 +381,30 @@
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
                   Manfaat Menggunakan Alat Ini
                 </h2>
-                <p class="text-secondary lh-lg">
-                  Alat ini membantu dalam meningkatkan keamanan sebuah akun
-                  dengan menyediakan pengecekan kekuatan password dan fitur
-                  pembuatan password secara acak. Pengguna bisa membuat password
-                  secara mandiri atau menggunakan tombol generate untuk
-                  mendapatkan kombinasi karakter yang lebih beragam.
-                </p>
+                <ul class="article-list">
+                  <li class="fw-semibold mb-0">Mencegah Link Rusak</li>
+                  <p class="text-secondary lh-lg">
+                    Memastikan link yang dikirim melalui pesan atau email tetap
+                    utuh dan bisa diakses serta mudah dibaca oleh browser.
+                  </p>
+                  <li class="fw-semibold mb-0">Kompatibilitas Browser</li>
+                  <p class="text-secondary lh-lg">
+                    Link yang di-encode akan berfungsi dengan baik di semua
+                    jenis browser dan aplikasi.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Kemudahan Membaca Data</li>
+                  <p class="text-secondary lh-lg">
+                    Fitur Decode memudahkan untuk melihat isi asli dari link
+                    yang penuh dengan kode persen yang sulit dibaca.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Memudahkan dalam Debugging</li>
+                  <p class="text-secondary lh-lg">
+                    Membantu pengembang web dalam membaca data yang dikirimkan
+                    dengan format ter-encode dengan fitur decode yang cepat.
+                  </p>
+                </ul>
               </div>
 
               <div class="mb-4">
@@ -511,11 +412,10 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat Cek Password & Generator ini cocok digunakan oleh siapa
-                  saja yang memiliki akun online. Baik pelajar, karyawan atau
-                  pemiliki usaha bisnis semua bisa memanfaatkan alat ini untuk
-                  mengelola password dengan lebih baik dan menjaga keamanan dan
-                  privasi akun.
+                  Alat ini sangat penting bagi Web Developer, SEO Specialist
+                  hingga Digital Marketer yang sering mengelola banyak link,
+                  hingga semua orang yang ingin memperbaiki link yang rusak
+                  karena karakter khusus.
                 </p>
               </div>
             </div>
@@ -547,7 +447,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq1"
                 >
-                  Apakah password yang saya masukkan tersimpan ke server?
+                  Apa itu decode-encode pada URL?
                 </button>
               </h3>
               <div
@@ -557,9 +457,9 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Tidak. Semua proses alat cek dan pembuatan password ini
-                    dilakukan langsung di browser dan tidak pernah terkirim atau
-                    tersimpan ke server.
+                    Suatu mekanisme untuk mengodekan informasi dalam URI
+                    (Uniform Resource Identifier) dengan mengganti karakter
+                    tertentu menggunakan tanda % dan kode heksadesimal unik.
                   </p>
                 </div>
               </div>
@@ -575,7 +475,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq2"
                 >
-                  Berapa panjang karakter password yang disarankan?
+                  Karakter apa saja yang biasanya perlu di-encode?
                 </button>
               </h3>
               <div
@@ -585,8 +485,8 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Disarankan membuat password dengan panjang minimal 12-16
-                    karakter, agar lebih sulit ditebak dan lebih kuat.
+                    Karakter yang bukan angka atau huruf, seperti spasi menjadi
+                    %20, tanda tanya %3F, dan garis miring %2F.
                   </p>
                 </div>
               </div>
@@ -602,7 +502,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq3"
                 >
-                  Bolehkah saya langsung menggunakan password yang dihasilkan?
+                  Apakah alat ini aman digunakan untuk URL sensitif?
                 </button>
               </h3>
               <div
@@ -612,8 +512,8 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Ya. Password acak yang dihasilkan bisa langsung digunakan
-                    untuk akun online anda.
+                    Ya, proses konversi dilakukan langsung di browser, sehingga
+                    tidak ada data yang dibaca atau terkirim ke server.
                   </p>
                 </div>
               </div>
@@ -649,9 +549,9 @@
             <div class="row g-2 g-md-3 justify-content-center">
               <div class="col-6 col-lg">
                 <a
-                  href="https://api.whatsapp.com/send?text=Gunakan%20alat%20Cek%20Password%20%26%20Generator%20untuk%20memeriksa%20kekuatan%20password%20atau%20membuat%20password%20baru%20secara%20acak.%20Cocok%20untuk%20mengelola%20kata%20sandi%20akun%20online.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fcek-password-generator"
+                  href="https://api.whatsapp.com/send?text=Alat%20konversi%20URL%20online%20gratis.%20Ubah%20simbol%20dan%20karakter%20khusus%20menjadi%20kode%20persen%20yang%20sesuai%20standar%20web.%20Cepat%2C%20akurat%2C%20dan%20langsung%20diproses%20di%20browser.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Furl-encoder-decoder"
                   target="_blank"
-                  class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100 text-decoration-none"
+                  class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
                   <i class="bi bi-whatsapp me-2"></i> WhatsApp
                 </a>
@@ -659,9 +559,9 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fcek-password-generator"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Furl-encoder-decoder"
                   target="_blank"
-                  class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100 text-decoration-none"
+                  class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
                   <i class="bi bi-facebook me-2"></i> Facebook
                 </a>
@@ -669,9 +569,9 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fcek-password-generator&text=Gunakan%20alat%20Cek%20Password%20%26%20Generator%20untuk%20memeriksa%20kekuatan%20password%20atau%20membuat%20password%20baru%20secara%20acak.%20Cocok%20untuk%20mengelola%20kata%20sandi%20akun%20online."
+                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Furl-encoder-decoder&text=Alat%20konversi%20URL%20online%20gratis.%20Ubah%20simbol%20dan%20karakter%20khusus%20menjadi%20kode%20persen%20yang%20sesuai%20standar%20web.%20Cepat%2C%20akurat%2C%20dan%20langsung%20diproses%20di%20browser."
                   target="_blank"
-                  class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100 text-decoration-none"
+                  class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
                   <i class="bi bi-telegram me-2"></i> Telegram
                 </a>
@@ -679,9 +579,9 @@
 
               <div class="col-6 col-lg">
                 <a
-                  href="https://twitter.com/intent/tweet?text=Gunakan%20alat%20Cek%20Password%20%26%20Generator%20untuk%20memeriksa%20kekuatan%20password%20atau%20membuat%20password%20baru%20secara%20acak.%20Cocok%20untuk%20mengelola%20kata%20sandi%20akun%20online.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fcek-password-generator"
+                  href="https://twitter.com/intent/tweet?text=Alat%20konversi%20URL%20online%20gratis.%20Ubah%20simbol%20dan%20karakter%20khusus%20menjadi%20kode%20persen%20yang%20sesuai%20standar%20web.%20Cepat%2C%20akurat%2C%20dan%20langsung%20diproses%20di%20browser.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Furl-encoder-decoder"
                   target="_blank"
-                  class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100 text-decoration-none"
+                  class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
                 >
                   <i class="bi bi-twitter-x me-2"></i> Twitter
                 </a>
@@ -805,7 +705,7 @@
     <!-- Alat JS -->
     <script
       type="text/javascript"
-      src="/assets/js/cek-password-generator.js"
+      src="/assets/js/url-encoder-decoder.js"
     ></script>
   </body>
 </html>
