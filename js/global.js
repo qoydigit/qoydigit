@@ -141,14 +141,13 @@ const allTools = [
         desc: "Hitung BMI (Body Mass Index) untuk mengetahui kategori berat badan berdasarkan tinggi dan berat badan dengan cepat.",
         link: "/alat/kalkulator-bmi",
     },
-    // Keamanan & Privasi
+    // Utilitas
     {
         name: "Cek Password & Generator",
-        cat: "keamanan",
+        cat: "utilitas",
         desc: "Periksa kekuatan password atau buat password secara acak untuk membantu mengelola kata sandi akun online.",
         link: "/alat/cek-password-generator",
     },
-    // Utilitas
     {
         name: "Biner Konverter",
         cat: "utilitas",
