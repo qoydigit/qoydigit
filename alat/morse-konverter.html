@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Konverter - Terjemahkan Kode Morse ke Teks Online</title>
+    <meta
+      name="description"
+      content="Gunakan alat Morse Konverter gratis untuk mengubah teks menjadi titik dan garis morse atau sebaliknya. Cepat tanpa perlu instalasi tambahan."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Qoydigit" />
+    <link rel="canonical" href="https://qoydigit.web.id/alat/morse-konverter" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://qoydigit.web.id/alat/morse-konverter"
+    />
+    <meta
+      property="og:title"
+      content="Morse Konverter - Terjemahkan Kode Morse ke Teks Online"
+    />
+    <meta
+      property="og:description"
+      content="Gunakan alat Morse Konverter gratis untuk mengubah teks menjadi titik dan garis morse atau sebaliknya. Cepat tanpa perlu instalasi tambahan."
+    />
+    <meta
+      property="og:image"
+      content="https://qoydigit.web.id/assets/metaog/qoydigit-banner.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://qoydigit.web.id/alat/morse-konverter"
+    />
+    <meta
+      name="twitter:title"
+      content="Morse Konverter - Terjemahkan Kode Morse ke Teks Online"
+    />
+    <meta
+      name="twitter:description"
+      content="Gunakan alat Morse Konverter gratis untuk mengubah teks menjadi titik dan garis morse atau sebaliknya. Cepat tanpa perlu instalasi tambahan."
+    />
+    <meta
+      name="twitter:image"
+      content="https://qoydigit.web.id/assets/metaog/qoydigit-banner.jpg"
+    />
+    <meta name="theme-color" content="#198754" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/global.css" />
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HMJ0ZM5TGK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HMJ0ZM5TGK");
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6857780609975923"
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3 px-3 fixed-top">
+      <div class="container bg-white py-2 px-3 rounded-4 shadow-sm border">
+        <a class="navbar-brand" href="/">
+          <img
+            src="/assets/logo/qoydigit_logo.png"
+            height="28"
+            alt="qoydigit_logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fw-bold fs-1 text-dark"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto gap-2 p-lg-0 py-2">
+            <a class="nav-link" href="/">Beranda</a>
+            <a class="nav-link active" href="/alat" aria-current="page">Alat</a>
+            <a class="nav-link" href="/tentang">Tentang</a>
+            <a class="nav-link" href="/kontak">Kontak</a>
+          </div>
+          <div class="d-grid d-md-block p-lg-0 py-2">
+            <a
+              href="/kontak"
+              class="btn btn-success rounded-4 px-4 py-2 fw-semibold"
+            >
+              Saran Alat Baru <i class="bi-envelope-plus ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <nav aria-label="breadcrumb" class="mt-4 mb-2 small">
+            <div class="container">
+              <ol
+                class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
+                style="--bs-breadcrumb-divider: '»'"
+              >
+                <li class="breadcrumb-item d-flex align-items-center">
+                  <a
+                    href="/"
+                    class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
+                  >
+                    Beranda
+                  </a>
+                </li>
+                <li class="breadcrumb-item d-flex align-items-center">
+                  <a
+                    href="/alat"
+                    class="text-secondary text-decoration-none fw-medium d-inline-flex align-items-center"
+                  >
+                    Alat
+                  </a>
+                </li>
+                <li
+                  class="breadcrumb-item active fw-bold text-success d-flex align-items-center"
+                  aria-current="page"
+                >
+                  Utilitas
+                </li>
+              </ol>
+            </div>
+          </nav>
+
+          <div class="row justify-content-center mb-4 px-2">
+            <div class="col-lg-7">
+              <div class="text-center">
+                <h1 class="display-4 fw-bold text-dark">
+                  Morse <span class="text-success">Konverter</span>
+                </h1>
+                <p class="text-secondary">
+                  Alat digital sederhana untuk melakukan konversi dua arah
+                  antara teks alfabet dan kode morse standar internasional
+                  dengan fitur tukar mode otomatis yang cepat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
+            <input type="checkbox" id="modeSwitch" class="d-none" />
+
+            <div class="row g-2 align-items-center mb-4">
+              <div class="col-12 col-lg">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <label id="labelInput" class="fw-bold text-dark fs-6 mb-0"
+                    >Masukkan Teks:</label
+                  >
+                  <button
+                    onclick="useExample()"
+                    class="btn btn-link btn-sm text-decoration-none p-0 small fw-semibold text-success"
+                  >
+                    Gunakan Contoh
+                  </button>
+                </div>
+                <textarea
+                  id="mainInput"
+                  class="form-control border-secondary-subtle rounded-4 p-3 shadow-none focus-ring"
+                  style="--bs-focus-ring-color: rgba(13, 110, 253, 0.1)"
+                  rows="8"
+                  oninput="convert()"
+                  placeholder="Ketik atau tempel teks di sini..."
+                ></textarea>
+              </div>
+
+              <div class="col-12 col-lg-auto text-center py-2 py-lg-0 px-lg-3">
+                <button
+                  onclick="triggerSwitch(this)"
+                  class="btn btn-white border-0 p-1 text-success shadow-none"
+                  title="Tukar Mode"
+                >
+                  <i
+                    id="swapIcon"
+                    class="bi bi-arrow-left-right fs-4 d-none d-lg-block"
+                  ></i>
+                  <i class="bi bi-arrow-down-up fs-4 d-block d-lg-none"></i>
+                </button>
+              </div>
+
+              <div class="col-12 col-lg">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <label id="labelOutput" class="fw-bold text-dark fs-6 mb-0"
+                    >Hasil Kode Morse:</label
+                  >
+                </div>
+                <textarea
+                  id="mainOutput"
+                  class="form-control border-secondary-subtle rounded-4 p-3 shadow-none font-monospace bg-light"
+                  rows="8"
+                  readonly
+                  placeholder="hasil konversi akan muncul di sini..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div
+              class="text-center d-flex justify-content-center align-items-center gap-2"
+            >
+              <button
+                id="copyBtn"
+                onclick="copyResult()"
+                class="btn btn-dark rounded-4 fw-semibold px-4 py-2 shadow-sm"
+              >
+                <i class="bi bi-clipboard me-2"></i>Salin Hasil
+              </button>
+              <button
+                onclick="resetTool()"
+                class="btn btn-link text-secondary text-decoration-none fw-bold small"
+              >
+                Hapus
+              </button>
+            </div>
+          </div>
+          <!-- End -->
+        </div>
+      </section>
+
+      <section class="text-description pb-4" id="qoy-article">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="bg-success p-4 rounded-4 shadow-sm mb-4">
+                <h2 class="h4 fw-bold text-white mb-4">
+                  Cara Menggunakan Alat:
+                </h2>
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex flex-column gap-4">
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          1
+                        </span>
+                        <div>
+                          <h2 class="h6 fw-bold mb-1 text-white lh-base">
+                            Pilih Konversi
+                          </h2>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Gunakan tombol panah di antara kotak teks untuk
+                            beralih antara mode "Teks ke Morse" atau "Morse ke
+                            Teks".
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          2
+                        </span>
+                        <div>
+                          <h2 class="h6 fw-bold mb-1 text-white lh-base">
+                            Masukkan Teks
+                          </h2>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Ketik atau tempel teks/kode morse pada kotak kiri.
+                            Klik "Gunakan Contoh" untuk melihat format yang
+                            benar.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="d-flex flex-column gap-4">
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          3
+                        </span>
+                        <div>
+                          <h2 class="h6 fw-bold mb-1 text-white lh-base">
+                            Lihat Hasil
+                          </h2>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Sistem akan memproses teks secara real-time dan
+                            menampilkan hasilnya langsung di kotak sebelah
+                            kanan.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex gap-3 align-items-start">
+                        <span
+                          class="poin-step fs-6 badge bg-light rounded-3 text-success d-flex align-items-center justify-content-center flex-shrink-0"
+                        >
+                          4
+                        </span>
+                        <div>
+                          <h2 class="h6 fw-bold mb-1 text-white lh-base">
+                            Salin Hasil
+                          </h2>
+                          <p class="small text-white opacity-75 mb-0 lh-lg">
+                            Klik tombol "Salin Hasil" untuk menyalin hasil teks
+                            ke clipboard dan kirimkan pesan ke tujuan.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark lh-base mb-2">
+                  Tentang Morse Konverter
+                </h2>
+                <p class="text-secondary lh-lg">
+                  Morse Konverter adalah alat utilitas berbasis web yang
+                  dirancang untuk membantu pengguna mengubah bahasa manusia
+                  menjadi sandi morse. Sandi ini menggunakan kombinasi unik dari
+                  titik (dot) dan garis (dash) untuk mewakili setiap karakter
+                  dalam alfabet dan angka.
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark lh-base mb-2">
+                  Mengapa Alat Ini Digunakan
+                </h2>
+                <p class="text-secondary lh-lg">
+                  Meskipun teknologi komunikasi saat ini sudah sangat maju, kode
+                  morse tetap menjadi bagian penting dalam sejarah
+                  telekomunikasi dan hobi radio amatir. Alat ini digunakan untuk
+                  mempermudah pembuatan pesan sandi tanpa harus menghafal
+                  seluruh tabel morse yang rumit.
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark lh-base mb-2">
+                  Manfaat Menggunakan Alat Ini
+                </h2>
+                <ul class="article-list">
+                  <li class="fw-semibold mb-0">Belajar Interaktif:</li>
+                  <p class="text-secondary lh-lg">
+                    Membantu pelajar atau organisasi pramuka memahami pola sandi
+                    morse dengan cepat.
+                  </p>
+                  <li class="fw-semibold mb-0">Hasil Instan:</li>
+                  <p class="text-secondary lh-lg">
+                    Menghindari kesalahan interpretasi antara garis dan titik
+                    yang sering terjadi pada penghitungan manual.
+                  </p>
+                  <li class="fw-semibold mb-0">Komunikasi Kreatif:</li>
+                  <p class="text-secondary lh-lg">
+                    Membuat cara unik dalam bertukar pesan rahasia dengan teman
+                    atau komunitas.
+                  </p>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <h2 class="h4 fw-bold text-dark lh-base mb-2">
+                  Untuk Siapa Alat Ini
+                </h2>
+                <p class="text-secondary lh-lg">
+                  Alat ini ditujukan bagi anggota pramuka, penggemar sejarah,
+                  operator radio amatir (ORARI), mahasiswa komunikasi, hingga
+                  semua orang yang ingin belajar serta bereksperimen dengan
+                  kriptografi sederhana.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-4">
+        <div class="container">
+          <div class="row justify-content-center mb-3 px-2">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <h2 class="h2 fw-bold text-dark">Informasi Penting</h2>
+                <p class="text-secondary">
+                  Hal yang perlu diketahui saat menggunakan alat ini
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="faqNamaTools">
+            <div
+              class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm"
+            >
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold py-4 bg-white text-dark shadow-none lh-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                >
+                  Apakah kode morse ini menggunakan standar internasional?
+                </button>
+              </h3>
+              <div
+                id="faq1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqNamaTools"
+              >
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="text-secondary mb-0">
+                    Ya, alat ini menggunakan standar International Morse Code
+                    yang diakui secara global untuk alfabet, angka, dan beberapa
+                    tanda baca dasar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm"
+            >
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold py-4 bg-white text-dark shadow-none lh-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                >
+                  Bagaimana cara memisahkan antar kata dalam kode morse?
+                </button>
+              </h3>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqNamaTools"
+              >
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="text-secondary mb-0">
+                    Secara standar, antar huruf dipisahkan oleh satu spasi,
+                    sedangkan antar kata dipisahkan oleh tanda garis miring (/)
+                    atau spasi yang lebih lebar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm"
+            >
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold py-4 bg-white text-dark shadow-none lh-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                >
+                  Apakah alat ini bisa menerjemahkan suara morse?
+                </button>
+              </h3>
+              <div
+                id="faq3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqNamaTools"
+              >
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="text-secondary mb-0">
+                    Untuk saat ini, alat ini khusus untuk konversi berbasis teks
+                    (visual). Namun, Anda bisa menyalin hasilnya untuk kemudian
+                    dipelajari polanya secara auditif.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-4 d-none">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="h2 fw-bold text-dark">Alat Terkait</h2>
+            <p class="text-secondary">Lihat alat serupa yang tersedia</p>
+          </div>
+          <div class="row g-3 mb-4" id="relatedToolsContent"></div>
+          <div class="row" id="relatedButtonContainer"></div>
+        </div>
+      </section>
+
+      <section class="py-4">
+        <div class="container">
+          <div class="row justify-content-center mb-3 px-2">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <h2 class="h2 fw-bold text-dark">Bagikan Alat Ini</h2>
+                <p class="text-secondary">
+                  Bagikan alat ini agar orang lain bisa merasakan manfaatnya
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row g-2 g-md-3 justify-content-center">
+              <div class="col-6 col-lg">
+                <a
+                  href="https://api.whatsapp.com/send?text=Terjemahkan%20teks%20menjadi%20kode%20morse%20atau%20ubah%20kode%20morse%20kembali%20menjadi%20teks%20secara%20instan.%20Alat%20edukasi%20kriptografi%20yang%20cepat%20dan%20akurat.%0A%0Ahttps%3A%2F%2Fqoydigit.web.id%2Falat%2Fmorse-konverter"
+                  target="_blank"
+                  class="btn btn-share-match btn-wa rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                </a>
+              </div>
+
+              <div class="col-6 col-lg">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fmorse-konverter"
+                  target="_blank"
+                  class="btn btn-share-match btn-fb rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-facebook me-2"></i> Facebook
+                </a>
+              </div>
+
+              <div class="col-6 col-lg">
+                <a
+                  href="https://t.me/share/url?url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fmorse-konverter&text=Terjemahkan%20teks%20menjadi%20kode%20morse%20atau%20ubah%20kode%20morse%20kembali%20menjadi%20teks%20secara%20instan.%20Alat%20edukasi%20kriptografi%20yang%20cepat%20dan%20akurat."
+                  target="_blank"
+                  class="btn btn-share-match btn-tg rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-telegram me-2"></i> Telegram
+                </a>
+              </div>
+
+              <div class="col-6 col-lg">
+                <a
+                  href="https://twitter.com/intent/tweet?text=Terjemahkan%20teks%20menjadi%20kode%20morse%20atau%20ubah%20kode%20morse%20kembali%20menjadi%20teks%20secara%20instan.%20Alat%20edukasi%20kriptografi%20yang%20cepat%20dan%20akurat.&url=https%3A%2F%2Fqoydigit.web.id%2Falat%2Fmorse-konverter"
+                  target="_blank"
+                  class="btn btn-share-match btn-x rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-twitter-x me-2"></i> Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-3">
+      <div class="container">
+        <div class="card border shadow-sm rounded-4 overflow-hidden bg-white">
+          <div class="card-body p-4 p-md-5">
+            <div class="row">
+              <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
+                <div class="mb-3">
+                  <img
+                    src="/assets/logo/qoydigit_logo.png"
+                    height="34"
+                    alt="qoydigit_logo"
+                  />
+                </div>
+                <p class="text-secondary mb-3">
+                  Situs penyedia berbagai alat digital praktis untuk mendukung
+                  produktivitas dengan tetap menjaga keamanan privasi
+                </p>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-6 col-md-6">
+                    <h3 class="fw-bold text-dark fs-6 mb-3">Menu Utama</h3>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a
+                          href="/"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Beranda</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="/alat"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Alat</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="/tentang"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Tentang</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="/kontak"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Kontak</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-6">
+                    <h3 class="fw-bold text-dark fs-6 mb-3">Legal</h3>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a
+                          href="/privacy-policy"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="/terms-of-services"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Terms of Service</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="/disclaimer"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Disclaimer</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="/cookie-policy"
+                          class="text-secondary text-decoration-none footer-link"
+                          >Cookie Policy</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4 opacity-25" />
+
+            <div class="text-center">
+              <p class="text-secondary small">
+                &copy; <span class="fw-bold text-success">Qoydigit</span>
+                <span class="mx-1">&bull;</span>
+                <span id="tahun"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/js/global.js"></script>
+    <!-- Alat JS -->
+    <script type="text/javascript" src="/assets/js/morse-konverter.js"></script>
+  </body>
+</html>

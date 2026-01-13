@@ -155,6 +155,12 @@ const allTools = [
         desc: "Ubah teks menjadi kode biner ASCII atau terjemahkan kode biner kembali menjadi teks secara instan.",
         link: "/alat/biner-konverter",
     },
+    {
+        name: "Morse Konverter",
+        cat: "utilitas",
+        desc: "Ubah teks alfabet menjadi kode morse atau terjemahkan titik dan garis kode kembali menjadi teks secara instan.",
+        link: "/alat/morse-konverter",
+    },
 ];
 
 // Alat Terkait
