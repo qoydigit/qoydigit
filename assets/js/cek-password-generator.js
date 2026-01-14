@@ -90,12 +90,12 @@ function copyPassword() {
     const btn = event.currentTarget;
     const originalContent = btn.innerHTML;
     btn.innerHTML =
-    '<i class="bi bi-check2-all me-2"></i>Berhasil disalin!';
-    btn.classList.replace("btn-dark", "btn-outline-dark");
+    '<i class="bi bi-clipboard-check me-2"></i>Berhasil disalin!';
+    btn.classList.replace("btn-dark", "btn-success");
 
     setTimeout(() => {
     btn.innerHTML = originalContent;
-    btn.classList.replace("btn-outline-dark", "btn-dark");
+    btn.classList.replace("btn-success", "btn-dark");
     }, 2000);
 }
 
