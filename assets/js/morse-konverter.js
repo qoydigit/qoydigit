@@ -141,7 +141,7 @@
         btn.classList.replace("btn-dark", "btn-success");
 
         setTimeout(() => {
-            btn.innerHTML = originalHTML;
+            btn.innerHTML = original;
             btn.classList.replace("btn-success", "btn-dark");
         }, 2000);
         });
