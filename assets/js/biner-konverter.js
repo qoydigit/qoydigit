@@ -118,7 +118,7 @@
         navigator.clipboard.writeText(text).then(() => {
         const originalHTML = btn.innerHTML;
         btn.innerHTML =
-            '<i class="bi bi-check2-all me-2"></i>Berhasil Disalin!';
+            '<i class="bi bi-clipboard-check me-2"></i>Berhasil Disalin!';
         btn.classList.replace("btn-dark", "btn-success");
 
         setTimeout(() => {
