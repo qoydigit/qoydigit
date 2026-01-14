@@ -141,6 +141,12 @@ const allTools = [
         desc: "Hitung BMI (Body Mass Index) untuk mengetahui kategori berat badan berdasarkan tinggi dan berat badan dengan cepat.",
         link: "/alat/kalkulator-bmi",
     },
+    {
+        name: "Kalkulator Kebutuhan Air Harian",
+        cat: "kesehatan",
+        desc: "Hitung jumlah asupan air harian yang ideal untuk tubuh berdasarkan berat badan, jenis kelamin, dan aktivitas agar kesehatan terjaga.",
+        link: "/alat/kalkulator-kebutuhan-air-harian",
+    },
     // Utilitas
     {
         name: "Cek Password & Generator",
@@ -199,7 +205,7 @@ function displayRelatedTools() {
                 </div>
 
                 <div class="mb-3">
-                    <h2 class="fw-bold text-dark fs-5 mb-2">${tool.name}</h2>
+                    <h2 class="fw-bold text-dark lh-base fs-5 mb-2">${tool.name}</h2>
                     <p class="text-secondary small mb-0">
                         ${tool.desc}
                     </p>
@@ -269,7 +275,7 @@ paginatedItems.forEach((tool) => {
         </div>
 
         <div class="mb-3">
-            <h2 class="fw-bold text-dark fs-5 mb-2">${tool.name}</h2>
+            <h2 class="fw-bold text-dark lh-base fs-5 mb-2">${tool.name}</h2>
             <p class="text-secondary small mb-0">
                 ${tool.desc}
             </p>
