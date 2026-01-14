@@ -57,7 +57,7 @@
         idealMin + " kg - " + idealMax + " kg";
     document.getElementById(
         "descBMI"
-    ).innerHTML = `<p class="small mb-0 fw-semibold text-dark">${pesan}</p>`;
+    ).innerHTML = `<p class="small mb-0 text-secondary">${pesan}</p>`;
     document.getElementById("bmiBar").style.width = barWidth + "%";
     document.getElementById("bmiBar").className = `progress-bar ${
         warnaClass.split(" ")[0]

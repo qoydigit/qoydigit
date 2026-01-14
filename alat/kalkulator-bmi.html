@@ -193,10 +193,11 @@
                       <input
                         type="number"
                         id="beratBadan"
-                        class="form-control py-2 fw-semibold shadow-none bg-white border-end-0"
+                        class="form-control py-3 fw-semibold shadow-none bg-white rounded-start-4 border-end-0"
                         placeholder="0"
                       />
-                      <span class="input-group-text bg-white text-muted fw-bold"
+                      <span
+                        class="input-group-text bg-success text-white fw-bold rounded-end-4 px-3"
                         >kg</span
                       >
                     </div>
@@ -212,10 +213,11 @@
                       <input
                         type="number"
                         id="tinggiBadan"
-                        class="form-control py-2 fw-semibold shadow-none bg-white border-end-0"
+                        class="form-control py-3 fw-semibold shadow-none bg-white rounded-start-4 border-end-0"
                         placeholder="0"
                       />
-                      <span class="input-group-text bg-white text-muted fw-bold"
+                      <span
+                        class="input-group-text bg-success text-white fw-bold rounded-end-4"
                         >cm</span
                       >
                     </div>
@@ -224,7 +226,7 @@
                   <div class="d-grid gap-2 d-md-block mb-4">
                     <button
                       id="hitungBMIBtn"
-                      class="btn btn-success rounded-4 fw-semibold py-2 px-3 shadow-sm border-0"
+                      class="btn btn-success rounded-4 fw-semibold py-3 px-4 shadow-sm border-0"
                       type="button"
                     >
                       <i class="bi bi-calculator me-2"></i>Hitung Skor BMI
@@ -269,7 +271,7 @@
                     </div>
                     <div
                       id="resKategoriBMI"
-                      class="badge rounded-4 mt-2 px-4 py-3 fw-semibold text-uppercase bg-secondary"
+                      class="badge rounded-4 mt-2 px-4 py-3 fw-semibold text-uppercase bg-dark"
                     >
                       Tidak Ada Data
                     </div>
@@ -302,9 +304,9 @@
                       <p class="mb-1 small text-muted">
                         Berat badan ideal anda:
                       </p>
-                      <h3 id="rangeIdeal" class="fw-bold fs-4 mb-0 text-dark">
+                      <h2 id="rangeIdeal" class="fw-bold fs-4 mb-0 text-dark">
                         0 kg - 0 kg
-                      </h3>
+                      </h2>
                     </div>
 
                     <div id="descBMI" class="text-center p-2">
@@ -596,13 +598,16 @@
         </div>
       </section>
 
-      <section class="py-4 d-none">
+      <section class="py-4">
         <div class="container">
           <div class="text-center mb-4">
             <h2 class="h2 fw-bold text-dark">Alat Terkait</h2>
             <p class="text-secondary">Lihat alat serupa yang tersedia</p>
           </div>
-          <div class="row g-3 mb-4" id="relatedToolsContent"></div>
+          <div
+            class="row g-3 mb-4 justify-content-center"
+            id="relatedToolsContent"
+          ></div>
           <div class="row" id="relatedButtonContainer"></div>
         </div>
       </section>
