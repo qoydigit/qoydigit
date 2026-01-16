@@ -147,6 +147,12 @@ const allTools = [
         desc: "Hitung jumlah asupan air harian yang ideal untuk tubuh berdasarkan berat badan, jenis kelamin, dan aktivitas agar kesehatan terjaga.",
         link: "/alat/kalkulator-kebutuhan-air-harian",
     },
+    {
+        name: "Kalkulator Berat Badan Ideal",
+        cat: "kesehatan",
+        desc: "Hitung berat badan ideal dengan menggunakan 5 metode klinis internasional dan rentang BMI dalam satu alat dengan cepat.",
+        link: "/alat/kalkulator-berat-badan-ideal",
+    },
     // Utilitas
     {
         name: "Cek Password & Generator",
