@@ -81,31 +81,31 @@ const allTools = [
     // Teks & Editor
     {
         name: "Penghitung Kata",
-        cat: "teks",
+        cat: "teks editor",
         desc: "Hitung jumlah kata, karakter, kalimat hingga estimasi membaca dilengkapi dengan analisis dalam satu alat.",
         link: "/alat/penghitung-kata",
     },
     {
         name: "Pengubah Huruf",
-        cat: "teks",
+        cat: "teks editor",
         desc: "Ubah teks menjadi huruf besar, huruf kecil, kapital hingga format kalimat secara real-time dan praktis.",
         link: "/alat/pengubah-huruf",
     },
     {
         name: "Pembersih Teks",
-        cat: "teks",
+        cat: "teks editor",
         desc: "Bersihkan teks dari spasi berlebih, baris kosong, simbol dan format tidak rapi secara otomatis dan mudah.",
         link: "/alat/pembersih-teks",
     },
     {
         name: "Penghapus Baris Duplikat",
-        cat: "teks",
+        cat: "teks editor",
         desc: "Hapus baris teks yang sama secara otomatis untuk membuat dan daftar menjadi lebih rapi dan terstruktur.",
         link: "/alat/penghapus-baris-duplikat",
     },
     {
         name: "Hapus Tanda Baca",
-        cat: "teks",
+        cat: "teks editor",
         desc: "Hapus tanda baca, spasi ganda dan ubah teks menjadi satu baris secara cepat dengan cepat dan mudah.",
         link: "/alat/hapus-tanda-baca",
     },
