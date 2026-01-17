@@ -129,10 +129,10 @@ const allTools = [
         link: "/alat/kalkulator-target-tabungan",
     },
     {
-        name: "Kalkulator Alokasi Gaji",
+        name: "Kalkulator Gaji 50-30-20",
         cat: "keuangan",
-        desc: "Kelola gaji otomatis dengan metode 50/30/20 untuk atur kebutuhan, keinginan, dan tabungan secara ideal.",
-        link: "/alat/kalkulator-alokasi-gaji",
+        desc: "Atur pembagian gaji bulanan dengan metode 50-30-20 untuk atur kebutuhan pokok, pribadi dan tabungan secara ideal.",
+        link: "/alat/kalkulator-gaji-50-30-20",
     },
     // Kesehatan
     {
