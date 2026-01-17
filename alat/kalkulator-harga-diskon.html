@@ -184,162 +184,170 @@
           <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
             <div class="row g-4">
               <div class="col-lg-6">
-                <div class="pe-lg-3">
-                  <div class="mb-4">
-                    <label
-                      for="InputHarga"
-                      class="form-label fw-bold text-dark fs-6"
-                      >Harga Awal</label
-                    >
-                    <div class="input-group">
-                      <span
-                        class="input-group-text border-end-0 bg-success text-white fw-semibold rounded-start-4 px-3"
-                        >Rp</span
-                      >
-                      <input
-                        type="text"
-                        id="hargaAsli"
-                        class="form-control border-start-0 py-3 fw-semibold shadow-none rounded-end-4 bg-white"
-                        placeholder="0"
-                      />
-                    </div>
-                  </div>
+                <div
+                  class="alert alert-success rounded-4 mb-0 border-1 bg-light mb-4"
+                >
+                  <h2 class="fw-bold small mb-2 text-success">
+                    <i class="bi bi-lightbulb-fill me-2"></i>Rumus Hitung Diskon
+                  </h2>
+                  <p class="mb-0 text-secondary small">
+                    Diskon <strong>50% + 20%</strong> bukan berarti total diskon
+                    jadi <strong>70%</strong>, tetapi diskon tambahan dihitung
+                    dari harga yang sudah dipotong dari diskon pertama.
+                  </p>
+                </div>
 
-                  <div class="mb-3">
-                    <label
-                      for="InputDiskonPertama"
-                      class="form-label fw-bold text-dark"
-                      >Diskon (%)</label
-                    >
-                    <div class="input-group">
-                      <input
-                        type="number"
-                        id="diskon1"
-                        class="form-control py-3 shadow-none border-end-0 bg-white rounded-start-4"
-                        placeholder="0"
-                      />
-                      <span
-                        class="input-group-text bg-success text-white fw-bold px-3 rounded-end-4"
-                        >%</span
-                      >
-                    </div>
-                  </div>
-
-                  <div class="form-check form-switch mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      role="switch"
-                      id="toggleDiskon2"
-                    />
-                    <label
-                      class="form-check-label small fw-bold text-success text-uppercase"
-                      for="toggleDiskon2"
-                      >Ada diskon tambahan?</label
-                    >
-                  </div>
-
-                  <div id="containerDiskon2" class="mb-4 d-none">
-                    <label class="form-label fw-bold text-dark"
-                      >Diskon Tambahan (%)</label
-                    >
-                    <div class="input-group">
-                      <input
-                        type="number"
-                        id="diskon2"
-                        class="form-control py-3 shadow-none border-end-0 bg-white rounded-start-4"
-                        placeholder="0"
-                      />
-                      <span
-                        class="input-group-text bg-success text-white fw-bold px-3 rounded-end-4"
-                        >%</span
-                      >
-                    </div>
-                  </div>
-
-                  <div class="d-grid gap-2 d-md-block mb-4">
-                    <button
-                      id="hitungBtn"
-                      class="btn btn-success rounded-4 fw-semibold py-3 px-4 shadow-sm border-0"
-                      type="button"
-                    >
-                      <i class="bi bi-calculator me-2"></i>Hitung Total Bayar
-                    </button>
-                    <button
-                      id="resetBtn"
-                      class="btn btn-link text-dark text-decoration-none fw-semibold small"
-                      type="button"
-                    >
-                      Hapus
-                    </button>
-                  </div>
-
-                  <div
-                    class="alert alert-success rounded-4 mb-0 border-1 bg-light"
+                <div class="mb-4">
+                  <label
+                    for="InputHarga"
+                    class="form-label fw-bold text-dark fs-6"
+                    >Harga Asli</label
                   >
-                    <h2 class="fw-bold small mb-2 text-success">
-                      <i class="bi bi-lightbulb-fill me-2"></i>Rumus Hitung
-                      Diskon
-                    </h2>
-                    <p class="mb-0 text-secondary small">
-                      Diskon <strong>50% + 20%</strong> bukan berarti total
-                      diskon jadi <strong>70%</strong>, tetapi diskon tambahan
-                      dihitung dari harga yang sudah dipotong dari diskon
-                      pertama.
-                    </p>
+                  <div class="input-group">
+                    <span
+                      class="input-group-text border-end-0 bg-success text-white fw-semibold rounded-start-4 px-3"
+                      >Rp</span
+                    >
+                    <input
+                      type="text"
+                      id="hargaAsli"
+                      class="form-control border-start-0 py-3 fw-semibold shadow-none rounded-end-4 bg-white"
+                      placeholder="0"
+                    />
                   </div>
+                </div>
+
+                <div class="mb-3">
+                  <label
+                    for="InputDiskonPertama"
+                    class="form-label fw-bold text-dark"
+                    >Diskon (%)</label
+                  >
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      id="diskon1"
+                      class="form-control py-3 shadow-none border-end-0 bg-white rounded-start-4"
+                      placeholder="0"
+                    />
+                    <span
+                      class="input-group-text bg-success text-white fw-bold px-3 rounded-end-4"
+                      >%</span
+                    >
+                  </div>
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="toggleDiskon2"
+                  />
+                  <label
+                    class="form-check-label small fw-bold text-success text-uppercase"
+                    for="toggleDiskon2"
+                    >Ada diskon tambahan?</label
+                  >
+                </div>
+
+                <div id="containerDiskon2" class="mb-4 d-none">
+                  <label class="form-label fw-bold text-dark"
+                    >Diskon Tambahan (%)</label
+                  >
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      id="diskon2"
+                      class="form-control py-3 shadow-none border-end-0 bg-white rounded-start-4"
+                      placeholder="0"
+                    />
+                    <span
+                      class="input-group-text bg-success text-white fw-bold px-3 rounded-end-4"
+                      >%</span
+                    >
+                  </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-block mb-4">
+                  <button
+                    id="hitungBtn"
+                    class="btn btn-success rounded-4 fw-semibold py-3 px-4 shadow-sm border-0"
+                    type="button"
+                  >
+                    <i class="bi bi-calculator me-2"></i>Hitung Total Harga
+                  </button>
+                  <button
+                    id="resetBtn"
+                    class="btn btn-link text-dark text-decoration-none fw-semibold small"
+                    type="button"
+                  >
+                    Hapus
+                  </button>
                 </div>
               </div>
 
               <div class="col-lg-6">
                 <div
                   id="hasilPerhitungan"
-                  class="rounded-4 border-0 shadow-sm h-100 d-flex flex-column bg-success text-white"
+                  class="bg-light rounded-4 p-4 border border-2 border-dashed position-relative overflow-hidden"
                 >
-                  <div class="p-4 bg-white bg-opacity-10 border-opacity-10">
-                    <h2 class="fw-bold small mb-4 text-uppercase text-center">
-                      Hasil Perhitungan
-                    </h2>
-                    <div
-                      class="d-flex justify-content-between flex-column flex-sm-row mb-2"
-                    >
-                      <span class="opacity-75">Harga Awal</span>
-                      <span id="resHargaAwal" class="fw-semibold">Rp 0</span>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between flex-column flex-sm-row mb-0"
-                    >
-                      <span class="opacity-75">Total Potongan</span>
-                      <span id="resPotongan" class="fw-bold text-warning"
-                        >- Rp 0</span
-                      >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-4"
+                  >
+                    <div>
+                      <h2 class="fw-bold fs-6 mb-0">Hasil Perhitungan</h2>
                     </div>
                   </div>
 
                   <div
-                    class="py-5 px-4 flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center"
-                  >
-                    <p
-                      class="mb-1 small fw-bold x-letspacing text-uppercase opacity-75"
+                    class="border-top border-secondary border-opacity-25 my-4"
+                  ></div>
+
+                  <div>
+                    <div
+                      class="d-flex justify-content-between flex-column flex-sm-row mb-3"
                     >
-                      Total Bayar
-                    </p>
-                    <div id="resHargaAkhir" class="fw-bold mb-0 display-4">
-                      Rp 0
+                      <span class="text-dark fw-semibold">Harga Asli :</span>
+                      <span id="resHargaAwal" class="fw-semibold text-dark"
+                        >Rp 0</span
+                      >
+                    </div>
+                    <div
+                      class="d-flex justify-content-between flex-column flex-sm-row mb-4 text-success"
+                    >
+                      <span class="text-dark fw-semibold"
+                        >Total Potongan :</span
+                      >
+                      <span id="resPotongan" class="fw-semibold">- Rp 0</span>
                     </div>
 
-                    <div id="badgeHemat" class="mt-4 d-none">
-                      <div
-                        class="py-3 px-4 rounded-4 border border-white border-opacity-25 bg-white bg-opacity-10"
-                      >
-                        <i class="bi bi-cash-coin me-2"></i>Hemat
-                        <span id="persenTotal">0</span>% dari harga asli
+                    <div
+                      class="border-top border-secondary border-opacity-25 my-3"
+                    ></div>
+
+                    <div
+                      class="d-flex justify-content-start align-items-end mt-4"
+                    >
+                      <div>
+                        <span
+                          class="d-block small fw-semibold text-uppercase text-dark mb-2"
+                          >Total Pembayaran</span
+                        >
+                        <h2
+                          class="fw-bold text-success mb-0"
+                          id="resHargaAkhir"
+                        >
+                          Rp 0
+                        </h2>
                       </div>
                     </div>
                   </div>
-
-                  <div class="p-3 text-center d-none">
-                    <small class="opacity-50 small">Kalkulator Diskon</small>
+                  <div id="badgeHemat" class="mt-2 d-none">
+                    <div class="fw-semibold text-success">
+                      <i class="bi bi-cash-coin me-2"></i>Hemat
+                      <span id="persenTotal">0</span>% dari harga asli
+                    </div>
                   </div>
                 </div>
               </div>
@@ -368,10 +376,10 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white">
-                            Masukkan Harga Awal
+                            Masukkan Harga Asli
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan harga awal produk sebelum diskon ke dalam
+                            Masukkan harga asli produk sebelum diskon ke dalam
                             kolom yang sudah tersedia.
                           </p>
                         </div>
@@ -424,11 +432,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white">
-                            Klik Tombol Hitung
+                            Hitung Hasil Perhitungan
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tekan tombol hitung total bayar untuk memproses data
-                            dan menampilkan harga akhir setelah diskon.
+                            Tekan tombol untuk mulai memproses perhitungan dan
+                            menampilkan harga akhir setelah diskon.
                           </p>
                         </div>
                       </div>
@@ -442,9 +450,10 @@
                   Tentang Kalkulator Harga Diskon
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Kalkulator harga Diskon adalah alat online untuk membantu
-                  menghitung harga akhir suatu barang setelah dikurangi dengan
-                  potongan diskon. Alat ini memudahkan siapa saja untuk
+                  Kalkulator Harga Diskon adalah alat digital online untuk
+                  membantu dalam menghitung harga akhir suatu barang setelah
+                  dikurangi dengan potongan diskon. Alat ini juga dilengkapi
+                  menghitung diskon tambahan guna memudahkan siapa saja untuk
                   mengetahui berapa harga yang harus dibayar tanpa perlu
                   melakukan perhitungan manual.
                 </p>
@@ -456,9 +465,9 @@
                 </h2>
                 <p class="text-secondary lh-lg">
                   Menghitung harga setelah diskon sering kali membingungkan,
-                  apalagi jika terdapat lebih dari satu potongan. Dengan
-                  menggunakan kalkulator harga diskon ini, hasil perhitungan
-                  dapat diperoleh secara cepat dan akurat.
+                  apalagi jika terdapat lebih dari satu potongan diskon
+                  tambahan. Dengan menggunakan kalkulator harga diskon ini,
+                  hasil perhitungan dapat diperoleh secara cepat dan akurat.
                 </p>
               </div>
 
