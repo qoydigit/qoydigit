@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator PPN | Hitung DPP & PPN 12%</title>
+    <title>Kalkulator PPN 12% - Hitung DPP Setelah Pajak PPN</title>
     <meta
       name="description"
-      content="Cek hasil perhitungan PPN 12% dan DPP secara instan. Solusi praktis untuk menghitung pajak pertambahan nilai sesuai dengan regulasi yang berlaku tahun 2026"
+      content="Cek hasil perhitungan harga dasar DPP dan PPN 12% secara instan. Solusi praktis untuk menghitung pajak pertambahan nilai sesuai dengan regulasi yang berlaku tahun 2026"
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Qoydigit" />
@@ -18,11 +18,11 @@
     />
     <meta
       property="og:title"
-      content="Kalkulator PPN | Hitung DPP & PPN 12% - Qoydigit"
+      content="Kalkulator PPN 12% - Hitung DPP Setelah Pajak PPN"
     />
     <meta
       property="og:description"
-      content="Cek hasil perhitungan PPN 12% dan DPP secara instan. Solusi praktis untuk menghitung pajak pertambahan nilai sesuai dengan regulasi yang berlaku tahun 2026"
+      content="Cek hasil perhitungan harga dasar DPP dan PPN 12% secara instan. Solusi praktis untuk menghitung pajak pertambahan nilai sesuai dengan regulasi yang berlaku tahun 2026"
     />
     <meta
       property="og:image"
@@ -35,11 +35,11 @@
     />
     <meta
       name="twitter:title"
-      content="Kalkulator PPN | Hitung DPP & PPN 12% - Qoydigit"
+      content="Kalkulator PPN 12% - Hitung DPP Setelah Pajak PPN"
     />
     <meta
       name="twitter:description"
-      content="Cek hasil perhitungan PPN 12% dan DPP secara instan. Solusi praktis untuk menghitung pajak pertambahan nilai sesuai dengan regulasi yang berlaku tahun 2026"
+      content="Cek hasil perhitungan harga dasar DPP dan PPN 12% secara instan. Solusi praktis untuk menghitung pajak pertambahan nilai sesuai dengan regulasi yang berlaku tahun 2026"
     />
     <meta
       name="twitter:image"
@@ -170,9 +170,9 @@
                   Kalkulator <span class="text-success">PPN 12%</span>
                 </h1>
                 <p class="text-secondary">
-                  Gunakan kalkulator PPN ini untuk menghitung nilai DPP dan
-                  pajak 12% dengan cepat yang telah disesuaikan dengan ketentuan
-                  perpajakan terbaru.
+                  Gunakan Kalkulator PPN ini untuk menghitung Harga Dasar dan
+                  PPN 12% secara cepat dan akurat, sesuai ketentuan perpajakan
+                  yang berlaku.
                 </p>
               </div>
             </div>
@@ -183,7 +183,7 @@
               <div class="col-12">
                 <div class="mb-4">
                   <label class="form-label fw-semibold text-dark"
-                    >Nominal Harga</label
+                    >Harga Dasar</label
                   >
                   <div class="input-group shadow-sm rounded-3">
                     <span
@@ -198,18 +198,20 @@
                       oninput="prosesInput(this)"
                     />
                   </div>
+                  <div class="form-text x-small mt-2 fst-italic">
+                    *Masukkan harga dasar sebelum dihitung PPN 12%.
+                  </div>
                 </div>
 
                 <div class="position-relative">
                   <div
-                    class="bg-light rounded-4 p-4 pb-5 mb-4 border border-2 border-dashed position-relative overflow-hidden"
+                    class="bg-light rounded-4 p-4 mb-4 border border-2 border-dashed position-relative overflow-hidden"
                   >
                     <div
                       class="d-flex justify-content-between align-items-start mb-4"
                     >
                       <div>
-                        <h2 class="fw-bold fs-6 mb-0">E-RECEIPT</h2>
-                        <p class="text-muted small mb-0">Kalkulator PPN</p>
+                        <h2 class="fw-bold fs-6 mb-0">Hasil Perhitungan</h2>
                       </div>
                       <div
                         class="x-small fw-semibold text-muted text-uppercase"
@@ -225,18 +227,20 @@
                       <div
                         class="d-flex justify-content-between flex-column flex-sm-row mb-3"
                       >
-                        <span class="text-secondary fw-medium"
-                          >Subtotal (DPP)</span
+                        <span class="text-dark fw-semibold"
+                          >Harga Dasar (DPP) :</span
                         >
-                        <span id="labelHarga" class="fw-bold text-dark"
+                        <span id="labelHarga" class="fw-semibold text-dark"
                           >Rp 0</span
                         >
                       </div>
                       <div
                         class="d-flex justify-content-between flex-column flex-sm-row mb-4 text-danger"
                       >
-                        <span class="text-secondary fw-medium">PPN (12%)</span>
-                        <span id="nominalPajak" class="fw-bold">+ Rp 0</span>
+                        <span class="text-dark fw-semibold">PPN 12% :</span>
+                        <span id="nominalPajak" class="fw-semibold"
+                          >+ Rp 0</span
+                        >
                       </div>
 
                       <div
@@ -244,14 +248,14 @@
                       ></div>
 
                       <div
-                        class="d-flex justify-content-between align-items-end mt-4"
+                        class="d-flex justify-content-start align-items-end mt-4"
                       >
                         <div>
                           <span
-                            class="d-block small fw-semibold text-uppercase text-secondary mb-2"
+                            class="d-block small fw-semibold text-uppercase text-dark mb-2"
                             >Total Pembayaran</span
                           >
-                          <h2 class="fw-bold text-dark mb-0" id="totalBayar">
+                          <h2 class="fw-bold text-success mb-0" id="totalBayar">
                             Rp 0
                           </h2>
                         </div>
@@ -261,9 +265,9 @@
 
                   <div class="text-center">
                     <p class="text-muted small lh-base mb-0 px-0 px-lg-5">
-                      Perhitungan ini menggunakan tarif PPN standar 12% sesuai
-                      dengan ketentuan UU Harmonisasi Peraturan Perpajakan (HPP)
-                      yang berlaku efektif sejak 1 Januari 2025.
+                      Perhitungan ini menggunakan tarif PPN sebesar 12% sesuai
+                      dengan ketentuan Undang-Undang Harmonisasi Peraturan
+                      Perpajakan (UU HPP) yang berlaku mulai 1 Januari 2025.
                     </p>
                   </div>
                 </div>
@@ -293,11 +297,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white">
-                            Masukkan Nominal Harga
+                            Masukkan Harga Dasar
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan angka harga dasar barang atau jasa pada
-                            kolom yang telah disediakan.
+                            Masukkan jumlah harga dasar (DPP) sebelum ditambah
+                            pajak ppn 12% pada kolom yang telah disediakan.
                           </p>
                         </div>
                       </div>
@@ -331,7 +335,7 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white">
-                            Hasil Instan
+                            Hasil Cepat
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
                             Hasil perhitungan PPN 12% akan langsung muncul
@@ -481,7 +485,7 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    PP atau Dasar Pengenaan Pajak adalah nilai harga dasar
+                    DPP atau Dasar Pengenaan Pajak adalah nilai harga dasar
                     sebelum dikenakan pajak. Alat ini secara otomatis memisahkan
                     harga dasar (DPP) dari nominal PPN agar Anda mendapatkan
                     rincian yang jelas.

@@ -119,7 +119,7 @@ const allTools = [
     {
         name: "Kalkulator PPN 12%",
         cat: "keuangan",
-        desc: "Hitung PPN 12% dari nominal harga untuk mengetahui total pembayaran dengan cepat dan akurat.",
+        desc: "Hitung PPN 12% dari harga dasar untuk mengetahui total pembayaran secara cepat dan akurat.",
         link: "/alat/kalkulator-ppn",
     },
     {
