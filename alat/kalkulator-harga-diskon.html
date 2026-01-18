@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator Harga Diskon | Hitung Potongan Harga Belanja</title>
+    <title>Kalkulator Harga Diskon - Hitung Potongan Harga Belanja</title>
     <meta
       name="description"
       content="Hitung potongan harga setelah diskon dengan mudah. Masukkan harga dan persentase diskon untuk mengetahui total hemat serta harga akhir secara akurat."
@@ -21,7 +21,7 @@
     />
     <meta
       property="og:title"
-      content="Kalkulator Harga Diskon | Hitung Potongan Harga Belanja - Qoydigit"
+      content="Kalkulator Harga Diskon - Hitung Potongan Harga Belanja"
     />
     <meta
       property="og:description"
@@ -38,7 +38,7 @@
     />
     <meta
       name="twitter:title"
-      content="Kalkulator Harga Diskon | Hitung Potongan Harga Belanja - Qoydigit"
+      content="Kalkulator Harga Diskon - Hitung Potongan Harga Belanja"
     />
     <meta
       name="twitter:description"
@@ -138,7 +138,7 @@
             <div class="container">
               <ol
                 class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-                style="--bs-breadcrumb-divider: '»'"
+                style="--bs-breadcrumb-divider: &quot;»&quot;"
               >
                 <li class="breadcrumb-item d-flex align-items-center">
                   <a
@@ -167,15 +167,16 @@
           </nav>
 
           <div class="row justify-content-center mb-4 px-2">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
                   Kalkukator<br /><span class="text-success">Harga Diskon</span>
                 </h1>
                 <p class="text-secondary">
-                  Hitung potongan harga setelah diskon dengan mudah. Masukkan
-                  harga dan persentase diskon untuk mengetahui total hemat serta
-                  harga akhir secara akurat.
+                  Kalkulator Harga Diskon untuk menghitung harga akhir produk
+                  setelah dipotong diskon dengan cepat dan mudah. Alat ini juga
+                  mendukung perhitungan dengan diskon tambahan, sehingga dapat
+                  mengetahui total penghematan dan harga yang harus dibayar.
                 </p>
               </div>
             </div>
@@ -290,7 +291,7 @@
               <div class="col-lg-6">
                 <div
                   id="hasilPerhitungan"
-                  class="bg-light rounded-4 p-4 border border-2 border-dashed position-relative overflow-hidden"
+                  class="bg-light rounded-4 p-4 border position-relative overflow-hidden"
                 >
                   <div
                     class="d-flex justify-content-between align-items-start mb-4"
@@ -351,6 +352,51 @@
                   </div>
                 </div>
               </div>
+              <div class="col-lg-12">
+                <div class="mt-4">
+                  <h2 class="fs-6 fw-semibold text-dark">Contoh Perhitungan</h2>
+                  <hr />
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold">Harga Produk :</span>
+                    <span class="fw-semibold">Rp 200.000</span>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold">Diskon (30%) :</span>
+                    <span class="fw-semibold text-success">- Rp 60.000</span>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold">Harga Setelah Diskon :</span>
+                    <span class="fw-bold">Rp 140.000</span>
+                  </div>
+                  <hr />
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold">Diskon Tambahan (20%) :</span>
+                    <span class="fw-semibold text-success">- Rp 28.000</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold">Harga Akhir :</span>
+                    <span class="fw-bold">Rp 112.000</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold">Total Hemat :</span>
+                    <span class="fw-bold">Rp 88.000</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- End -->
@@ -379,8 +425,9 @@
                             Masukkan Harga Asli
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan harga asli produk sebelum diskon ke dalam
-                            kolom yang sudah tersedia.
+                            Input harga produk sebelum diskon ke kolom yang
+                            tersedia. Pastikan harga yang dimasukkan sesuai
+                            label produk.
                           </p>
                         </div>
                       </div>
@@ -396,8 +443,8 @@
                             Masukkan Jumlah Diskon
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan nilai diskon dalam persen, misal 10, 20
-                            atau 50 sesuai promo yang berlaku.
+                            Isi persentase diskon tanpa %, misal 10, 20, 30 atau
+                            50 sesuai dengan promo yang berlaku.
                           </p>
                         </div>
                       </div>
@@ -417,9 +464,8 @@
                             Diskon Tambahan (opsional)
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Jika ada potongan diskon tambahan seperti promo
-                            ekstra, aktifkan opsi ini dan masukkan nilai
-                            persennya.
+                            Jika terdapat promo tambahan, aktifkan opsi diskon
+                            tambahan dan masukkan persentasenya.
                           </p>
                         </div>
                       </div>
@@ -432,11 +478,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white">
-                            Hitung Hasil Perhitungan
+                            Hitung Total Harga
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tekan tombol untuk mulai memproses perhitungan dan
-                            menampilkan harga akhir setelah diskon.
+                            Tekan tombol untuk melihat harga akhir, total
+                            potongan, dan jumlah yang harus dibayar.
                           </p>
                         </div>
                       </div>
@@ -450,12 +496,15 @@
                   Tentang Kalkulator Harga Diskon
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Kalkulator Harga Diskon adalah alat digital online untuk
-                  membantu dalam menghitung harga akhir suatu barang setelah
-                  dikurangi dengan potongan diskon. Alat ini juga dilengkapi
-                  menghitung diskon tambahan guna memudahkan siapa saja untuk
-                  mengetahui berapa harga yang harus dibayar tanpa perlu
-                  melakukan perhitungan manual.
+                  Kalkulator Harga Diskon adalah alat digital gratis yang
+                  memudahkan dalam perhitungan harga akhir produk setelah
+                  diskon. Dengan adanya fitur tambahan yaitu diskon tambahan,
+                  pengguna juga bisa menghitung harga produk setelah dipotong
+                  oleh diskon pertama, terlebih lagi tidak perlu menghitung
+                  secara manual atau takut jika salah hitung. Alat ini juga
+                  berguna untuk membandingkan promo, mengetahui total
+                  penghematan, dan memastikan harga yang harus dibayar sesuai
+                  dengan promo yang berlaku.
                 </p>
               </div>
 
@@ -466,9 +515,30 @@
                 <p class="text-secondary lh-lg">
                   Menghitung harga setelah diskon sering kali membingungkan,
                   apalagi jika terdapat lebih dari satu potongan diskon
-                  tambahan. Dengan menggunakan kalkulator harga diskon ini,
-                  hasil perhitungan dapat diperoleh secara cepat dan akurat.
+                  tambahan. Dengan menggunakan kalkulator harga diskon ini
+                  pengguna dapat:
                 </p>
+                <ul class="article-list">
+                  <li class="fw-semibold mb-0">
+                    Menghindari Kesalahan Perhitungan
+                  </li>
+                  <p class="text-secondary lh-lg">
+                    Semua perhitungan dilakukan otomatis, sehingga akurat dan
+                    cepat.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Hemat Waktu</li>
+                  <p class="text-secondary lh-lg">
+                    Tidak perlu menghitung diskon secara manual, terutama saat
+                    belanja banyak produk.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Membandingkan Promo</li>
+                  <p class="text-secondary lh-lg">
+                    Bisa mencoba beberapa produk yang sama dengan diskon yang
+                    berbeda untuk menentukan pilihan terbaik.
+                  </p>
+                </ul>
               </div>
 
               <div class="mb-4">
@@ -476,13 +546,34 @@
                   Manfaat Menggunakan Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Dengan alat ini, pengguna bisa mengerti:
+                  Alat ini memberikan beberapa manfaat yaitu:
                 </p>
-                <ul class="article-list text-secondary">
-                  <li>Mengetahui harga akhir setelah diskon dengan mudah.</li>
-                  <li>Menghindari kesalahan perhitungan.</li>
-                  <li>Membandingkan beberapa promo produk sekaligus.</li>
-                  <li>Menghemat waktu saat berbelanja.</li>
+                <ul class="article-list">
+                  <li class="fw-semibold mb-0">
+                    Mengetahui Harga Akhir dengan Mudah
+                  </li>
+                  <p class="text-secondary lh-lg">
+                    Hasil perhitungan langsung menunjukkan harga yang harus
+                    dibayar setelah dipotong diskon.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Mengurangi Kesalahan Hitung</li>
+                  <p class="text-secondary lh-lg">
+                    Perhitungan dengan diskon tambahan atau promo menjadi lebih
+                    cepat dan akurat.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Menghemat Waktu Berbelanja</li>
+                  <p class="text-secondary lh-lg">
+                    Sangat berguna untuk belanja melalui toko online atau saat
+                    menghitung promo di toko.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Menghemat Biaya</li>
+                  <p class="text-secondary lh-lg">
+                    Dapat menilai biaya pengeluaran dan potongan dengan cepat
+                    sebelum checkout produk.
+                  </p>
                 </ul>
               </div>
 
@@ -491,18 +582,24 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini sangat cocok digunakan oleh:
+                  Kalkulator ini sangat cocok untuk:
                 </p>
                 <ul class="article-list text-secondary">
                   <li>
-                    Pembeli online yang ingin memastikan harga sebelum checkout.
+                    Pembeli melalui toko online yang ingin memastikan harga
+                    sebelum checkout.
                   </li>
                   <li>
-                    Penjual yang sedang menghitung untuk menentukan harga promo.
+                    Penjual yang sedang menghitung untuk membantu menentukan
+                    harga promo untuk produk.
                   </li>
                   <li>
-                    Pelajar, mahasiswa dan siapa pun untuk mengetahui harga
-                    setelah diskon dengan cepat.
+                    Belajar menghitung diskon atau membuat perkiraan harga
+                    dengan cepat.
+                  </li>
+                  <li>
+                    Cocok untuk penggunaan harian, belanja bulanan, atau
+                    perencanaan biaya.
                   </li>
                 </ul>
               </div>
@@ -572,8 +669,8 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Diskon tambahan adalah potongan ekstra seperti voucher atau
-                    promo lain yang diberikan setelah potongan diskon utama.
+                    Diskon tambahan adalah potongan harga ekstra yang diberikan
+                    di luar diskon awal.
                   </p>
                 </div>
               </div>
@@ -599,8 +696,10 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Ya. Proses alat kalkulator ini menggunakan rumus matematika
-                    standar dalam menghitung diskon.
+                    Hasil kalkulator dihitung otomatis berdasarkan harga dan
+                    persentase diskon yang dimasukkan. Diskon tambahan dihitung
+                    dari harga yang sudah dikurangi dari diskon pertama,
+                    sehingga sesuai dengan metode standar.
                   </p>
                 </div>
               </div>
