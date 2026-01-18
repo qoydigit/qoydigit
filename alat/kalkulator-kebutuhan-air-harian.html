@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -138,7 +138,7 @@
             <div class="container">
               <ol
                 class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-                style="--bs-breadcrumb-divider: '»'"
+                style="--bs-breadcrumb-divider: &quot;»&quot;"
               >
                 <li class="breadcrumb-item d-flex align-items-center">
                   <a
@@ -167,16 +167,18 @@
           </nav>
 
           <div class="row justify-content-center mb-4 px-2">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
-                  Kalkulator Kebutuhan
+                  Kalkulator Kebutuhan<br />
                   <span class="text-success">Air Harian</span>
                 </h1>
                 <p class="text-secondary">
-                  Gunakan kalkulator ini untuk mengetahui jumlah air minum yang
-                  dibutuhkan tubuh setiap hari nya untuk menjaga tubuh tetap
-                  terhidrasi.
+                  Cek Kebutuhan Air Harian anda untuk mengetahui jumlah air yang
+                  dibutuhkan tubuh setiap hari. Alat ini menghitung kebutuhan
+                  cairan berdasarkan berat badan, jenis kelamin, dan tingkat
+                  aktivitas, sehingga membantu menjaga tubuh tetap terhidrasi
+                  dan mendukung kesehatan yang optimal.
                 </p>
               </div>
             </div>
@@ -249,11 +251,9 @@
               </div>
 
               <div class="col-12 col-lg-6">
-                <div
-                  class="card h-100 border-success-subtle rounded-4 overflow-hidden"
-                >
+                <div class="card h-100 border rounded-4 overflow-hidden">
                   <h2
-                    class="card-header bg-success py-3 fw-semibold text-white h6 text-center lh-base"
+                    class="card-header bg-light py-3 fw-semibold h6 text-center lh-base border-bottom-0"
                   >
                     Rekomendasi Kebutuhan Air
                   </h2>
@@ -292,54 +292,54 @@
                       Tabel Referensi Kebutuhan Air
                     </h2>
                     <div class="table-responsive">
-                      <table class="table table-bordered align-middle">
+                      <table class="table align-middle small">
                         <thead class="table-light">
                           <tr>
-                            <th class="small fw-bold">Berat Badan</th>
-                            <th class="small fw-bold text-center">
+                            <th class="fw-bold">Berat Badan</th>
+                            <th class="fw-bold text-center">
                               Pria (Liter/Hari)
                             </th>
-                            <th class="small fw-bold text-center">
+                            <th class="fw-bold text-center">
                               Wanita (Liter/Hari)
                             </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="small fw-semibold">40 kg</td>
-                            <td class="text-center small">1.4 - 1.7 L</td>
-                            <td class="text-center small">1.2 - 1.5 L</td>
+                            <td class="fw-semibold">40 kg</td>
+                            <td class="fw-medium text-center">1.4 - 1.7 L</td>
+                            <td class="fw-medium text-center">1.2 - 1.5 L</td>
                           </tr>
                           <tr>
-                            <td class="small fw-semibold">50 kg</td>
-                            <td class="text-center small">1.8 - 2.1 L</td>
-                            <td class="text-center small">1.6 - 1.9 L</td>
+                            <td class="fw-semibold">50 kg</td>
+                            <td class="fw-medium text-center">1.8 - 2.1 L</td>
+                            <td class="fw-medium text-center">1.6 - 1.9 L</td>
                           </tr>
                           <tr>
-                            <td class="small fw-semibold">60 kg</td>
-                            <td class="text-center small">2.1 - 2.4 L</td>
-                            <td class="text-center small">1.9 - 2.2 L</td>
+                            <td class="fw-semibold">60 kg</td>
+                            <td class="fw-medium text-center">2.1 - 2.4 L</td>
+                            <td class="fw-medium text-center">1.9 - 2.2 L</td>
                           </tr>
                           <tr>
-                            <td class="small fw-semibold">70 kg</td>
-                            <td class="text-center small">2.5 - 2.8 L</td>
-                            <td class="text-center small">2.2 - 2.5 L</td>
+                            <td class="fw-semibold">70 kg</td>
+                            <td class="fw-medium text-center">2.5 - 2.8 L</td>
+                            <td class="fw-medium text-center">2.2 - 2.5 L</td>
                           </tr>
                           <tr>
-                            <td class="small fw-semibold">80 kg</td>
-                            <td class="text-center small">2.8 - 3.1 L</td>
-                            <td class="text-center small">2.5 - 2.8 L</td>
+                            <td class="fw-semibold">80 kg</td>
+                            <td class="fw-medium text-center">2.8 - 3.1 L</td>
+                            <td class="fw-medium text-center">2.5 - 2.8 L</td>
                           </tr>
                           <tr>
-                            <td class="small fw-semibold">90 kg</td>
-                            <td class="text-center small">3.2 - 3.5 L</td>
-                            <td class="text-center small">2.8 - 3.1 L</td>
+                            <td class="fw-semibold">90 kg</td>
+                            <td class="fw-medium text-center">3.2 - 3.5 L</td>
+                            <td class="fw-medium text-center">2.8 - 3.1 L</td>
                           </tr>
                         </tbody>
                       </table>
-                      <p class="text-muted small fst-italic">
-                        *Kebutuhan air dapat meningkat tergantung pada suhu
-                        cuaca dan kegiatan fisik.
+                      <p class="text-muted x-small fst-italic">
+                        Kebutuhan air dapat meningkat tergantung pada suhu
+                        lingkungan (cuaca) dan tingkat aktivitas fisik.
                       </p>
                     </div>
                   </div>
@@ -352,7 +352,7 @@
                       <div class="list-group-item p-3">
                         <p class="fw-bold small mb-1">Cek Warna Urine</p>
                         <p class="small text-muted mb-0">
-                          Jika warna urine kuning pucat atau jernih, berarti
+                          Jika warna urine kuning pucat atau jernih, menunjukan
                           asupan air sudah tercukupi.
                         </p>
                       </div>
@@ -366,8 +366,8 @@
                       <div class="list-group-item p-3">
                         <p class="fw-bold small mb-1">Faktor Lingkungan</p>
                         <p class="small text-muted mb-0">
-                          Jika cuaca sangat panas, Anda mungkin butuh tambahan
-                          0.5 - 1 liter air.
+                          Jika cuaca panas atau berolahraga berat, tubuh mungkin
+                          butuh tambahan air.
                         </p>
                       </div>
                     </div>
@@ -402,8 +402,9 @@
                             Masukkan Berat Badan
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tentukan satuan berat (kg atau lbs) dan isi angka
-                            berat badan tubuh anda saat ini.
+                            Pilih satuan berat (kg atau lbs) dan isi angka berat
+                            badan saat ini. Pastikan data akurat agar hasil
+                            perhitungan yang tepat.
                           </p>
                         </div>
                       </div>
@@ -420,7 +421,7 @@
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
                             Sesuaikan data dengan jenis kelamin untuk
-                            menghasilkan perhitungan yang lebih spesifik.
+                            menghasilkan rekomendasi cairan yang lebih spesifik.
                           </p>
                         </div>
                       </div>
@@ -440,8 +441,9 @@
                             Pilih Aktivitas Harian
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tentukan seberapa sering anda bergerak agar bonus
-                            cairan dapat disesuaikan.
+                            Tentukan seberapa sering anda bergerak agar asupan
+                            cairan dapat disesuaikan dengan energi yang
+                            dikeluarkan tubuh.
                           </p>
                         </div>
                       </div>
@@ -457,9 +459,9 @@
                             Lihat Hasil
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Cek kolom rekomendasi secara otomatis untuk
-                            mengetahui jumlah liter air dan gelas yang perlu
-                            diminum.
+                            Hasil rekomendasi otomatis muncul, menampilkan
+                            jumlah air dalam liter gelas (250 ml) yang sebaiknya
+                            dikonsumsi.
                           </p>
                         </div>
                       </div>
@@ -473,12 +475,22 @@
                   Tentang Kalkulator Kebutuhan Air Harian
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Kalkulator Kebutuhan Air Harian adalah alat bantu sederhana
-                  namun akurat yang dirancang berdasarkan panduan kesehatan
-                  internasional. Alat ini menggunakan metode perhitungan
-                  mencakup berat badan hingga faktor aktivitas fisik untuk
-                  memberikan rekomendasi asupan air yang paling mendekati
-                  kebutuhan untuk tubuh.
+                  Kalkulator ini dirancang berdasarkan panduan kesehatan
+                  internasional, dengan mempertimbangkan data kondisi tubuh
+                  seperti berat badan, jenis kelamin, dan tingkat aktivitas
+                  harian, alat ini membantu untuk menghitung kebutuhan cairan
+                  yang sesuai untuk menjaga tubuh agar tetap terhidrasi dengan
+                  optimal.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Memahami kebutuhan cairan tubuh sangatlah penting karena
+                  dehidrasi bisa memengaruhi fokus, energi, dan metabolisme,
+                  sementara kelebihan cairan juga dapat membebani organ ginjal.
+                  Misalnya, seorang pria 70 kg yang bekerja di kantor ber-AC
+                  dengan aktivitas ringan membutuhkan sekitar 2,5 liter air per
+                  hari, sementara seorang atlet yang berolahraga 1 jam setiap
+                  hari mungkin membutuhkan tambahan 0,5&mdash;1 liter.
                 </p>
               </div>
 
@@ -487,12 +499,30 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Setiap orang memiliki kebutuhan cairan yang berbeda.
-                  Mengandalkan rumus aturan "8 gelas sehari" saja seringkali
-                  kurang akurat karena tidak mempertimbangkan berat massa dan
-                  energi tubuh yang dikeluarkan. Alat ini membantu untuk
-                  menghindari kekurangan cairan (dehidrasi) atau kelebihan
-                  cairan pada tubuh.
+                  Rumus umum “8 gelas sehari” tidak mempertimbangkan berat
+                  tubuh, energi yang dikeluarkan, atau kondisi lingkungan,
+                  sehingga seringkali kurang akurat. Kalkulator ini membantu
+                  memberikan rekomendasi personal, sehingga mampu untuk:
+                </p>
+                <ul class="article-list text-secondary">
+                  <li class="lh-lg">
+                    Menghindari dehidrasi ringan yang menyebabkan sakit kepala,
+                    mudah lelah, atau kulit kering.
+                  </li>
+                  <li class="lh-lg">
+                    Menghindari konsumsi cairan berlebih yang bisa menyebabkan
+                    pembengkakan atau gangguan elektrolit.
+                  </li>
+                  <li class="lh-lg">
+                    Mengetahui kapan tubuh membutuhkan tambahan cairan, misalnya
+                    saat cuaca panas atau aktivitas fisik tinggi seperti
+                    olahraga.
+                  </li>
+                </ul>
+                <p class="text-secondary lh-lg">
+                  Dengan informasi ini, pengguna dapat menyesuaikan jadwal minum
+                  harian, jumlah gelas per waktu, serta memantau dengen melihat
+                  warna urine untuk memastikan hidrasi tetap optimal.
                 </p>
               </div>
 
@@ -500,29 +530,42 @@
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
                   Manfaat Menggunakan Alat Ini
                 </h2>
+                <p class="text-secondary lh-lg">
+                  Dengan alat ini pengguna dapat:
+                </p>
                 <ul class="article-list">
-                  <li class="fw-semibold mb-0">Meningkatkan Fokus</li>
+                  <li class="fw-semibold mb-0">
+                    Meningkatkan fokus dan energi otak
+                  </li>
                   <p class="text-secondary lh-lg">
-                    Dengan cairan yang cukup menjaga fungsi kognitif otak tetap
-                    optimal.
+                    Hidrasi yang cukup akan mendukung konsentrasi, produktivitas
+                    kerja, dan daya ingat.
                   </p>
 
                   <li class="fw-semibold mb-0">Menjaga Metabolisme Tubuh</li>
                   <p class="text-secondary lh-lg">
-                    Membantu sistem pencernaan dan pembuangan racun dari dalam
-                    tubuh.
+                    Air dapat membantu pencernaan, penyerapan nutrisi, dan
+                    pembuangan racun melalui urine dan keringat.
                   </p>
 
                   <li class="fw-semibold mb-0">Menjaga Suhu Tubuh</li>
                   <p class="text-secondary lh-lg">
-                    Sangat penting bagi orang yang sering beraktivitas di
-                    lingkungan panas atau rutin berolahraga.
+                    Sangat penting terutama bagi orang yang beraktivitas di
+                    cuaca panas, rutin berolahraga, atau bekerja di lapangan.
                   </p>
 
                   <li class="fw-semibold mb-0">Kesehatan Kulit</li>
                   <p class="text-secondary lh-lg">
-                    Kebutuhan air yang cukup dapat membantu kulit tetap lembap
-                    dan tidak kusam.
+                    Kebutuhan air yang cukup dapat membantu kulit tetap lembab
+                    dan tampak lebih sehat.
+                  </p>
+
+                  <li class="fw-semibold mb-0">
+                    Mengurangi risiko masalah kesehatan
+                  </li>
+                  <p class="text-secondary lh-lg">
+                    Dehidrasi kronis bisa memicu penyakit sembelit, infeksi
+                    saluran kemih, hingga gangguan ginjal.
                   </p>
                 </ul>
               </div>
@@ -532,12 +575,26 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini ditujukan bagi siapa saja yang ingin memulai gaya
-                  hidup sehat, mulai dari pekerja kantoran yang sering duduk di
-                  meja kerja serta ruangan ber-AC, ibu rumah tangga, hingga para
-                  pelaku olahraga yang ingin memastikan apakh tubuh sudah
-                  terhidrasi dengan cukup.
+                  Alat ini cocok digunakan oleh:
                 </p>
+                <ul class="article-list text-secondary">
+                  <li class="lh-lg">
+                    Orang yang ingin memulai gaya hidup sehat dan memastikan
+                    hidrasi optimal.
+                  </li>
+                  <li class="lh-lg">
+                    Pekerja kantoran atau orang yang beraktiftas dalam duduk di
+                    ruangan ber-AC.
+                  </li>
+                  <li class="lh-lg">
+                    Pegiat olahraga yang ingin menyesuaikan tingkat asupan
+                    cairan sesuai dengan aktivitas.
+                  </li>
+                  <li class="lh-lg">
+                    Siapa saja yang ingin mengetahui jumlah air harian tanpa
+                    harus menghitung secara manual.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -580,7 +637,7 @@
                   <p class="text-secondary mb-0">
                     Sebagian besar cairan berasal dari air minum, namun sekitar
                     20% cairan tubuh juga bisa didapat melalui makanan yang
-                    mengandung air seperti buah dan sayur.
+                    mengandung air seperti buah-buahan dan sayur.
                   </p>
                 </div>
               </div>
@@ -596,7 +653,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq2"
                 >
-                  Berapa ukuran gelas yang digunakan dalam hasil hitungan?
+                  Berapa ukuran gelas yang digunakan dalam hasil kalkulator?
                 </button>
               </h3>
               <div
@@ -606,8 +663,8 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Menggunakan standar ukuran gelas umum yaitu 250 ml atau 8 oz
-                    per gelas.
+                    Satu gelas standar dihitung 250 ml atau ukuran 8 oz. Hasil
+                    liter dapat dikonversi ke jumlah gelas sesuai kebutuhan.
                   </p>
                 </div>
               </div>
@@ -633,10 +690,11 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Hasil ini digunakan sebagai referensi dasar. Jika anda
-                    sedang hamil, menyusui, atau memiliki kondisi medis tertentu
-                    (gangguan ginjal), sebaiknya konsultasikan asupan cairan
-                    dengan dokter.
+                    Hasil kalkulator berdasarkan panduan kesehatan internasional
+                    dan mempertimbangkan berat badan, jenis kelamin, serta
+                    aktivitas. Namun, kebutuhan individu bisa berbeda tergantung
+                    kondisi kesehatan (seperti gangguan ginjal), cuaca, dan
+                    intensitas aktivitas.
                   </p>
                 </div>
               </div>
@@ -649,7 +707,9 @@
         <div class="container">
           <div class="text-center mb-4">
             <h2 class="h2 fw-bold text-dark">Alat Terkait</h2>
-            <p class="text-secondary">Lihat alat serupa yang tersedia</p>
+            <p class="text-secondary">
+              Lihat alat kesehatan serupa yang tersedia
+            </p>
           </div>
           <div
             class="row g-3 mb-4 justify-content-center"
