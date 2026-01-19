@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -138,7 +138,7 @@
             <div class="container">
               <ol
                 class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-                style="--bs-breadcrumb-divider: '»'"
+                style="--bs-breadcrumb-divider: &quot;»&quot;"
               >
                 <li class="breadcrumb-item d-flex align-items-center">
                   <a
@@ -167,16 +167,18 @@
           </nav>
 
           <div class="row justify-content-center mb-4 px-2">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
                   Kalkulator Gaji<br />
                   <span class="text-success">50 30 20</span>
                 </h1>
                 <p class="text-secondary">
-                  Gunakan Kalkulator Gaji 50-30-20 untuk membagi gaji bulanan ke
-                  kebutuhan, pribadi dan tabungan secara cepat guna membantu
-                  dalam mengatur keuangan.
+                  Hitung pendapatan bulanan dengan Kalkulator Gaji 50-30-20
+                  untuk membagi gaji bulanan ke dalam tiga kategori utama secara
+                  otomatis: kebutuhan pokok, keinginan pribadi, serta tabungan
+                  dan investasi. Alat ini membantu mengatur keuangan agar lebih
+                  terstruktur dan terkendali.
                 </p>
               </div>
             </div>
@@ -185,21 +187,6 @@
           <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
             <div class="row g-4">
               <div class="col-lg-6">
-                <div
-                  class="alert alert-success rounded-4 border-1 bg-light mb-4"
-                >
-                  <h2 class="fw-bold small mb-2 text-success">
-                    <i class="bi bi-lightbulb-fill me-2"></i>Aturan 50/30/20
-                  </h2>
-                  <p class="mb-0 text-secondary small">
-                    Metode ini membagi gaji menjadi 3 bagian:
-                    <strong>50%</strong> untuk kebutuhan pokok,
-                    <strong>30%</strong> untuk keinginan pribadi, dan
-                    <strong>20%</strong>
-                    sebagai tabungan, investasi atau dana darurat.
-                  </p>
-                </div>
-
                 <div class="mb-4">
                   <label class="form-label fw-semibold text-dark"
                     >Gaji Bulanan</label
@@ -237,11 +224,48 @@
                     Hapus
                   </button>
                 </div>
+                <div class="p-3 bg-light border rounded-4">
+                  <h2 class="fw-bold fs-6">Contoh Perhitungan Gaji 50-30-20</h2>
+                  <hr />
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-semibold small">Gaji Bulanan :</span>
+                    <span class="fw-semibold small">Rp 6.000.000</span>
+                  </div>
+                  <hr />
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold small"
+                      >Kebutuhan Pokok (50%) :</span
+                    >
+                    <span class="fw-semibold small">Rp 3.000.000</span>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold small"
+                      >Keinginan Pribadi (30%) :</span
+                    >
+                    <span class="fw-semibold small">Rp 1.800.000</span>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="fw-semibold small"
+                      >Tabungan & Investasi (20%) :</span
+                    >
+                    <span class="fw-semibold small">Rp 1.200.000</span>
+                  </div>
+                </div>
               </div>
 
               <div class="col-lg-6" id="cardHasilBudget">
                 <div
-                  class="p-4 rounded-4 h-100 bg-light border border-2 border-dashed d-flex flex-column justify-content-between gap-2"
+                  class="p-4 rounded-4 h-100 bg-light border d-flex flex-column justify-content-between gap-2"
                 >
                   <div
                     class="mb-3 pb-3 border-bottom border-1 border-dark-subtle"
@@ -296,6 +320,52 @@
                   </div>
                 </div>
               </div>
+              <div class="col-lg-12">
+                <div class="alert border rounded-4 bg-light mb-4">
+                  <h2 class="fw-bold fs-6 mb-2 text-success">
+                    Penjelasan Aturan 50-30-20
+                  </h2>
+                  <p class="text-secondary small mb-0">
+                    Metode 50-30-20 adalah konsep budgeting yang membagi
+                    pendapatan bulanan menjadi tiga bagian proporsional agar
+                    keuangan tetap seimbang.
+                  </p>
+                  <div class="mt-2">
+                    <span class="fw-semibold small">50% Kebutuhan Pokok</span>
+                    <p class="text-secondary small mb-0">
+                      Digunakan untuk pengeluaran wajib seperti makan, sewa
+                      rumah, cicilan, listrik, air, transportasi, dan kebutuhan
+                      primer lainnya.
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <span class="fw-semibold small">30% Keinginan Pribadi</span>
+                    <p class="text-secondary small mb-0">
+                      Dialokasikan untuk membeli kebutuhan seperti hiburan,
+                      hobi, jajan, langganan digital, atau belanja
+                      non-prioritas.
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <span class="fw-semibold small"
+                      >20% Tabungan & Investasi</span
+                    >
+                    <p class="text-secondary small mb-0">
+                      Difokuskan untuk dana darurat, tabungan masa depan,
+                      investasi, atau tujuan finansial jangka panjang.
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <p class="text-secondary small mb-0">
+                      Pembagian ini membantu untuk memastikan kebutuhan
+                      terpenuhi tanpa mengorbankan masa depan.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- End -->
@@ -324,7 +394,7 @@
                             Masukkan Gaji Bulanan
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan total gaji bersih atau pendapatan rutin
+                            Input total gaji bersih atau pendapatan rutin
                             bulanan setelah dipotong pajak pada kolom yang
                             tersedia
                           </p>
@@ -342,8 +412,8 @@
                             Hitung Gaji
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Klik tombol "Hitung Gaji" sistem akan secara
-                            otomatis membagi uang ke dalam tiga aturan.
+                            Klik tombol "Hitung Gaji" sistem secara otomatis
+                            membagi gaji ke dalam aturan 50-30-20.
                           </p>
                         </div>
                       </div>
@@ -363,9 +433,8 @@
                             Hasil Otomatis
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Pada perangkat mobile, layar akan bergeser otomatis
-                            ke bawah untuk menampilkan rincian nominal di setiap
-                            aturan.
+                            Nominal untuk setiap kategori akan langsung
+                            ditampilkan, termasuk pada perangkat mobile.
                           </p>
                         </div>
                       </div>
@@ -378,12 +447,11 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white">
-                            Periksa Hasil
+                            Cek Hasil Perhitungan
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Gunakan hasil perhitungan tersebut untuk digunakan
-                            sebagai referensi dalam batas pengeluaran gaji
-                            bulanan.
+                            Jadikan hasil tersebut untuk digunakan sebagai
+                            panduam dalam batas pengeluaran gaji bulanan.
                           </p>
                         </div>
                       </div>
@@ -405,6 +473,11 @@
                   masa depan. Tujuannya adalah untuk memberikan struktur
                   keuangan yang sehat agar setiap pengeluaran tetap terkendali.
                 </p>
+                <p class="text-secondary lh-lg">
+                  Dengan struktur pembagian yang jelas, pengguna dapat
+                  mengontrol pengeluaran tanpa merasa terlalu terkekang oleh
+                  gaya hidup.
+                </p>
               </div>
 
               <div class="mb-4">
@@ -420,6 +493,25 @@
                   terhindar dari perilaku konsumtif yang berlebihan dan
                   memastikan kewajiban finansial terpenuhi setiap bulannya.
                 </p>
+                <ul class="article-list">
+                  <li class="fw-semibold mb-0">Memberikan Struktur Keuangan</li>
+                  <p class="text-secondary lh-lg">
+                    Setiap rupiah memiliki fungsi yang jelas sejak awal.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Mengurangi Perilaku Boros</li>
+                  <p class="text-secondary lh-lg">
+                    membatasi pengeluaran untuk membantu menghindari belanja
+                    yang impulsif.
+                  </p>
+
+                  <li class="fw-semibold mb-0">
+                    Membantu Konsistensi Menabung
+                  </li>
+                  <p class="text-secondary lh-lg">
+                    Tabungan dibagi langsung sejak awal mendapatkan gaji.
+                  </p>
+                </ul>
               </div>
 
               <div class="mb-4">
@@ -432,9 +524,35 @@
                   yang membingungkan. Alat ini membantu menciptakan keseimbangan
                   hidup, di mana tetap bisa memenuhi kebutuhan pokok, menikmati
                   hobi atau hiburan, namun tetap memiliki simpanan yang cukup
-                  untuk masa depan. Hal ini secara jangka panjang akan
-                  mengurangi stres finansial.
+                  untuk masa depan.
                 </p>
+
+                <p class="text-secondary lh-lg">
+                  Menggunakan kalkulator ini memberikan manfaat nyata dalam
+                  pengelolaan keuangan sehari-hari.
+                </p>
+
+                <ul class="article-list">
+                  <li class="fw-semibold">Pengelolaan Lebih Mudah</li>
+                  <p class="text-secondary lh-lg">
+                    Tidak perlu menghitung manual atau membuat tabel sendiri.
+                  </p>
+
+                  <li class="fw-semibold">Keseimbangan Hidup Lebih Terjaga</li>
+                  <p class="text-secondary lh-lg">
+                    Tetap bisa menikmati gaya hidup tanpa mengorbankan tabungan.
+                  </p>
+
+                  <li class="fw-semibold">Mengurangi Stres Finansial</li>
+                  <p class="text-secondary lh-lg">
+                    Keuangan menjadi lebih terkontrol dan terencana.
+                  </p>
+
+                  <li class="fw-semibold">Cocok untuk Pemula</li>
+                  <p class="text-secondary lh-lg">
+                    Sangat ideal bagi yang ingin memulai belajar budgeting.
+                  </p>
+                </ul>
               </div>
 
               <div class="mb-4">
@@ -570,7 +688,9 @@
         <div class="container">
           <div class="text-center mb-4">
             <h2 class="h2 fw-bold text-dark">Alat Terkait</h2>
-            <p class="text-secondary">Lihat alat serupa yang tersedia</p>
+            <p class="text-secondary">
+              Lihat alat keuangan serupa yang tersedia
+            </p>
           </div>
           <div class="row g-3 mb-4" id="relatedToolsContent"></div>
           <div class="row" id="relatedButtonContainer"></div>
