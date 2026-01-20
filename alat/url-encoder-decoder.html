@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -138,7 +138,7 @@
             <div class="container">
               <ol
                 class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-                style="--bs-breadcrumb-divider: '»'"
+                style="--bs-breadcrumb-divider: &quot;»&quot;"
               >
                 <li class="breadcrumb-item d-flex align-items-center">
                   <a
@@ -167,15 +167,16 @@
           </nav>
 
           <div class="row justify-content-center mb-4 px-2">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
                   URL<br /><span class="text-success">Encoder & Decoder</span>
                 </h1>
                 <p class="text-secondary">
-                  Alat untuk mengonversi simbol, spasi, dan karakter menjadi
-                  format persen agar URL mudah dibaca oleh browser, serta
-                  menerjemahkan kembali URL menjadi teks.
+                  Gunakan URL Encoder & Decoder untuk mengubah suatu teks atau
+                  link URL menjadi format aman yang dapat dibaca browser serta
+                  menerjemahkan kembali URL ter-encode ke bentuk teks aslinya
+                  secara cepat dan praktis.
                 </p>
               </div>
             </div>
@@ -190,7 +191,7 @@
                   class="d-flex justify-content-between align-items-center mb-2"
                 >
                   <label id="labelInput" class="fw-bold text-dark fs-6 mb-0"
-                    >Masukkan URL/Teks:</label
+                    >Masukkan Teks/URL</label
                   >
                   <button
                     onclick="useExample()"
@@ -228,7 +229,7 @@
                   class="d-flex justify-content-between align-items-center mb-2"
                 >
                   <label id="labelOutput" class="fw-bold text-dark fs-6 mb-0"
-                    >Hasil Encode:</label
+                    >Hasil Encode</label
                   >
                 </div>
                 <textarea
@@ -282,11 +283,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Pilih Fungsi (Encode/Decode)
+                            Pilih Fungsi Encode atau Decode
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Tekan tombol panah untuk memilih ingin mengubah
-                            (Encode) teks biasa atau menerjemahkan (Decode) URL.
+                            Gunakan tombol panah di tengah untuk menentukan
+                            apakah ingin melakukan proses encode (ubah teks ke
+                            format URL) atau sebaliknya.
                           </p>
                         </div>
                       </div>
@@ -299,11 +301,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Masukkan atau Tempel URL/teks
+                            Masukkan atau Tempel Teks / URL
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Masukkan link website atau sebuah teks yang ingin
-                            diproses ke dalam kotak input yang disediakan.
+                            Ketik atau tempel alamat URL, parameter link, atau
+                            teks yang mengandung karakter khusus ke dalam kolom
+                            input sebelah kiri.
                           </p>
                         </div>
                       </div>
@@ -320,11 +323,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Lihat Hasil
+                            Lihat Hasil Konversi
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Hasil akan muncul secara otomatis di kotak sebelah
-                            kanan segera setelah mengetik atau menempelkan teks.
+                            Sistem akan memproses data secara otomatis dan
+                            menampilkan hasil encode atau decode secara
+                            real-time di kolom sebelah kanan.
                           </p>
                         </div>
                       </div>
@@ -340,8 +344,9 @@
                             Salin Hasil
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Klik tombol "Salin Hasil" untuk menyalin hasil URL
-                            encode/decode untuk digunakan sesuai kebutuhan.
+                            “Salin Hasil” untuk menyalin hasil URL encode atau
+                            decode untuk langsung digunakan pada website,
+                            aplikasi, atau kebutuhan lainnya.
                           </p>
                         </div>
                       </div>
@@ -355,12 +360,29 @@
                   Tentang URL Decoder & Encoder
                 </h2>
                 <p class="text-secondary lh-lg">
-                  URL Encoder/Decoder adalah alat yang digunakan untuk memproses
-                  karakter pada alamat web (URL). Karena URL hanya dapat
-                  dikirimkan melalui internet menggunakan set karakter ASCII,
-                  karakter di luar set tersebut (seperti spasi, tanda seru, atau
-                  simbol lainnya) harus diubah menjadi format % diikuti oleh dua
-                  digit heksadesimal.
+                  URL Encoder & Decoder adalah alat utilitas online yang
+                  berfungsi untuk mengonversi karakter khusus dalam sebuah URL
+                  ke dalam format yang dapat mudah dibaca oleh browser dan
+                  server. Pada dasarnya, URL hanya mendukung karakter tertentu
+                  yang termasuk dalam set ASCII standar. Ketika sebuah URL
+                  mengandung spasi, simbol, atau karakter non-standar, browser
+                  memerlukan format khusus agar data tersebut dapat dikirim dan
+                  dibaca dengan benar.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Proses URL Encoding mengubah karakter khusus seperti spasi,
+                  tanda tanya, tanda ampersand (&), dan simbol lainnya menjadi
+                  format persen (%) yang diikuti oleh dua digit heksadesimal.
+                  Sebaliknya, URL Decoding berfungsi untuk menerjemahkan kembali
+                  format persen tersebut ke bentuk teks aslinya agar mudah
+                  dibaca manusia.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Dengan alat ini, menjadikan tidak perlu untuk melakukan proses
+                  encode atau decode secara manual yang berisiko menimbulkan
+                  kesalahan.
                 </p>
               </div>
 
@@ -369,11 +391,22 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Browser sering kali mengalami kesalahan dalam membaca jika URL
-                  mengandung simbol khusus yang memiliki arti teknis (seperti &,
-                  ?, atau =) namun digunakan sebagai teks biasa. Alat ini
-                  memastikan url yang dikirimkan melalui parameter URL tidak
-                  merusak struktur link tersebut agar mudah dibaca oleh browser.
+                  Seringkali terjadi kesalahan pada browser saat membaca URL
+                  karena penggunaan karakter yang tidak sesuai. Hal ini sering
+                  ditemukan saat:
+                </p>
+                <ul class="article-list text-secondary">
+                  <li>Mengirim data melalui parameter URL.</li>
+                  <li>Membuat link dengan query string yang kompleks.</li>
+                  <li>Menyalin URL dari website atau aplikasi tertentu.</li>
+                  <li>Melakukan debugging data pada web atau API.</li>
+                </ul>
+                <p class="text-secondary lh-lg">
+                  URL Encoder & Decoder digunakan untuk memastikan struktur URL
+                  tetap aman, konsisten, dan dapat dibaca dengan benar oleh
+                  browser maupun server. Tanpa proses encoding yang tepat, URL
+                  bisa rusak, data tidak terbaca, atau bahkan menyebabkan error
+                  pada aplikasi maupun website.
                 </p>
               </div>
 
@@ -382,27 +415,38 @@
                   Manfaat Menggunakan Alat Ini
                 </h2>
                 <ul class="article-list">
-                  <li class="fw-semibold mb-0">Mencegah Link Rusak</li>
+                  <li class="fw-semibold mb-0">Mencegah URL Rusak</li>
                   <p class="text-secondary lh-lg">
-                    Memastikan link yang dikirim melalui pesan atau email tetap
-                    utuh dan bisa diakses serta mudah dibaca oleh browser.
+                    Dengan proses encoding yang benar, link akan tetap utuh saat
+                    dibagikan melalui pesan, email, atau sistem pemrograman.
                   </p>
+
                   <li class="fw-semibold mb-0">Kompatibilitas Browser</li>
                   <p class="text-secondary lh-lg">
-                    Link yang di-encode akan berfungsi dengan baik di semua
-                    jenis browser dan aplikasi.
+                    URL yang telah di-encode dapat diproses dengan baik oleh
+                    semua browser tanpa konflik karakter.
                   </p>
 
-                  <li class="fw-semibold mb-0">Kemudahan Membaca Data</li>
+                  <li class="fw-semibold mb-0">Mempermudah Pembacaan Data</li>
                   <p class="text-secondary lh-lg">
-                    Fitur Decode memudahkan untuk melihat isi asli dari link
-                    yang penuh dengan kode persen yang sulit dibaca.
+                    Fitur decode membantu menerjemahkan URL panjang yang penuh
+                    kode persen menjadi teks yang lebih mudah dipahami manusia.
                   </p>
 
-                  <li class="fw-semibold mb-0">Memudahkan dalam Debugging</li>
+                  <li class="fw-semibold mb-0">
+                    Proses Debugging & Development
+                  </li>
                   <p class="text-secondary lh-lg">
-                    Membantu pengembang web dalam membaca data yang dikirimkan
-                    dengan format ter-encode dengan fitur decode yang cepat.
+                    Sangat membantu web developer saat membaca parameter URL,
+                    request API, atau data yang dikirim melalui query string.
+                  </p>
+
+                  <li class="fw-semibold mb-0">
+                    Menghemat Waktu & Menghindari Kesalahan
+                  </li>
+                  <p class="text-secondary lh-lg">
+                    Tidak perlu menghafal tabel karakter URL encoding atau
+                    menghitung manual format persen.
                   </p>
                 </ul>
               </div>
@@ -412,10 +456,34 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini sangat penting bagi Web Developer, SEO Specialist
-                  hingga Digital Marketer yang sering mengelola banyak link,
-                  hingga semua orang yang ingin memperbaiki link yang rusak
-                  karena karakter khusus.
+                  URL Encoder & Decoder cocok digunakan oleh berbagai kalangan,
+                  antara lain:
+                </p>
+                <ul class="article-list text-secondary">
+                  <li>
+                    <strong>Web Developer</strong> yang sering bekerja dengan
+                    parameter URL dan API.
+                  </li>
+                  <li>
+                    <strong>SEO Spesialis</strong> yang mengelola struktur URL
+                    dan tracking link.
+                  </li>
+                  <li>
+                    <strong>Digital Marketer</strong> yang membuat campaign
+                    dengan parameter khusus.
+                  </li>
+                  <li>
+                    <strong>Mahasiswa IT</strong> yang sedang belajar dasar
+                    pengembangan web dan jaringan.
+                  </li>
+                  <li>
+                    <strong>Pengguna umum</strong> yang ingin memperbaiki atau
+                    membaca URL dengan karakter aneh
+                  </li>
+                </ul>
+                <p class="text-secondary lh-lg">
+                  Alat ini dirancang agar mudah digunakan oleh pemula, namun
+                  tetap relevan untuk kebutuhan profesional.
                 </p>
               </div>
             </div>
@@ -447,7 +515,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#faq1"
                 >
-                  Apa itu decode-encode pada URL?
+                  Apa itu Encode dan Decode pada URL?
                 </button>
               </h3>
               <div
@@ -457,9 +525,10 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Suatu mekanisme untuk mengodekan informasi dalam URI
-                    (Uniform Resource Identifier) dengan mengganti karakter
-                    tertentu menggunakan tanda % dan kode heksadesimal unik.
+                    URL Encode adalah proses mengubah karakter khusus menjadi
+                    format persen agar aman dan mudah dibaca oleh browser.
+                    Sedangkan URL Decode adalah proses menerjemahkan kembali
+                    format tersebut ke teks aslinya.
                   </p>
                 </div>
               </div>
@@ -485,8 +554,9 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Karakter yang bukan angka atau huruf, seperti spasi menjadi
-                    %20, tanda tanya %3F, dan garis miring %2F.
+                    Karakter seperti spasi, tanda seru, tanda tanya, ampersand
+                    (&), tanda sama dengan (=), dan simbol non-ASCII umumnya
+                    perlu di-encode agar tidak merusak struktur URL.
                   </p>
                 </div>
               </div>
@@ -512,8 +582,37 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Ya, proses konversi dilakukan langsung di browser, sehingga
-                    tidak ada data yang dibaca atau terkirim ke server.
+                    Ya. Seluruh proses dilakukan langsung di browser dan tidak
+                    menyimpan atau mengirim data ke server, sehingga relatif
+                    aman untuk penggunaan umum.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm"
+            >
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold py-4 bg-white text-dark shadow-none lh-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                >
+                  Kapan saya perlu melakukan decode URL?
+                </button>
+              </h3>
+              <div
+                id="faq4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqNamaTools"
+              >
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="text-secondary mb-0">
+                    Decode URL diperlukan saat anda ingin membaca isi asli dari
+                    URL atau parameter yang tampil dalam format kode persen dan
+                    sulit dipahami.
                   </p>
                 </div>
               </div>
@@ -526,7 +625,9 @@
         <div class="container">
           <div class="text-center mb-4">
             <h2 class="h2 fw-bold text-dark">Alat Terkait</h2>
-            <p class="text-secondary">Lihat alat serupa yang tersedia</p>
+            <p class="text-secondary">
+              Lihat alat utilitas serupa yang tersedia
+            </p>
           </div>
           <div class="row g-3 mb-4" id="relatedToolsContent"></div>
           <div class="row" id="relatedButtonContainer"></div>
