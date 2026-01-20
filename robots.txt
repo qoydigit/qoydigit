@@ -1,5 +1,3 @@
-User-agent: AhrefsBot
-User-agent: SemrushBot
 User-agent: DotBot
 User-agent: MJ12bot
 User-agent: Rogerbot
@@ -14,11 +12,6 @@ User-agent: Crawler
 User-agent: HTTrack
 User-agent: JamesBOT
 Disallow: /
-
-User-agent: Googlebot
-User-agent: Chrome-Lighthouse
-User-agent: Bingbot
-Allow: /
 
 User-agent: *
 Disallow: /wp-admin/
