@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -135,7 +135,7 @@
             <div class="container">
               <ol
                 class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-                style="--bs-breadcrumb-divider: '»'"
+                style="--bs-breadcrumb-divider: &quot;»&quot;"
               >
                 <li class="breadcrumb-item d-flex align-items-center">
                   <a
@@ -164,15 +164,17 @@
           </nav>
 
           <div class="row justify-content-center mb-4 px-2">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
                   Morse <span class="text-success">Konverter</span>
                 </h1>
                 <p class="text-secondary">
-                  Alat digital sederhana untuk melakukan konversi dua arah
-                  antara teks alfabet dan kode morse standar internasional
-                  dengan fitur tukar mode otomatis yang cepat.
+                  Ubah teks alfabet menjadi kode morse atau menerjemahkan kode
+                  morse kembali ke teks secara cepat dan akurat. Alat ini
+                  mendukung konversi dua arah dengan mode otomatis, cocok untuk
+                  belajar, eksperimen, maupun kebutuhan kriptografi tanpa harus
+                  menghafal tabel manual.
                 </p>
               </div>
             </div>
@@ -187,7 +189,7 @@
                   class="d-flex justify-content-between align-items-center mb-2"
                 >
                   <label id="labelInput" class="fw-bold text-dark fs-6 mb-0"
-                    >Masukkan Teks:</label
+                    >Masukkan Teks</label
                   >
                   <button
                     onclick="useExample()"
@@ -225,7 +227,7 @@
                   class="d-flex justify-content-between align-items-center mb-2"
                 >
                   <label id="labelOutput" class="fw-bold text-dark fs-6 mb-0"
-                    >Hasil Kode Morse:</label
+                    >Hasil Kode Morse</label
                   >
                 </div>
                 <textarea
@@ -282,9 +284,9 @@
                             Pilih Konversi
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Gunakan tombol panah di antara kotak teks untuk
-                            beralih antara mode "Teks ke Morse" atau "Morse ke
-                            Teks".
+                            Gunakan tombol panah di tengah untuk menentukan
+                            jenis konversi, apakah ingin mengubah teks menjadi
+                            kode morse atau sebaliknya.
                           </p>
                         </div>
                       </div>
@@ -300,9 +302,9 @@
                             Masukkan Teks
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Ketik atau tempel teks/kode morse pada kotak kiri.
-                            Klik "Gunakan Contoh" untuk melihat format yang
-                            benar.
+                            Ketik atau tempel teks maupun kode morse pada kolom
+                            input sebelah kiri. "Gunakan Contoh" untuk melihat
+                            format penulisan yang benar.
                           </p>
                         </div>
                       </div>
@@ -319,12 +321,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Lihat Hasil
+                            Lihat Hasil Konversi
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Sistem akan memproses teks secara real-time dan
-                            menampilkan hasilnya langsung di kotak sebelah
-                            kanan.
+                            Sistem akan memproses input secara otomatis dan
+                            menampilkan hasil konversi secara real-time pada
+                            kolom sebelah kanan.
                           </p>
                         </div>
                       </div>
@@ -340,8 +342,9 @@
                             Salin Hasil
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Klik tombol "Salin Hasil" untuk menyalin hasil teks
-                            ke clipboard dan kirimkan pesan ke tujuan.
+                            Klik tombol "Salin Hasil" untuk menyalin hasil
+                            konversi ke clipboard sehingga dapat langsung
+                            digunakan sesuai kebutuhan.
                           </p>
                         </div>
                       </div>
@@ -355,11 +358,31 @@
                   Tentang Morse Konverter
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Morse Konverter adalah alat utilitas berbasis web yang
-                  dirancang untuk membantu pengguna mengubah bahasa manusia
-                  menjadi sandi morse. Sandi ini menggunakan kombinasi unik dari
-                  titik (dot) dan garis (dash) untuk mewakili setiap karakter
-                  dalam alfabet dan angka.
+                  Morse Konverter adalah alat digital gratis yang dirancang
+                  untuk melakukan konversi dua arah antara teks alfabet dan kode
+                  morse standar internasional. Dengan alat ini, pengguna dapat
+                  dengan mudah mengubah pesan teks biasa menjadi sandi morse
+                  yang terdiri dari titik (dot) dan garis (dash), atau
+                  sebaliknya menerjemahkan kode morse menjadi teks yang dapat
+                  dibaca manusia.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Kode morse sendiri merupakan sistem komunikasi tertua yang
+                  masih digunakan hingga saat ini. Setiap huruf, angka, dan
+                  beberapa tanda baca direpresentasikan oleh kombinasi unik dari
+                  titik dan garis. Morse Konverter ini mengadopsi dari
+                  International Morse Code, sehingga hasil konversi yang
+                  dihasilkan bersifat universal dan dapat dipahami secara
+                  global.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Alat ini dibuat dengan tampilan sederhana dan responsif,
+                  memungkinkan untuk melihat hasil konversi secara real-time
+                  tanpa perlu menekan tombol tambahan. Dengan demikian, proses
+                  belajar dan penggunaan kode morse menjadi lebih praktis dan
+                  efisien.
                 </p>
               </div>
 
@@ -368,11 +391,27 @@
                   Mengapa Alat Ini Digunakan
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Meskipun teknologi komunikasi saat ini sudah sangat maju, kode
-                  morse tetap menjadi bagian penting dalam sejarah
-                  telekomunikasi dan hobi radio amatir. Alat ini digunakan untuk
-                  mempermudah pembuatan pesan sandi tanpa harus menghafal
-                  seluruh tabel morse yang rumit.
+                  Meskipun teknologi komunikasi modern telah berkembang pesat,
+                  kode morse tetap memiliki nilai bersejarah, edukatif, dan
+                  praktis. Banyak orang tertarik mempelajari kode morse sebagai
+                  bagian dari pendidikan, hobi, atau kebutuhan komunikasi khusus
+                  seperti radio amatir.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Tanpa alat bantu, mempelajari dan menerjemahkan kode morse
+                  memerlukan hafalan tabel yang cukup rumit. Kesalahan kecil
+                  dalam membaca titik dan garis dapat mengubah arti pesan secara
+                  keseluruhan. Oleh karena itu, Morse Konverter digunakan untuk
+                  menyederhanakan proses konversi agar lebih akurat dan mudah
+                  dipahami.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Selain itu, alat ini juga sering digunakan sebagai media
+                  pembelajaran interaktif. Dengan melihat hasil konversi secara
+                  langsung, untuk dapat memahami pola sandi morse dengan lebih
+                  cepat dibandingkan metode manual.
                 </p>
               </div>
 
@@ -380,23 +419,45 @@
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
                   Manfaat Menggunakan Alat Ini
                 </h2>
+                <p class="text-secondary lh-lg">
+                  Menggunakan Morse Konverter ini memberikan berbagai manfaat,
+                  baik untuk kebutuhan edukasi maupun penggunaan sehari-hari,
+                  antara lain:
+                </p>
                 <ul class="article-list">
-                  <li class="fw-semibold mb-0">Belajar Interaktif:</li>
+                  <li class="fw-semibold mb-0">Mempermudah Proses Belajar</li>
                   <p class="text-secondary lh-lg">
-                    Membantu pelajar atau organisasi pramuka memahami pola sandi
-                    morse dengan cepat.
+                    Tidak perlu menghafal seluruh kode morse karena sistem akan
+                    menerjemahkannya secara otomatis.
                   </p>
-                  <li class="fw-semibold mb-0">Hasil Instan:</li>
+                  <li class="fw-semibold mb-0">Hasil Cepat dan Akurat</li>
                   <p class="text-secondary lh-lg">
-                    Menghindari kesalahan interpretasi antara garis dan titik
-                    yang sering terjadi pada penghitungan manual.
+                    Konversi dilakukan secara instan sehingga mengurangi risiko
+                    kesalahan interpretasi titik dan garis.
                   </p>
-                  <li class="fw-semibold mb-0">Komunikasi Kreatif:</li>
+                  <li class="fw-semibold mb-0">Dua Fungsi dalam Satu Alat</li>
                   <p class="text-secondary lh-lg">
-                    Membuat cara unik dalam bertukar pesan rahasia dengan teman
-                    atau komunitas.
+                    Dapat digunakan untuk mengubah teks ke morse maupun
+                    menerjemahkan morse ke teks.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Mendukung Kreativitas</li>
+                  <p class="text-secondary lh-lg">
+                    Cocok digunakan untuk membuat pesan rahasia kepada teman,
+                    konten edukatif, atau eksperimen komunikasi yang unik.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Tanpa Instalasi</li>
+                  <p class="text-secondary lh-lg">
+                    Alat ini dapat langsung digunakan melalui browser tanpa
+                    perlu mendownload aplikasi tambahan.
                   </p>
                 </ul>
+                <p class="text-secondary lh-lg">
+                  Dengan manfaat tersebut, Morse Konverter menjadi solusi
+                  praktis bagi siapa saja yang ingin mengenal atau menggunakan
+                  kode morse secara efisien.
+                </p>
               </div>
 
               <div class="mb-4">
@@ -404,10 +465,45 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini ditujukan bagi anggota pramuka, penggemar sejarah,
-                  operator radio amatir (ORARI), mahasiswa komunikasi, hingga
-                  semua orang yang ingin belajar serta bereksperimen dengan
-                  kriptografi sederhana.
+                  Morse Konverter dirancang untuk berbagai kalangan dengan
+                  kebutuhan yang berbeda. Alat ini cocok digunakan oleh:
+                </p>
+
+                <ul class="article-list">
+                  <li class="fw-semibold mb-0">Pelajar dan Mahasiswa</li>
+                  <p class="text-secondary lh-lg">
+                    Dapat digunakan sebagai media belajar dasar telekomunikasi
+                    dan sejarah sistem komunikasi.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Anggota Pramuka</li>
+                  <p class="text-secondary lh-lg">
+                    Membantu dalam melatih kode morse yang sering digunakan
+                    dalam kegiatan kepramukaan.
+                  </p>
+
+                  <li class="fw-semibold mb-0">
+                    Operator Radio Amatir (ORARI)
+                  </li>
+                  <p class="text-secondary lh-lg">
+                    Untuk latihan dan validasi pesan dalam kode morse dengan
+                    komunikasi radio.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Guru dan Tenaga Pengajar</li>
+                  <p class="text-secondary lh-lg">
+                    Sebagai alat bantu pembelajaran yang praktis dan interaktif.
+                  </p>
+
+                  <li class="fw-semibold mb-0">Pengguna Umum</li>
+                  <p class="text-secondary lh-lg">
+                    Siapa saja yang tertarik untuk membuat atau membaca pesan
+                    kode morse tanpa ribet.
+                  </p>
+                </ul>
+                <p class="text-secondary lh-lg">
+                  Dengan fleksibilitas dan kemudahan penggunaan, Morse Konverter
+                  dapat dimanfaatkan oleh pemula hingga pengguna berpengalaman.
                 </p>
               </div>
             </div>
