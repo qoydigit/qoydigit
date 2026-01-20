@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -135,7 +135,7 @@
             <div class="container">
               <ol
                 class="breadcrumb mb-0 d-flex justify-content-center align-items-center"
-                style="--bs-breadcrumb-divider: '»'"
+                style="--bs-breadcrumb-divider: &quot;»&quot;"
               >
                 <li class="breadcrumb-item d-flex align-items-center">
                   <a
@@ -164,15 +164,18 @@
           </nav>
 
           <div class="row justify-content-center mb-4 px-2">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="display-4 fw-bold text-dark">
                   Biner <span class="text-success">Konverter</span>
                 </h1>
                 <p class="text-secondary">
-                  Alat konversi dan penerjemah yang mengubah pesan teks menjadi
-                  deretan angka 0 dan 1 (biner) atau sebaliknya dengan cepat,
-                  akurat, dan mudah digunakan.
+                  Biner Konverter adalah alat konversi digital yang berfungsi
+                  untuk mengubah teks biasa menjadi kode biner dengan angka 0
+                  dan 1 atau menerjemahkan kode biner menjadi teks yang dapat
+                  dibaca oleh manusia. Alat ini dirancang agar mudah digunakan,
+                  cepat, dan akurat tanpa memerlukan pemahaman teknis yang
+                  rumit.
                 </p>
               </div>
             </div>
@@ -188,7 +191,7 @@
                     id="labelInput"
                     for="mainInput"
                     class="fw-bold text-dark fs-6 mb-0"
-                    >Masukkan Teks:</label
+                    >Masukkan Teks</label
                   >
                   <button
                     onclick="useExample()"
@@ -224,7 +227,7 @@
 
               <div class="col-12 col-lg">
                 <label id="labelOutput" class="fw-bold text-dark fs-6 mb-2"
-                  >Hasil Konversi (Biner):</label
+                  >Hasil Konversi (Biner)</label
                 >
                 <textarea
                   id="mainOutput"
@@ -277,11 +280,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Pilih Konversi
+                            Pilih Tipe Konversi
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Klik tombol panah putar untuk menentukan ingin
-                            mengubah teks ke biner atau biner ke teks.
+                            Gunakan tombol panah putar untuk menentukan jenis
+                            konversi untuk mengubah teks ke kode biner atau
+                            sebaliknya.
                           </p>
                         </div>
                       </div>
@@ -294,11 +298,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Masukkan Teks
+                            Masukkan Teks atau Kode Biner
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Ketik atau tempelkan teks/kode biner yang ingin
-                            diproses ke dalam kotak input yang tersedia.
+                            Ketik atau tempel teks yang ingin dikonversi ke
+                            dalam kolom input. jika mengkonversi biner ke teks
+                            pastikan hanya input angka 0 dan 1.
                           </p>
                         </div>
                       </div>
@@ -315,11 +320,12 @@
                         </span>
                         <div>
                           <h2 class="h6 fw-bold mb-1 text-white lh-base">
-                            Lihat Hasil
+                            Lihat Hasil Konversi
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Hasil konversi akan muncul secara otomatis di kolom
-                            kanan tanpa perlu menekan tombol apapun.
+                            Hasil terjemahan konversi akan muncul secara
+                            otomatis pada kolom hasil tanpa perlu menekan tombol
+                            apapun.
                           </p>
                         </div>
                       </div>
@@ -335,8 +341,9 @@
                             Salin Hasil
                           </h2>
                           <p class="small text-white opacity-75 mb-0 lh-lg">
-                            Klik tombol "Salin Hasil" untuk menyalin hasil
-                            terjemahan untuk dapat gunakan sesuai kebutuhan.
+                            Gunakan tombol salin untuk menyalin hasil konversi
+                            agar bisa digunakan kembali, dibagikan, atau
+                            disimpan sesuai kebutuhan.
                           </p>
                         </div>
                       </div>
@@ -350,12 +357,20 @@
                   Tentang Biner Konverter
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Biner Konverter adalah alat utilitas digital yang berfungsi
-                  untuk menerjemahkan karakter manusia (huruf, angka, simbol) ke
-                  dalam format bahasa mesin yang terdiri dari angka 0 dan 1.
-                  Alat ini menggunakan standar ASCII (American Standard Code for
-                  Information Interchange) di mana setiap karakter diwakili oleh
-                  8 digit biner unik.
+                  Biner Konverter adalah alat utilitas online yang menerjemahkan
+                  karakter yang digunakan oleh manusia seperti huruf, angka, dan
+                  simbol ke dalam bentuk bilangan biner yang terdiri angka 0 dan
+                  1. Alat ini menggunakan standar ASCII (American Standard Code
+                  for Information Interchange), di mana setiap karakter
+                  direpresentasikan oleh 8-bit kode biner yang unik.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Standar ASCII ini banyak digunakan dalam sistem komputer
+                  modern untuk memastikan keseragaman dalam penyimpanan dan
+                  pemrosesan data. Dengan adanya alat ini, manusia dapat
+                  memahami dan menerjemahkan bahasa mesin menjadi jauh lebih
+                  mudah dan cepat.
                 </p>
               </div>
 
@@ -367,9 +382,13 @@
                   Dalam dunia komputer, semua data sebenarnya disimpan dalam
                   format biner yang berisi angka 0 dan 1. Alat ini digunakan
                   untuk menerjemahkan ke dalam bahasa manusia dengan logika
-                  dasar komputer. Selain untuk keperluan teknis, alat ini sering
-                  digunakan untuk mempelajari dasar ilmu komputer atau sekadar
-                  membuat pesan rahasia yang unik.
+                  dasar komputer.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                  Selain kebutuhan teknis, biner konverter juga sering digunakan
+                  untuk tujuan edukasi, eksperimen, hingga hiburan seperti
+                  membuat pesan rahasia atau teks unik berbasis kode biner.
                 </p>
               </div>
 
@@ -377,19 +396,30 @@
                 <h2 class="h4 fw-bold text-dark lh-base mb-2">
                   Manfaat Menggunakan Alat Ini
                 </h2>
+                <p class="text-secondary lh-lg">
+                  Menggunakan Biner Konverter memberikan berbagai manfaat
+                  praktis, antara lain:
+                </p>
                 <ul class="article-list">
-                  <li class="fw-semibold mb-0">Efisiensi Waktu:</li>
+                  <li class="fw-semibold mb-0">Efisiensi Waktu</li>
                   <p class="text-secondary lh-lg">
-                    Tidak perlu menghitung manual menggunakan tabel ASCII yang
-                    rumit.
+                    Tidak perlu menghitung atau menghafal secara manual
+                    menggunakan tabel ASCII.
                   </p>
-                  <li class="fw-semibold mb-0">Akurasi:</li>
+                  <li class="fw-semibold mb-0">Akurasi Tinggi</li>
                   <p class="text-secondary lh-lg">
-                    Menghindari kesalahan dalam penulisan deretan angka 0 dan 1.
+                    Mengurangi risiko kesalahan dalam penulisan kode biner yang
+                    sering terjadi saat konversi manual.
                   </p>
-                  <li class="fw-semibold mb-0">Dua Arah (2-in-1):</li>
+                  <li class="fw-semibold mb-0">Fungsi Dua Arah</li>
                   <p class="text-secondary lh-lg">
-                    Bisa digunakan untuk mengubah maupun menerjemahkan kembali.
+                    Bisa digunakan untuk mengubah teks ke biner maupun
+                    menerjemahkan kembali biner ke teks.
+                  </p>
+                  <li class="fw-semibold mb-0">Mudah Digunakan</li>
+                  <p class="text-secondary lh-lg">
+                    Tampilan sederhana seperti alat penerjemah umum membuat alat
+                    ini bisa digunakan oleh siapa saja.
                   </p>
                 </ul>
               </div>
@@ -399,10 +429,24 @@
                   Untuk Siapa Alat Ini
                 </h2>
                 <p class="text-secondary lh-lg">
-                  Alat ini sangat bermanfaat bagi mahasiswa ilmu komputer,
-                  pemrogram (developer), guru IT, hingga penggemar kriptografi
-                  yang ingin bereksperimen dengan data digital.
+                  Biner Konverter cocok digunakan oleh berbagai kalangan,
+                  seperti:
                 </p>
+                <ul class="article-list text-secondary">
+                  <li>
+                    Pelajar atau Mahasiswa yang sedang mempelajari dasar ilmu
+                    komputer.
+                  </li>
+                  <li>
+                    Programmer atau developer yang ingin melakukan pengecekan
+                    dengan cepat.
+                  </li>
+                  <li>Guru dan pengajar IT dalam kebutuhan pembelajaran.</li>
+                  <li>
+                    Penggemar kriptografi yang ingin bereksperimen dengan kode
+                    biner.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -443,9 +487,9 @@
               >
                 <div class="accordion-body pt-0 pb-4">
                   <p class="text-secondary mb-0">
-                    Alat konversi ini mengambil nilai desimal dari setiap huruf
-                    berdasarkan standar ASCII, lalu mengubah nilai tersebut
-                    menjadi format biner 8-bit.
+                    Setiap karakter teks diubah menjadi kode ASCII, lalu
+                    diterjemahkan ke dalam bentuk bilangan biner 8-bit yang
+                    terdiri dari angka 0 dan 1.
                   </p>
                 </div>
               </div>
@@ -515,7 +559,9 @@
         <div class="container">
           <div class="text-center mb-4">
             <h2 class="h2 fw-bold text-dark">Alat Terkait</h2>
-            <p class="text-secondary">Lihat alat serupa yang tersedia</p>
+            <p class="text-secondary">
+              Lihat alat utilitas serupa yang tersedia
+            </p>
           </div>
           <div class="row g-3 mb-4" id="relatedToolsContent"></div>
           <div class="row" id="relatedButtonContainer"></div>
