@@ -183,7 +183,7 @@ const allTools = [
         name: "Generator Headline Konten",
         cat: "media sosial",
         desc: "Buat konten headline media untuk berita atau media informasi lainnya dengan cepat dan siap posting tanpa perlu desain.",
-        link: "/alat/generator-media-sosial",
+        link: "/alat/generator-headline-konten",
     },
 ];
 
