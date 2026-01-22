@@ -1,0 +1,15 @@
+canvas {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+@media (min-width: 992px) {
+    .sticky-lg-top {
+    top: 2rem !important;
+    }
+}
+.active-upload {
+    border-color: #198754 !important;
+    background-color: #f0fdf4 !important;
+    color: #198754 !important;
+}

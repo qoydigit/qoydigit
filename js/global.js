@@ -178,6 +178,13 @@ const allTools = [
         desc: "Ubah karakter khusus pada link menjadi format yang valid agar mudah diakses browser tanpa error.",
         link: "/alat/url-encoder-decoder",
     },
+    // Media Sosial
+    {
+        name: "Generator Headline Konten",
+        cat: "media sosial",
+        desc: "Buat konten headline media untuk berita atau media informasi lainnya dengan cepat dan siap posting tanpa perlu desain.",
+        link: "/alat/generator-media-sosial",
+    },
 ];
 
 // Alat Terkait
