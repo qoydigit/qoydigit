@@ -185,6 +185,12 @@ const allTools = [
         desc: "Buat konten headline media untuk berita atau media informasi lainnya dengan cepat dan siap posting tanpa perlu desain.",
         link: "/alat/generator-headline-konten",
     },
+    {
+        name: "MLBB Nickname Generator",
+        cat: "media sosial",
+        desc: "Cari dan buat nama untuk akun game mobile legends dengan koleksi ribuan jenis nickname unik sesuai gaya bermain.",
+        link: "/alat/mlbb-nickname-generator",
+    },
 ];
 
 // Alat Terkait

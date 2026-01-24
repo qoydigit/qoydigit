@@ -1,0 +1,98 @@
+    .card-custom {
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Slider Track */
+    .form-range::-webkit-slider-thumb {
+        background: #198754;
+    }
+
+    .category-item {
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 14px;
+        transition: 0.2s;
+        cursor: pointer;
+        font-size: 0.85rem;
+        background: #fff;
+        display: block;
+    }
+    .category-item:hover {
+        border-color: #cbd5e1;
+    }
+    .category-item:has(input:checked) {
+        border-color: #198754;
+        background-color: #f0fdf4;
+        color: #166534;
+    }
+
+    .btn-generate {
+        background: #198754;
+        border: none;
+        padding: 14px;
+        border-radius: 12px;
+        font-weight: 700;
+        transition: 0.3s;
+        color: white;
+    }
+    .btn-generate:hover {
+        background: #157347;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(25, 135, 84, 0.3);
+        color: white;
+    }
+
+    .nick-item {
+        background: #f8fafc;
+        border: 1px solid #f1f5f9;
+        border-radius: 10px;
+        margin-bottom: 6px;
+        padding: 9px 12px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .nick-item:hover {
+        border-color: #198754;
+        background: #ffffff;
+        color: #198754;
+        transform: scale(1.02);
+    }
+
+    .empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-height: 300px;
+        color: #94a3b8;
+    }
+
+    .auto-card {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .auto-card:hover {
+        border-color: #198754;
+        background: #f0fdf4;
+        transform: translateY(-2px);
+    }
+
+    .info-box {
+        background: #f1f5f9;
+        border-radius: 14px;
+        padding: 15px;
+        border-left: 4px solid #198754;
+    }
