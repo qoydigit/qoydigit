@@ -1,7 +1,17 @@
 const inputArea = document.getElementById("textInput");
 const outputArea = document.getElementById("textOutput");
 const charCount = document.getElementById("charCount");
-const notify = document.getElementById("copyNotify");
+
+function showToast(message, type = "bg-success") {
+    const toastEl = document.getElementById("copyToast");
+    const toastMsg = document.getElementById("toastMsg");
+    
+    toastMsg.innerText = message;
+    toastEl.className = `toast align-items-center text-white border-0 rounded-4 shadow ${type}`;
+    
+    const toast = new bootstrap.Toast(toastEl, { delay: 2000 });
+    toast.show();
+}
 
 function processText() {
     let text = inputArea.value;
@@ -34,16 +44,13 @@ function processText() {
 }
 
 function copyResult() {
-    if (!outputArea.value) return;
+    if (!outputArea.value) {
+        showToast("Tidak ada teks untuk disalin!", "bg-danger");
+        return;
+    }
 
     navigator.clipboard.writeText(outputArea.value).then(() => {
-        if (notify) {
-            notify.classList.remove("d-none"); 
-
-            setTimeout(() => {
-                notify.classList.add("d-none");
-            }, 2000);
-        }
+        showToast("Teks berhasil disalin!");
     });
 }
 
@@ -52,7 +59,6 @@ function clearAll() {
         inputArea.value = "";
         outputArea.value = "";
         charCount.innerText = "0 Karakter";
-        
-        if (notify) notify.classList.add("d-none");
+        showToast("Data berhasil dihapus", "bg-dark");
     }
 }
