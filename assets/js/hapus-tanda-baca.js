@@ -1,67 +1,67 @@
-    function processPunctuation() {
-        const input = document.getElementById("inputText").value;
-        const isCleanSpasi = document.getElementById("optCleanSpasi").checked;
-        const isOneLine = document.getElementById("optRemoveLineBreak").checked;
+function showToast(message, type = "bg-success") {
+    const toastEl = document.getElementById("copyToast");
+    const toastMsg = document.getElementById("toastMsg");
+    toastMsg.innerText = message;
+    toastEl.className = `toast align-items-center text-white border-0 rounded-4 shadow ${type}`;
+    const toast = new bootstrap.Toast(toastEl, { delay: 2000 });
+    toast.show();
+}
 
-        if (!input) return;
+function processPunctuation() {
+    const input = document.getElementById("inputText").value;
+    const isCleanSpasi = document.getElementById("optCleanSpasi").checked;
+    const isOneLine = document.getElementById("optRemoveLineBreak").checked;
 
-        // 1. Ganti semua simbol KECUALI huruf, angka, spasi, dan baris baru (\n) menjadi SPASI
-        // Kita tambahkan \n di dalam regex agar enter tidak hilang di tahap ini
-        let result = input.replace(/[^a-zA-Z0-9\s\n]/gi, " ");
+    if (!input) {
+        document.getElementById("outputText").value = "";
+        return;
+    };
 
-        // 2. Jika "Jadikan Satu Baris" AKTIF, hapus baris baru
-        if (isOneLine) {
-          result = result.replace(/\n/g, " ");
-        }
+    let result = input.replace(/[^a-zA-Z0-9\s\n]/gi, " ");
 
-        // 3. Bersihkan spasi ganda
-        if (isCleanSpasi) {
-          if (isOneLine) {
-            // Jika satu baris, bersihkan semua spasi ganda secara total
-            result = result.replace(/\s+/g, " ").trim();
-          } else {
-            // Jika tetap berbaris, bersihkan spasi ganda per baris agar enter tidak hilang
-            result = result
-              .split("\n")
-              .map((line) => line.replace(/[ \t]+/g, " ").trim())
-              .join("\n");
-            // Menghapus baris kosong yang benar-benar tidak ada teksnya
-            result = result.replace(/\n\s*\n/g, "\n").trim();
-          }
-        }
-
-        document.getElementById("outputText").value = result;
+    if (isOneLine) {
+        result = result.replace(/\n/g, " ");
     }
 
-      function clearAll() {
+    if (isCleanSpasi) {
+        if (isOneLine) {
+            result = result.replace(/\s+/g, " ").trim();
+        } else {
+            result = result
+                .split("\n")
+                .map((line) => line.replace(/[ \t]+/g, " ").trim())
+                .join("\n");
+            result = result.replace(/\n\s*\n/g, "\n").trim();
+        }
+    }
+    document.getElementById("outputText").value = result;
+}
+
+function loadExample() {
+    const exampleText = "Halo, Dunia! Apa kabar? @Ini #adalah %contoh &teks *yang (penuh) -tanda _baca.";
+    document.getElementById("inputText").value = exampleText;
+    processPunctuation();
+    showToast("Contoh teks berhasil dimuat", "bg-dark");
+}
+
+function clearAll() {
+    if (document.getElementById("inputText").value) {
         document.getElementById("inputText").value = "";
         document.getElementById("outputText").value = "";
         document.getElementById("optRemoveLineBreak").checked = false;
         document.getElementById("optCleanSpasi").checked = true;
-        document.getElementById("inputText").focus();
+        showToast("Data berhasil dihapus", "bg-dark");
+    }
+}
+
+function copyToClipboard() {
+    const output = document.getElementById("outputText");
+    if (!output.value) {
+        showToast("Hasil kosong, tidak ada yang disalin", "bg-danger");
+        return;
     }
 
-      function copyToClipboard() {
-        const output = document.getElementById("outputText");
-        const notify = document.getElementById("copyNotify");
-
-        if (!output.value) return;
-
-        // Proses Salin
-        output.select();
-        output.setSelectionRange(0, 99999); // Untuk mobile
-        document.execCommand("copy");
-
-        // Hilangkan seleksi biru setelah copy (opsional, agar rapi)
-        window.getSelection().removeAllRanges();
-
-        // Tampilkan Notifikasi
-        notify.classList.remove("d-none");
-        notify.classList.add("d-block");
-
-        // Sembunyikan kembali setelah 2 detik
-        setTimeout(() => {
-          notify.classList.remove("d-block");
-          notify.classList.add("d-none");
-        }, 2000);
-    }
+    navigator.clipboard.writeText(output.value).then(() => {
+        showToast("Teks berhasil disalin!");
+    });
+}
