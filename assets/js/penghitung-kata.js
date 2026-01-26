@@ -220,14 +220,25 @@ try {
 document.body.removeChild(textArea);
 }
 
-function showNotifyIfStats(text) {
-if (text.includes("-------------------")) {
-    const notify = document.getElementById("copyNotify");
-    if (notify) {
-    notify.style.display = "block";
-    setTimeout(() => (notify.style.display = "none"), 3000);
-    }
+function showToast(message, type = "bg-success") {
+    const toastEl = document.getElementById("copyToast");
+    const toastMsg = document.getElementById("toastMsg");
+    
+    // Set Pesan dan Warna (bg-success atau bg-danger)
+    toastMsg.innerText = message;
+    toastEl.className = `toast align-items-center text-white border-0 rounded-4 shadow ${type}`;
+    
+    // Inisialisasi dan Tampilkan Toast Bootstrap
+    const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+    toast.show();
 }
+
+function showNotifyIfStats(text) {
+    if (text.includes("-------------------")) {
+        showToast("Statistik berhasil disalin!");
+    } else {
+        showToast("Teks Berhasil disalin!");
+    }
 }
 
 function clearText() {
