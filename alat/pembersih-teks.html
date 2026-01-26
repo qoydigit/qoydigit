@@ -181,7 +181,7 @@
           </div>
 
           <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm mb-3 border">
-            <div class="row g-4">
+            <div class="row g-4 mb-4">
               <div class="col-lg-6">
                 <div
                   class="d-flex justify-content-between align-items-center mb-2"
@@ -318,13 +318,28 @@
                 Hapus
               </button>
             </div>
-            <div class="text-center">
+            <div
+              class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3"
+              style="z-index: 1100"
+            >
               <div
-                id="copyNotify"
-                class="small text-success fw-bold mt-3 d-none"
+                id="copyToast"
+                class="toast align-items-center text-white border-0 rounded-4 shadow"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
               >
-                <i class="bi bi-check-circle-fill me-1"></i>Teks berhasil
-                disalin!
+                <div class="d-flex p-1">
+                  <div class="toast-body fw-medium">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    <span id="toastMsg">Berhasil!</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast"
+                  ></button>
+                </div>
               </div>
             </div>
           </div>
