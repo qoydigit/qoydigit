@@ -191,6 +191,13 @@ const allTools = [
         desc: "Cari dan buat nama untuk akun game mobile legends dengan koleksi ribuan jenis nickname unik sesuai gaya bermain.",
         link: "/alat/mlbb-nickname-generator",
     },
+    // Edukasi
+    {
+        name: "Fakta Random Generator",
+        cat: "edukasi",
+        desc: "Alat kumpulan fakta menarik secara acak, lengkap dengan sumber tepercaya dan penjelasan singkat yang mudah dipahami.",
+        link: "/alat/fakta-random-generator",
+    },
 ];
 
 // Alat Terkait

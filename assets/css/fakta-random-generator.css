@@ -1,0 +1,43 @@
+.fixed-container {
+    min-height: 100%;
+    display: flex;
+}
+
+.scroll-area {
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.scroll-area::-webkit-scrollbar {
+    width: 4px;
+}
+.scroll-area::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 10px;
+}
+.fade-content {
+    transition: opacity 0.4s ease-in-out;
+    height: 100%;
+}
+.is-hidden {
+    opacity: 0;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+@media (min-width: 992px) {
+    .vertical-divider {
+    border-right: 1px solid #dee2e6;
+    }
+    .collapse-desktop-force {
+    display: block !important;
+    height: auto !important;
+    }
+    .equal-height {
+    display: flex;
+    align-items: stretch;
+    }
+}
